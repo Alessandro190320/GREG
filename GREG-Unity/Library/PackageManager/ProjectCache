@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
       ticks: 637850374540000000
     m_Hash: 949383638
+=======
+      ticks: 637819176540000000
+    m_Hash: 1647964996
+>>>>>>> prove canestro dietro
   m_LockFileStatus:
     m_FilePath: /home/alessandro/Scrivania/ GREG/GREG-Unity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
       ticks: 637850374560000000
     m_Hash: 1938497695
+=======
+      ticks: 637819176540000000
+    m_Hash: 3856226353
+>>>>>>> prove canestro dietro
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -653,7 +663,11 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.15.12
       source: 1
+<<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
       resolvedPath: /home/alessandro/Scrivania/ GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.12
+=======
+      resolvedPath: /home/alessandro/Scrivania/ GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.7
+>>>>>>> prove canestro dietro
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -3579,6 +3593,65 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
+<<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
+=======
+    - packageId: com.unity.nuget.newtonsoft-json@2.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 2.0.0
+      source: 1
+      resolvedPath: /home/alessandro/Scrivania/ GREG/GREG-Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 12.0.2.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.0.0
+        compatible:
+        - 2.0.0
+        verified: 2.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+>>>>>>> prove canestro dietro
     - packageId: com.unity.services.core@1.0.1
       testable: 0
       isDirectDependency: 0
@@ -3898,4 +3971,8 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: /home/alessandro/Scrivania/ GREG/GREG-Unity/Packages
+<<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
 m_EditorVersion: 2020.3.30f1 (1fb1bf06830e)
+=======
+m_EditorVersion: 2020.3.28f1 (f5400f52e03f)
+>>>>>>> prove canestro dietro
