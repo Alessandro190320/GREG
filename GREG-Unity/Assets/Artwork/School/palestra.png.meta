@@ -13,7 +13,7 @@ TextureImporter:
     second: finestra_pal 2
   - first:
       213: 1887045243778957532
-    second: palestra_angolo_sx_1
+    second: canestro-dietro-s0
   - first:
       213: 6972026461487647321
     second: palestra_front_0
@@ -134,6 +134,21 @@ TextureImporter:
   - first:
       213: -8690109632024291329
     second: qsr3-5
+  - first:
+      213: 4997226102390560282
+    second: canestro-dietro-d0
+  - first:
+      213: 1174739588193166353
+    second: canestro-dietro-s1
+  - first:
+      213: 2763102994387731062
+    second: canestro-dietro-s2
+  - first:
+      213: 829104137053197063
+    second: canestro-dietro-d1
+  - first:
+      213: 2737749927362952216
+    second: canestro-dietro-d2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -243,7 +258,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +279,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,7 +300,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1217,6 +1232,132 @@ TextureImporter:
       bones: []
       spriteID: ff7ddf3f457866780800000000000000
       internalID: -8690109632024291329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-s0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd00986b6a1203a10800000000000000
+      internalID: 1887045243778957532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-d0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a169c47e9a6b95540800000000000000
+      internalID: 4997226102390560282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-s1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114a7d17e638d4010800000000000000
+      internalID: 1174739588193166353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-s2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6728c4aa883885620800000000000000
+      internalID: 2763102994387731062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-d1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703dcd2e1d1918b00800000000000000
+      internalID: 829104137053197063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro-dietro-d2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cf150cd017ef520800000000000000
+      internalID: 2737749927362952216
       vertices: []
       indices: 
       edges: []

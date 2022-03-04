@@ -614,6 +614,21 @@ TextureImporter:
   - first:
       213: 2249873877508154663
     second: sedia_ricky_0
+  - first:
+      213: -8103359966573317217
+    second: sedia_v1
+  - first:
+      213: -2644197309409174743
+    second: banco_palestra_s0
+  - first:
+      213: 1942685481875038249
+    second: banco_palestra_d0
+  - first:
+      213: 7494074774459630789
+    second: banco_palestra_s1
+  - first:
+      213: 1909965612555234805
+    second: banco_palestra_d1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -4974,7 +4989,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4995,7 +5010,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5003,6 +5018,132 @@ TextureImporter:
       bones: []
       spriteID: 725ed4a0f58293f10800000000000000
       internalID: 2249873877508154663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sedia_v0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 307
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876fc10040b0d80c0800000000000000
+      internalID: -4571985934901512584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sedia_v1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93b6493b051b8f80800000000000000
+      internalID: -8103359966573317217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_palestra_s0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 118
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b5f908e8ced4bd0800000000000000
+      internalID: -2644197309409174743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_palestra_d0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 118
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9206879272ec5fa10800000000000000
+      internalID: 1942685481875038249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_palestra_s1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 134
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4c1e35d4d400860800000000000000
+      internalID: 7494074774459630789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_palestra_d1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 134
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fde09dea9f818a10800000000000000
+      internalID: 1909965612555234805
       vertices: []
       indices: 
       edges: []
