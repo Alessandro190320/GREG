@@ -27,3 +27,5 @@
 ## 6--> adesso siete pronti per il commit, scrivere la descrizione del progetto ( io solitamente metto la data inserendo anno mese e giorno in modo tale da sapere quando ho modificato i file l'ultima volta) una volta messa la descrizione, premere il ✔ tutto in alto e vi apparirà un bottone blu che dirà sincronizza modifiche
 
 ## 7--> premendo il bottone verrà caricato il tutto su GITHUB
+
+# il gioco è stato pubblicato al seguente link https://play.unity.com/mg/other/greg-online-2
