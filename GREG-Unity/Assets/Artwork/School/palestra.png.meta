@@ -151,16 +151,28 @@ TextureImporter:
     second: canestro-dietro-d2
   - first:
       213: -1764203836772398815
-    second: canestro-dietro-d3
+    second: canestro_1
   - first:
       213: -3311331651567087346
-    second: canestro-dietro-d4
+    second: canestro_2
   - first:
       213: 1485476530884678330
-    second: canestro-dietro-s3
+    second: canestro_3
   - first:
       213: -5973783389922707208
-    second: canestro-dietro-s4
+    second: canestro_4
+  - first:
+      213: 7823443157092760340
+    second: canestro_5
+  - first:
+      213: 6825516798430129498
+    second: canestro_6
+  - first:
+      213: 5766943359323221273
+    second: canestro_7
+  - first:
+      213: -5779564283769850512
+    second: canestro_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1375,11 +1387,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro-dietro-d3
+      name: canestro_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 328
+        x: 19
+        y: 391
         width: 16
         height: 16
       alignment: 0
@@ -1396,11 +1408,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro-dietro-d4
+      name: canestro_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 344
+        x: 35
+        y: 391
         width: 16
         height: 16
       alignment: 0
@@ -1417,11 +1429,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro-dietro-s3
+      name: canestro_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 328
+        x: 19
+        y: 375
         width: 16
         height: 16
       alignment: 0
@@ -1438,11 +1450,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro-dietro-s4
+      name: canestro_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 344
+        x: 35
+        y: 375
         width: 16
         height: 16
       alignment: 0
@@ -1454,6 +1466,90 @@ TextureImporter:
       bones: []
       spriteID: 8f8378648abd81da0800000000000000
       internalID: -5973783389922707208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 359
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b79fad914729c60800000000000000
+      internalID: 7823443157092760340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 359
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5da3e27d5b19be50800000000000000
+      internalID: 6825516798430129498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 343
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d22444e6c480050800000000000000
+      internalID: 5766943359323221273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canestro_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 343
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075fc55c7ecdacfa0800000000000000
+      internalID: -5779564283769850512
       vertices: []
       indices: 
       edges: []
