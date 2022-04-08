@@ -82,13 +82,13 @@ TextureImporter:
     second: door_windows_lat_doppia_0
   - first:
       213: 2724678343298630751
-    second: door_brown_left_0
+    second: door_classic_left
   - first:
       213: 433748349519558422
-    second: door_brown_left_0
+    second: door_classic_left
   - first:
       213: 4479432949024882888
-    second: door_brown_left_1
+    second: door_classic_right
   - first:
       213: 6609483125065025674
     second: door_brown_right_0
@@ -115,7 +115,7 @@ TextureImporter:
     second: porte_mistiche
   - first:
       213: -2437508175588858173
-    second: door_tunnel_cosed_2
+    second: muro_bsso
   - first:
       213: 7289354489394467729
     second: door_tunnel_open_0
@@ -805,15 +805,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_brown_left_0
+      name: door_classic_left
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 16
-        height: 16
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -826,15 +826,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_brown_left_1
+      name: door_classic_right
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 0
         width: 16
-        height: 16
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -842,48 +842,6 @@ TextureImporter:
       bones: []
       spriteID: 8c00fc9b8842a2e30800000000000000
       internalID: 4479432949024882888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_brown_right_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88807a32e999bb50800000000000000
-      internalID: 6609483125065025674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_brown_right_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 309ae4d1a278fb6e0800000000000000
-      internalID: -1819587109484320509
       vertices: []
       indices: 
       edges: []
@@ -1023,7 +981,7 @@ TextureImporter:
         width: 16
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,6 +989,27 @@ TextureImporter:
       bones: []
       spriteID: ea644112aba039f90800000000000000
       internalID: -6948198005567371602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_bsso
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 122
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c66ae09a3b3c2ed0800000000000000
+      internalID: -2437508175588858173
       vertices: []
       indices: 
       edges: []
