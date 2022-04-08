@@ -19,6 +19,7 @@ MonoBehaviour:
     width: 1852
     height: 991
   m_ShowMode: 4
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
   m_Title: Scene
@@ -31,6 +32,11 @@ MonoBehaviour:
   m_RootView: {fileID: 2}
 >>>>>>> Revert "Revert "prove unity compilazione""
   m_MinSize: {x: 875, y: 300}
+=======
+  m_Title: Inspector
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> parent of e3d89e6... prove unity compilazione
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -61,7 +67,7 @@ MonoBehaviour:
   controlID: 73
 =======
     height: 991
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -152,6 +158,7 @@ MonoBehaviour:
     y: 30
     width: 1852
     height: 941
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
   m_MinSize: {x: 906, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
@@ -164,6 +171,12 @@ MonoBehaviour:
   vertical: 1
   controlID: 985
 >>>>>>> prove canestro dietro
+=======
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
+  vertical: 1
+  controlID: 323
+>>>>>>> parent of e3d89e6... prove unity compilazione
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,6 +198,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1852
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
     height: 991
   m_MinSize: {x: 875, y: 300}
@@ -207,6 +221,13 @@ MonoBehaviour:
   vertical: 0
   controlID: 986
 >>>>>>> prove canestro dietro
+=======
+    height: 941
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
+  vertical: 0
+  controlID: 324
+>>>>>>> parent of e3d89e6... prove unity compilazione
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,12 +259,16 @@ MonoBehaviour:
   m_MinSize: {x: 603, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
   controlID: 128
 >>>>>>> Revert "Revert "prove unity compilazione""
 =======
   controlID: 987
 >>>>>>> prove canestro dietro
+=======
+  controlID: 325
+>>>>>>> parent of e3d89e6... prove unity compilazione
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,12 +298,16 @@ MonoBehaviour:
   m_MinSize: {x: 603, y: 221}
   m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
   controlID: 129
 >>>>>>> Revert "Revert "prove unity compilazione""
 =======
   controlID: 988
 >>>>>>> prove canestro dietro
+=======
+  controlID: 326
+>>>>>>> parent of e3d89e6... prove unity compilazione
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -362,8 +391,8 @@ MonoBehaviour:
     width: 1017
 >>>>>>> prove canestro dietro
     height: 447
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -398,11 +427,15 @@ MonoBehaviour:
   m_MinSize: {x: 473, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
   controlID: 23
 =======
   controlID: 1083
 >>>>>>> prove canestro dietro
+=======
+  controlID: 398
+>>>>>>> parent of e3d89e6... prove unity compilazione
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -460,8 +493,8 @@ MonoBehaviour:
     y: 0
     width: 1320
     height: 494
-  m_MinSize: {x: 240, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 242, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -493,9 +526,15 @@ MonoBehaviour:
     y: 0
     width: 301
     height: 941
+<<<<<<< HEAD
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 25}
+=======
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 24}
+>>>>>>> parent of e3d89e6... prove unity compilazione
   m_Panes:
   - {fileID: 24}
   - {fileID: 25}
@@ -644,7 +683,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 82f0ffffacf0ffff64f1ffff22f2ffff2af2ffff2ef2ffff36f2ffff3cf2ffff9ef2ffffc8f2ffff34f4fffff2f4fffffaf4ffff00f5ffff10f5ffff1cf5ffff66fbffff
+=======
+      m_ExpandedIDs: 1efbffff2c450000
+>>>>>>> parent of e3d89e6... prove unity compilazione
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -892,12 +935,16 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 45.200012}
     m_SelectedIDs: 82530000
     m_LastClickedID: 21378
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
     m_ExpandedIDs: 000000000a4a00004c4e00000a5300000c5300000e53000010530000125300001453000016530000185300001a5300001c5300001e53000020530000225300002453000026530000285300002a5300002c5300002e530000305300003253000034530000
 >>>>>>> Revert "Revert "prove unity compilazione""
 =======
     m_ExpandedIDs: ffffffff00000000d4480000064d000060510000625100006451000066510000685100006a5100006c5100006e51000070510000725100007451000076510000785100007a5100007c5100007e51000080510000825100008451000086510000885100008a510000
 >>>>>>> prove canestro dietro
+=======
+    m_ExpandedIDs: ffffffff00000000d4480000325100003451000036510000385100003a5100003c5100003e51000040510000425100004451000046510000485100004a5100004c5100004e51000050510000525100005451000056510000585100005a5100005c510000
+>>>>>>> parent of e3d89e6... prove unity compilazione
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -925,6 +972,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
     m_ExpandedIDs: 00000000ec4900001e4e0000e64e0000e84e0000ea4e0000ec4e0000ee4e0000f04e0000f24e0000f44e0000f64e0000f84e0000fa4e0000fc4e0000fe4e0000004f0000024f0000044f0000064f0000084f00000a4f00000c4f00000e4f0000104f0000
@@ -934,6 +982,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: ffffffff00000000d4480000064d000060510000625100006451000066510000685100006a5100006c5100006e51000070510000725100007451000076510000785100007a5100007c5100007e51000080510000825100008451000086510000885100008a510000
 >>>>>>> prove canestro dietro
+=======
+    m_ExpandedIDs: ffffffff00000000d4480000d64c0000325100003451000036510000385100003a5100003c5100003e51000040510000425100004451000046510000485100004a5100004c5100004e51000050510000525100005451000056510000585100005a5100005c510000
+>>>>>>> parent of e3d89e6... prove unity compilazione
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1100,6 +1151,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< 92d7edc7900649cc7e7cdd681baaea3d66789c07
     x: 377
     y: 119
@@ -1107,8 +1159,11 @@ MonoBehaviour:
     height: 522
 =======
     x: 1619
+=======
+    x: 1644
+>>>>>>> parent of e3d89e6... prove unity compilazione
     y: 119
-    width: 300
+    width: 275
     height: 920
 >>>>>>> Revert "Revert "prove unity compilazione""
   m_ViewDataDictionary: {fileID: 0}
