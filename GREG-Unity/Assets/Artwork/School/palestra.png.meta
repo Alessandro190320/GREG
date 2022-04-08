@@ -13,7 +13,7 @@ TextureImporter:
     second: finestra_pal 2
   - first:
       213: 1887045243778957532
-    second: canestro_dietro
+    second: canestro-dietro-s0
   - first:
       213: 6972026461487647321
     second: palestra_front_0
@@ -136,7 +136,7 @@ TextureImporter:
     second: qsr3-5
   - first:
       213: 4997226102390560282
-    second: canestro
+    second: canestro-dietro-d0
   - first:
       213: 1174739588193166353
     second: canestro-dietro-s1
@@ -151,7 +151,6 @@ TextureImporter:
     second: canestro-dietro-d2
   - first:
       213: -1764203836772398815
-<<<<<<< Updated upstream
     second: canestro-dietro-d3
   - first:
       213: -3311331651567087346
@@ -162,30 +161,6 @@ TextureImporter:
   - first:
       213: -5973783389922707208
     second: canestro-dietro-s4
-=======
-    second: canestro_d0
-  - first:
-      213: -3311331651567087346
-    second: canestro_d1
-  - first:
-      213: 1485476530884678330
-    second: canestro_d2
-  - first:
-      213: -5973783389922707208
-    second: canestro_d3
-  - first:
-      213: 7823443157092760340
-    second: canestro_d4
-  - first:
-      213: 6825516798430129498
-    second: canestro_d5
-  - first:
-      213: 5766943359323221273
-    second: canestro_d6
-  - first:
-      213: -5779564283769850512
-    second: canestro_d7
->>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1274,24 +1249,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro_dietro
+      name: canestro-dietro-s0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
         x: 80
         y: 328
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-=======
-        x: 81
-        y: 341
-        width: 30
-        height: 35
-      alignment: 9
-      pivot: {x: 0.51108426, y: 0.07341309}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,22 +1270,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: canestro
+      name: canestro-dietro-d0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
         x: 96
         y: 328
         width: 16
         height: 16
-=======
-        x: 41
-        y: 347
-        width: 30
-        height: 52
->>>>>>> Stashed changes
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1331,7 +1290,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< Updated upstream
     - serializedVersion: 2
       name: canestro-dietro-s1
       rect:
@@ -1500,8 +1458,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-=======
->>>>>>> Stashed changes
     outline: []
     physicsShape: []
     bones: []

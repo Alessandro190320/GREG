@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":0.014569619670510292,"y":0.0005424858536571264,"z":0.00008761952631175518},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":9.961328506469727,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":3.8587334156036379,"y":6.679232597351074,"z":-1.8965082168579102},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":0.893273651599884,"orthographic":true}
+>>>>>>> parent of 67fea37... modifiche ausili

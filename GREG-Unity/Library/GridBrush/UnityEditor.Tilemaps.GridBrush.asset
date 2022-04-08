@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: Default Brush
   m_EditorClassIdentifier: 
   m_Cells:
-<<<<<<< Updated upstream
   - m_Tile: {fileID: 11400000, guid: 3d571f50f6983074a9655f03194d9922, type: 2}
-=======
-  - m_Tile: {fileID: 11400000, guid: 26bbf7514f3a9ea4388f051dd86181c3, type: 2}
->>>>>>> Stashed changes
     m_Matrix:
       e00: 1
       e01: 0
@@ -36,7 +32,6 @@ MonoBehaviour:
       e32: 0
       e33: 1
     m_Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< Updated upstream
   - m_Tile: {fileID: 11400000, guid: 327b178e3bc4646e0824a4f7799b8262, type: 2}
     m_Matrix:
       e00: 1
@@ -57,9 +52,6 @@ MonoBehaviour:
       e33: 1
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Size: {x: 1, y: 2, z: 1}
-=======
-  m_Size: {x: 1, y: 1, z: 1}
->>>>>>> Stashed changes
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_FloodFillContiguousOnly: 1
