@@ -166,3 +166,4 @@ Received Import Request.
   path: Assets/Artwork/School/campi_palestra.png
   artifactKey: Guid(8cb850ca4a82ddb408086a16c2da4b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Artwork/School/campi_palestra.png using Guid(8cb850ca4a82ddb408086a16c2da4b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a90fa74d4865b833ea22620265c9839') in 0,187665 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
