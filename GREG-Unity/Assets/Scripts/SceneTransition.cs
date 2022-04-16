@@ -10,23 +10,30 @@ public class SceneTransition : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // mi memorizzo Index della scena
             int indexFloor = SceneManager.GetActiveScene().buildIndex;
-            int indexFloorLiceo = SceneManager.GetActiveScene().buildIndex;
 
             // se nell'opggetto contiene licero, vado a selezionare iil piano per quanto riguarda il liceo
             // in caso contrario spostarsi sul piano dell'itis
-            if(!name.Contains("liceo")){
+            if (!name.Contains("liceo")) // ramo non liceo
+            {
                 if (name.Contains("up"))
                     indexFloor++;
                 else if (name.Contains("down"))
                     indexFloor--;
             }
-            else {
+            else // ramo lice 
+            {
+                indexFloor = 6;
                 if (name.Contains("up"))
-                    indexFloorLiceo++;
+                    indexFloor++;
                 else if (name.Contains("down"))
-                    indexFloorLiceo--;
+                    indexFloor--;
             }
+
+            if (name.Contains("ITI"))
+                indexFloor = 3;
+
 
             PlayerState.setPosition(initialPosition);
             LevelSystem.current.ChangeScene(indexFloor);
