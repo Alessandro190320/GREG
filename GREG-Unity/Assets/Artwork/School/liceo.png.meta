@@ -7,25 +7,79 @@ TextureImporter:
     second: liceo_0
   - first:
       213: -9185893131325324293
-    second: liceo_1
+    second: muro_liceo_scale1
   - first:
       213: -1968957894886268911
     second: liceo_2
   - first:
       213: 1154153929843694096
-    second: liceo_3
+    second: muro_liceo_scale2
   - first:
       213: 2617004029196440146
-    second: liceo_4
+    second: muro_finestra_1
   - first:
       213: -2496438193429978767
-    second: liceo_5
+    second: muro_finestra_2
   - first:
       213: -8205896675961849489
     second: liceo_6
   - first:
       213: 9006709205343804148
-    second: liceo_7
+    second: muro_finestra_3
+  - first:
+      213: 7603352450624019857
+    second: muro_finestra_4
+  - first:
+      213: 7978579228284591308
+    second: muro_segreteria1
+  - first:
+      213: 2210055752588333132
+    second: muro_segreteria2
+  - first:
+      213: 5593776287256393901
+    second: muro_segreteria3
+  - first:
+      213: 4438976385288318315
+    second: muro_segreteria4
+  - first:
+      213: 4119419382506123697
+    second: muro_segreteria5
+  - first:
+      213: -7298774002903237088
+    second: muro_segreteria6
+  - first:
+      213: 7208619204147161890
+    second: muro_segreteria7
+  - first:
+      213: -8836955679202677883
+    second: muro_segreteria8
+  - first:
+      213: -1057756479133718118
+    second: muro_segreteria9
+  - first:
+      213: -8178197466690700522
+    second: muro_segreteria10
+  - first:
+      213: -4347195283208832572
+    second: muro_segreteria11
+  - first:
+      213: 4167465394064433334
+    second: muro_segreteria12
+  - first:
+      213: 8162536152224212181
+    second: muro_segreteria13
+  - first:
+      213: 2286461398196209443
+    second: muro_segreteria14
+  - first:
+      213: -9159489841851776866
+    second: muro_segreteria15
+  - first:
+      213: 2321680585776841945
+    second: muro_segreteria16
+  - first:
+      213: 2649014593708199392
+    second: muro_segreteria17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +110,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -92,7 +146,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +158,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +170,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -185,6 +239,489 @@ TextureImporter:
       bones: []
       spriteID: f693cbd237cce1e80800000000000000
       internalID: -8205896675961849489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_liceo_scale1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf347a2bdd6258080800000000000000
+      internalID: -9185893131325324293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_liceo_scale2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a547c52e0640010800000000000000
+      internalID: 1154153929843694096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_finestra_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25215009c47715420800000000000000
+      internalID: 2617004029196440146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_finestra_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17163e490beda5dd0800000000000000
+      internalID: -2496438193429978767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_finestra_3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa12cb7d424efc70800000000000000
+      internalID: 9006709205343804148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_finestra_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d5a8105c8848960800000000000000
+      internalID: 7603352450624019857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc963a298b99be60800000000000000
+      internalID: 7978579228284591308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4016d26ff1bbae10800000000000000
+      internalID: 2210055752588333132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 433
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8bbea65e511ad40800000000000000
+      internalID: 5593776287256393901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d2573f0896a9d30800000000000000
+      internalID: 4438976385288318315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria5
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1f22f4a1e1b2930800000000000000
+      internalID: 4119419382506123697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria6
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 433
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eb81507bb85ba90800000000000000
+      internalID: -7298774002903237088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria7
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b204829f82a0460800000000000000
+      internalID: 7208619204147161890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58be04541a3dc5580800000000000000
+      internalID: -8836955679202677883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99ed5226181251f0800000000000000
+      internalID: -1057756479133718118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bb6e6ebb4318e80800000000000000
+      internalID: -8178197466690700522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9751f1ce8aba3c0800000000000000
+      internalID: -4347195283208832572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria12
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0a1fa12bfc5d930800000000000000
+      internalID: 4167465394064433334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria13
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4ab9b2267274170800000000000000
+      internalID: 8162536152224212181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327c02807842bbf10800000000000000
+      internalID: 2286461398196209443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria15
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 465
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9040a49484f2e080800000000000000
+      internalID: -9159489841851776866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 449
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d446252134483020800000000000000
+      internalID: 2321680585776841945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_segreteria17
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 433
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed8dc6ecb033c420800000000000000
+      internalID: 2649014593708199392
       vertices: []
       indices: 
       edges: []

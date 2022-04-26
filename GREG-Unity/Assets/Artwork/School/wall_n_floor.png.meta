@@ -319,7 +319,7 @@ TextureImporter:
     second: angolo_bd
   - first:
       213: -3970637011837078050
-    second: muro_basso
+    second: SCALE_PALESTRA_CENTRO
   - first:
       213: -1921267233604643583
     second: scala_obliquo_1
@@ -2953,11 +2953,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muro_basso
+      name: SCALE_PALESTRA_CENTRO
       rect:
         serializedVersion: 2
-        x: 23
-        y: 4
+        x: 208
+        y: 28
         width: 16
         height: 16
       alignment: 0
@@ -3066,7 +3066,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3087,7 +3087,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3108,7 +3108,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3129,7 +3129,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

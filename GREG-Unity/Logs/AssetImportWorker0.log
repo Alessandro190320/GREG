@@ -23,11 +23,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-39283
+34389
 Successfully changed project path to: /home/alessandro/Scrivania/GREG/GREG-Unity
 /home/alessandro/Scrivania/GREG/GREG-Unity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 106,18 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 100,64 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -43,99 +43,99 @@ int_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program
 L_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewpor
 t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_depth_bounds_test GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture
 _shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -428828304
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 2084458368
 ../src/intel/isl/isl.c:2212: FINISHME: ../src/intel/isl/isl.c:isl_surf_supports_ccs: CCS for 3D textures is disabled, but a workaround is available.
 Initialize mono
 Mono path[0] = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56862
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,002596 seconds.
+Registered in 0,002481 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 109,19 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 97,84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1,202 seconds
+- Completed reload, in  1,253 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1202ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1253ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (971ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (986ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (288ms)
+			SetupTypeCache (311ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (442ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (412ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (109ms)
-				BeforeProcessingInitializeOnLoad (18ms)
-				ProcessInitializeOnLoadAttributes (249ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,004084 seconds.
+Registered in 0,003346 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 106,56 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 121,07 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2,124 seconds
+- Completed reload, in  2,268 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2125ms)
-		BeginReloadAssembly (258ms)
+	ReloadAssembly (2270ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1759ms)
-			LoadAssemblies (171ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1893ms)
+			LoadAssemblies (169ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (553ms)
+			SetupTypeCache (546ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (103ms)
-			SetupLoadedEditorAssemblies (742ms)
+			RebuildScriptCaches (151ms)
+			SetupLoadedEditorAssemblies (762ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (107ms)
-				BeforeProcessingInitializeOnLoad (115ms)
-				ProcessInitializeOnLoadAttributes (466ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (457ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0,88 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0,85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 97,8 MB.
 System memory in use after: 97,9 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2785.
-Total: 10,763541 ms (FindLiveObjects: 0,272891 ms CreateObjectMapping: 0,170505 ms MarkObjects: 9,971589 ms  DeleteObjects: 0,346210 ms)
+Total: 10,922641 ms (FindLiveObjects: 0,341926 ms CreateObjectMapping: 0,179385 ms MarkObjects: 10,046684 ms  DeleteObjects: 0,351495 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -148,13 +148,139 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Artwork/School/wall_n_floor.png
-  artifactKey: Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_n_floor.png using Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7665f6bfe344f31e706ee2d659d9b003') in 0,649374 seconds 
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10f053b9c23e6d6acec9bd0dbf7e690') in 0,152042 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 188,807030 seconds.
+  Time since last request: 241,793961 seconds.
+  path: Assets/Scenes/Atrio.unity
+  artifactKey: Guid(f630abac36f24224693c16dcc9e966bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Atrio.unity using Guid(f630abac36f24224693c16dcc9e966bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0341a9303b5cb4da1aa9f4f4025407b6') in 0,001137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16,617695 seconds.
+  path: Assets/Scenes/Piano_terra_liceo.unity
+  artifactKey: Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Piano_terra_liceo.unity using Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793e719998c0f722242a26b5e0c2b47c') in 0,005928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 550,204846 seconds.
   path: Assets/Artwork/School/wall_n_floor.png
   artifactKey: Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_n_floor.png using Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50a437d79b2712927f379fad41057c9') in 0,562650 seconds 
+Start importing Assets/Artwork/School/wall_n_floor.png using Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360d46b60deb9809633f5fb0cc227d25') in 0,445296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76,839110 seconds.
+  path: Assets/Scenes/Piano_terra_liceo.unity
+  artifactKey: Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Piano_terra_liceo.unity using Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d211998526a5137cf7ad8916a10def') in 0,001168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38,011636 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8eea58fc31c22d95a6fa3f4497962d') in 0,044612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70,746338 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a854989d137e85fb60216373a098cc') in 0,063496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 427,193002 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd4db81e9d651ce6a30c7fc2978dda2') in 0,040167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18,013353 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d0bbd850713c3eee00c638591c20de') in 0,058911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 256,071874 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c549f889e5575996067f7785e48b9a9') in 0,047141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1228,344365 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68439763e621de2b07e37b82db14f8b') in 0,075665 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 453,906957 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036eee139ba81c56d824bd79a16c5243') in 0,049026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 515,293497 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22745abc9e2bae63fb46520011fb473') in 0,075525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 534,862770 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca287971e6393333e328be4f4ce7ecc2') in 0,067311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32,359773 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a7d498205cbe828f57b56b1295d0a5') in 0,052332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 143,692098 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71fba10bd6aebe22aba5aae6c8b5773') in 0,073039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32,494586 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57ecfb4b9c974478fe7a53d605d3308') in 0,067693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60,087984 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046a9ef9e88efe3bfb3e169598ce4dbb') in 0,071159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81,274022 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea4184cab1190a44787bdc72519d5bf') in 0,063775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 100,721895 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c047c37c7fabecc30932b0f6e891963') in 0,071556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 447,939895 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673e0415bab030a8dd8bee6cf8f9ea32') in 0,061726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2151,074361 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6f6c7922958581de2b38f7b11b6590') in 0,081168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 391,761014 seconds.
+  path: Assets/Artwork/School/liceo.png
+  artifactKey: Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Artwork/School/liceo.png using Guid(68b51c0f9a0b7dbda8ea697d43b70b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af9f30f0d95f7d40cbb88dc00af12b7') in 0,120797 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
