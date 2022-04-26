@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private float x, y;
     public float speed;
     private bool isMove;
+    private int speedboost=0;
 
     Vector2 oldPos;
 
@@ -23,8 +24,22 @@ public class PlayerMovement : MonoBehaviour
     {
         speed = PlayerState.speed;
         // ritorna i valori di x e y
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetKeyDown(KeyCode.LeftShift)){
+            speedboost=1;
+        }
+        if(Input.GetKeyUp(KeyCode.LeftShift)){
+            speedboost=0;
+        }
+
+        if(speedboost==1){
+            x = Input.GetAxisRaw("Horizontal")*2;
+            y = Input.GetAxisRaw("Vertical")*2;
+        }
+        else{
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
+        }
     }
 
     private void FixedUpdate()

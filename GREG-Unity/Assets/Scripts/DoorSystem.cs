@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DoorSystem : MonoBehaviour
 {
+    // creazione di variabili di tipo sprite
     public Sprite open;
     public Sprite close;
     private SpriteRenderer current;
-
 
     private void Start()
     {
