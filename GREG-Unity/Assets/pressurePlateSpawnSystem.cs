@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class pressurePlateSpawnSystem : MonoBehaviour
 {
-    public Sprite presPlatDis;
-    public Sprite presPlatAct;
+    public Sprite pressurePlateDeactivate;
+    public Sprite pressurePlateActive;
     private SpriteRenderer current;
-
-    // variabile contenente l'oggetto che voglio spawnare
-    public GameObject newObjectToSpawn;
-
-    // variabile contenente la posizione dello spawn
-    public Transform newObjectToSpawnLocation;
-
     private GameObject spawnedEntity;
 
     private void Start()
@@ -21,23 +14,34 @@ public class pressurePlateSpawnSystem : MonoBehaviour
         current = GetComponent<SpriteRenderer>();
     }
 
+    // quando entro spawno la roba
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        current.sprite = presPlatAct;
-
-        // spawno nella posizione data
-        spawnedEntity = Instantiate(newObjectToSpawn, newObjectToSpawnLocation.position, newObjectToSpawnLocation.rotation);
-
-        // implementazione dello spawn dell'oggetto che voglio
+        current.sprite = pressurePlateActive;
+        spawnedEntity = cloneObject();
     }
 
+
+    // distruzione dell'oggetto spawnato quando si esce dalla collider
     private void OnTriggerExit2D(Collider2D other)
     {
-        current.sprite = presPlatDis;
-
+        current.sprite = pressurePlateDeactivate;
         Destroy(spawnedEntity, 0);
+    }
 
-        // implementazione della distruzione dell'oggetto creato
+    // ---
+
+    public GameObject newObjectToSpawn;
+    public Transform newObjectToSpawnLocation;
+    public string newObjectToSpawnLayerName;
+    private SpriteRenderer newObjectToSpawnSprite;
+    private GameObject cloneObject(){
+        GameObject returnValue = Instantiate(newObjectToSpawn, newObjectToSpawnLocation.position, newObjectToSpawnLocation.rotation);
+        newObjectToSpawnSprite = returnValue.GetComponent<SpriteRenderer>();
+        newObjectToSpawnSprite.sortingOrder = 0;
+        newObjectToSpawnSprite.sortingLayerName = newObjectToSpawnLayerName;
+
+        return returnValue;
     }
 
 }
