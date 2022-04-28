@@ -35,6 +35,7 @@ public class pressurePlateSpawnSystem : MonoBehaviour
     public Transform newObjectToSpawnLocation;
     public string newObjectToSpawnLayerName;
     private SpriteRenderer newObjectToSpawnSprite;
+
     private GameObject cloneObject(){
         GameObject returnValue = Instantiate(newObjectToSpawn, newObjectToSpawnLocation.position, newObjectToSpawnLocation.rotation);
         newObjectToSpawnSprite = returnValue.GetComponent<SpriteRenderer>();
