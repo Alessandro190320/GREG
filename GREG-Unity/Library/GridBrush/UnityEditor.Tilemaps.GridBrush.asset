@@ -15,6 +15,7 @@ MonoBehaviour:
   m_Cells:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_Tile: {fileID: 11400000, guid: ab750e0efe923c34fa99bf627f0fb9c8, type: 2}
 =======
   - m_Tile: {fileID: 11400000, guid: 1c866a898bc605844a67ce6f29c7d517, type: 2}
@@ -22,6 +23,9 @@ MonoBehaviour:
 =======
   - m_Tile: {fileID: 11400000, guid: f6964baca8a81ad119c0d9950d738ac3, type: 2}
 >>>>>>> a2ebeecb8cbbbe8b12bf61932d2a7eaccc44dc23
+=======
+  - m_Tile: {fileID: 11400000, guid: cc9b3bc3909ae46a0aacb5a972a67cd6, type: 2}
+>>>>>>> 6df58e910b2e94382001a66626f4262216489ae6
     m_Matrix:
       e00: 1
       e01: 0
@@ -40,26 +44,7 @@ MonoBehaviour:
       e32: 0
       e33: 1
     m_Color: {r: 1, g: 1, b: 1, a: 1}
-  - m_Tile: {fileID: 11400000, guid: 6fe45f68169bf3b0abcd5eb4923a5443, type: 2}
-    m_Matrix:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_FloodFillContiguousOnly: 1
