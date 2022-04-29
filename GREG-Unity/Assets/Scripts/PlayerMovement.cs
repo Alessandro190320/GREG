@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private bool isMove;
     private int speedBoost=0;
+    public float shiftDownSpeed=2f;
 
     Vector2 oldPos;
 
@@ -33,8 +34,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if(speedBoost==1){
-            x = Input.GetAxisRaw("Horizontal")*2;
-            y = Input.GetAxisRaw("Vertical")*2;
+            x = Input.GetAxisRaw("Horizontal")*shiftDownSpeed;
+            y = Input.GetAxisRaw("Vertical")*shiftDownSpeed;
         }
         else{
             x = Input.GetAxisRaw("Horizontal");
