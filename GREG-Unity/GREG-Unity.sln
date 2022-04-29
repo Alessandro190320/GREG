@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{f4caa4ab-bc05-32bf-5897-a06a2c6657eb}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics", "Unity.Mathematics.csproj", "{f9d66df7-5b25-2ac5-a34f-0cec52a14c3b}"
@@ -73,11 +74,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mathematics.Editor", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEditorBridge.001", "Unity.InternalAPIEditorBridge.001.csproj", "{d9df8941-5fd8-eb39-63e7-2a8d30b63420}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{daeda09e-6061-5aaa-e982-be587e66bf59}"
+EndProject
+>>>>>>> 32b60bd22db666a0006369036a6face115336e59
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{f4caa4ab-bc05-32bf-5897-a06a2c6657eb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f4caa4ab-bc05-32bf-5897-a06a2c6657eb}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f9d66df7-5b25-2ac5-a34f-0cec52a14c3b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -150,6 +156,10 @@ Global
 		{20aeb098-57c8-d7ec-f736-3fe8d42c4196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d9df8941-5fd8-eb39-63e7-2a8d30b63420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d9df8941-5fd8-eb39-63e7-2a8d30b63420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+=======
+		{daeda09e-6061-5aaa-e982-be587e66bf59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{daeda09e-6061-5aaa-e982-be587e66bf59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+>>>>>>> 32b60bd22db666a0006369036a6face115336e59
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
