@@ -8,7 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private float x, y;
     public float speed;
     private bool isMove;
+<<<<<<< HEAD
 
+=======
+    private int speedBoost=0;
+    public float shiftDownSpeed=2f;
+>>>>>>> GREGFork
     Vector2 oldPos;
 
     private void Start()
