@@ -200,6 +200,48 @@ TextureImporter:
   - first:
       213: 1914969373582163236
     second: piastrella_segnaletica
+  - first:
+      213: -7724004477131598075
+    second: colonna_1
+  - first:
+      213: 4171289676540489601
+    second: colonna_2
+  - first:
+      213: 4800856269567853741
+    second: colonna_3
+  - first:
+      213: -1669924498035444835
+    second: muro_corridoio_lab1
+  - first:
+      213: 2007335864308341901
+    second: muro_corridoio_lab2
+  - first:
+      213: -5325562398964251950
+    second: muro_corridoio_lab3
+  - first:
+      213: -3353705898998284452
+    second: muro_corridoio_lab4
+  - first:
+      213: 4628378062524318625
+    second: muro_corridoio_lab5
+  - first:
+      213: 6442666899339087895
+    second: muro_corridoio_lab6
+  - first:
+      213: 8743057357569316474
+    second: muro_corridoio_lab7
+  - first:
+      213: -5019875139144961545
+    second: trave_sinistra
+  - first:
+      213: -2050083810058392087
+    second: pavimento_freccia
+  - first:
+      213: 8138297440078547639
+    second: trofei_1
+  - first:
+      213: -8253619673159068574
+    second: trofei_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1674,7 +1716,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1682,6 +1724,300 @@ TextureImporter:
       bones: []
       spriteID: 42dfd14df76539a10800000000000000
       internalID: 1914969373582163236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colonna_1
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5075b010ad2dec490800000000000000
+      internalID: -7724004477131598075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colonna_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f23714cd563e930800000000000000
+      internalID: 4171289676540489601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colonna_3
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da48c45575110a240800000000000000
+      internalID: 4800856269567853741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab1
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93ffd4448c33d8e0800000000000000
+      internalID: -1669924498035444835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 325
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1001555d7bdb10800000000000000
+      internalID: 2007335864308341901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 341
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d20f84d63dc716b0800000000000000
+      internalID: -5325562398964251950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab4
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 357
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f3319e04e3571d0800000000000000
+      internalID: -3353705898998284452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab5
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 373
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a309fe535d4b3040800000000000000
+      internalID: 4628378062524318625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab6
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 389
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71016450963f86950800000000000000
+      internalID: 6442666899339087895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_lab7
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 405
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76d8c01854955970800000000000000
+      internalID: 8743057357569316474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trave_sinistra
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1337a4822d55ab0800000000000000
+      internalID: -5019875139144961545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pavimento_freccia
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 239
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eda0b5f2a3ac83e0800000000000000
+      internalID: -2050083810058392087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trofei_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba4a58376a01f070800000000000000
+      internalID: 8138297440078547639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trofei_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2649d2603a0457d80800000000000000
+      internalID: -8253619673159068574
       vertices: []
       indices: 
       edges: []
