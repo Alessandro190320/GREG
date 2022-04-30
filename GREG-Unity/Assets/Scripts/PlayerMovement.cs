@@ -9,7 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private bool isMove;
     private int speedBoost=0;
+<<<<<<< HEAD
     public float shiftDownSpeed=2f;
+=======
+    public int shiftDownSpeed=2;
+>>>>>>> origin/patch-2
 
     Vector2 oldPos;
 
