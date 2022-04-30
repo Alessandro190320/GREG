@@ -1,21 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using NUnit.Framework;
-using UnityEngine.TestTools;
-using UnityEditor;
-
-namespace UnityEngine.U2D
-{
-    internal class ObjectMenuCreationTests
-    {
-        [Test]
-        public void ExecuteMenuCommandCreatesGameObjectWithPixelPerfectCamera()
-        {
-            var transformCount = Object.FindObjectsOfType<Transform>();
-            EditorApplication.ExecuteMenuItem("GameObject/2D Object/Pixel Perfect Camera");
-            LogAssert.NoUnexpectedReceived();
-            Assert.True(Object.FindObjectsOfType<Transform>().Length > transformCount.Length);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7575ea523724a4a2e350f2aa6702ee361fc8d76be4e92c17a638d09a96bd271
+size 680

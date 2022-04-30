@@ -1,21 +1,3 @@
-using UnityEngine;
-using System.Collections.Generic;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal class RectVertexSelector : IRectSelector<int>
-    {
-        public ISelection<int> selection { get; set; }
-        public ISpriteMeshData spriteMeshData { get; set; }
-        public Rect rect { get; set; }
-
-        public void Select()
-        {
-            for (int i = 0; i < spriteMeshData.vertexCount; i++)
-            {
-                if (rect.Contains(spriteMeshData.GetPosition(i), true))
-                    selection.Select(i, true);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:afc2fff74afe4f80ab0d30a738a234478b6464a38bb3521b041a2bf741bd3676
+size 602

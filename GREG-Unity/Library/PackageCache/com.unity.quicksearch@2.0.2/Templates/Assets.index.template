@@ -1,14 +1,3 @@
-{
-  "roots": [],
-  "includes": [],
-  "excludes": ["Temp/", "External/"],
-  "options": {
-    "files": true,
-    "directories": false,
-    "fstats": true,
-    "types": true,
-    "properties": false,
-    "dependencies": false
-  },
-  "baseScore": 100
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac0c2fdc68e1eccfd4a1183e4a758a99884a831b5c6340e39d85fd7e97817ed6
+size 248

@@ -1,30 +1,3 @@
-// -----------------------------------------------------------------------
-// <copyright file="IEdge.cs" company="">
-// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
-// </copyright>
-// -----------------------------------------------------------------------
-
-namespace UnityEngine.U2D.Animation.TriangleNet
-    .Geometry
-{
-    internal interface IEdge
-    {
-        /// <summary>
-        /// Gets the first endpoints index.
-        /// </summary>
-        int P0 { get; }
-
-        /// <summary>
-        /// Gets the second endpoints index.
-        /// </summary>
-        int P1 { get; }
-
-        /// <summary>
-        /// Gets or sets a general-purpose label.
-        /// </summary>
-        /// <remarks>
-        /// This is used for the segments boundary mark.
-        /// </remarks>
-        int Label { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6b25943392fa90b07da1d433d7f17d6d00b7c7df087dde766fd1ca312813e5c
+size 874

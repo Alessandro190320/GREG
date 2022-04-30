@@ -1,13 +1,3 @@
-using System.Collections.Generic;
-using NUnit.Framework.Interfaces;
-using UnityEditor.TestTools.TestRunner.Api;
-using UnityEngine.TestTools;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    interface ITestListCache
-    {
-        void CacheTest(TestPlatform platform, ITest test);
-        IEnumerator<ITestAdaptor> GetTestFromCacheAsync(TestPlatform platform);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:807243035be93a3ed902803fb2c7110148667b27e9b9036c346dfabac4cabcb4
+size 382

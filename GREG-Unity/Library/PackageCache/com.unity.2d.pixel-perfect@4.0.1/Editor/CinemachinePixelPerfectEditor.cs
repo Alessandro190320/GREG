@@ -1,11 +1,3 @@
-namespace UnityEditor.U2D
-{
-    [CustomEditor(typeof(UnityEngine.U2D.CinemachinePixelPerfect)), CanEditMultipleObjects]
-    internal class CinemachinePixelPerfectEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            EditorGUILayout.HelpBox("This Cinemachine extension is now deprecated and doesn't function properly. Instead, use the one from Cinemachine v2.4.0 or newer.", MessageType.Error);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b17e962b2e6984184a22baffcc0964f2e8bf4cf545e5e6104cca4400baf7c215
+size 459

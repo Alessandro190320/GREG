@@ -1,35 +1,3 @@
-using System;
-using UnityEditor.IMGUI.Controls;
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal class VisibilityToolColumnHeader : MultiColumnHeader
-    {
-        public Action<bool> SetAllVisibility = (b) => {};
-        public Func<bool> GetAllVisibility = () => true;
-
-        public VisibilityToolColumnHeader(MultiColumnHeaderState state)
-            : base(state)
-        {
-            visibilityColumn = -1;
-        }
-
-        public int visibilityColumn { private get; set; }
-
-        protected override void ColumnHeaderGUI(MultiColumnHeaderState.Column column, Rect headerRect, int columnIndex)
-        {
-            if (columnIndex == visibilityColumn)
-            {
-                GUIStyle style = DefaultStyles.columnHeaderCenterAligned;
-                EditorGUI.BeginChangeCheck();
-                var visibility = GetAllVisibility();
-                visibility = GUI.Toggle(headerRect, visibility, visibility ? VisibilityTreeViewBase.VisibilityIconStyle.visibilityOnIcon : VisibilityTreeViewBase.VisibilityIconStyle.visibilityOffIcon, style);
-                if (EditorGUI.EndChangeCheck())
-                    SetAllVisibility(visibility);
-            }
-            else
-                base.ColumnHeaderGUI(column, headerRect, columnIndex);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da354e4b7aa95fd1e4b1251e3dc4edf95ff7585e6227c81bdb09880a9ae27738
+size 1335

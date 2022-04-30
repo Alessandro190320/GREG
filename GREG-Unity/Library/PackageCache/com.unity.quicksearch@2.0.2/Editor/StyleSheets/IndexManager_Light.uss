@@ -1,12 +1,3 @@
-.index-manager-variables {
-    /* 2020.2 variables */
-    --unity-colors-default-border: #999999;
-    --unity-theme-background-color-10: #B6B6B6;
-    --unity-colors-tab-background-checked: #CBCBCB;
-    --unity-metrics-default-border_radius: 3px;
-    /* **************** */
-
-    --button-add-image: resource("Toolbar Plus");
-    --button-remove-image: resource("Toolbar Minus");
-    --folder-icon: resource("Folder Icon");
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6095ef1a6a3bd08df7a28a520d604bd1f52845b1c44b3b045472650c44aa88fe
+size 424

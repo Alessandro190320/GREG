@@ -1,15 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
-
-
-namespace TMPro
-{
-    /// <summary>
-    /// Custom text input validator where user can implement their own custom character validation.
-    /// </summary>
-    [System.Serializable]
-    public abstract class TMP_InputValidator : ScriptableObject
-    {
-        public abstract char Validate(ref string text, ref int pos, char ch);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5aec655102520e380dcee725cf1bf795a60aff0a1ca6fa50a36dcf903678de53
+size 387

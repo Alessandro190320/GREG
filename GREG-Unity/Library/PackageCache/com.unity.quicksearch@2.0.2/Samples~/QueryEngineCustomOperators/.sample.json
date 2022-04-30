@@ -1,5 +1,3 @@
-{
-	"displayName":"QueryEngine Custom Operators",
-	"description": "Customisation of the Query Engine for your specific needs.",
-	"createSeparatePackage": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b3b354ff3a4f013c1d8224ae758b5169c0177ca58b85457d3db4d5504e244af
+size 161

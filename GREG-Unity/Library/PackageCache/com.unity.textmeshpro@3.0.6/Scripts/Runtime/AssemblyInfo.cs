@@ -1,11 +1,3 @@
-﻿using System.Runtime.CompilerServices;
-
-// Allow internal visibility for testing purposes.
-[assembly: InternalsVisibleTo("Unity.TextCore")]
-
-[assembly: InternalsVisibleTo("Unity.FontEngine.Tests")]
-
-#if UNITY_EDITOR
-[assembly: InternalsVisibleTo("Unity.TextCore.Editor")]
-[assembly: InternalsVisibleTo("Unity.TextMeshPro.Editor")]
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:37598ede90f5962a7701c5798e4ff599f11e720fa54e29528449bdc0f48b9e33
+size 341

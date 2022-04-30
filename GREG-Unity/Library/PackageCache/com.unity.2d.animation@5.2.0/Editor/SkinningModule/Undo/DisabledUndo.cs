@@ -1,19 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal class DisabledUndo : IUndo
-    {
-        public void RecordObject(object o, string name) {}
-        public void RegisterCompleteObjectUndo(object o, string name) {}
-        public void RegisterCompleteObjectUndo(object[] o, string name) {}
-        public void RegisterCreatedObjectUndo(object o, string name) {}
-        public void DestroyObjectImmediate(object o)
-        {
-            BaseObject.DestroyImmediate(o);
-        }
-
-        public void ClearUndo(object o) {}
-        public void IncrementCurrentGroup() {}
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:732ece3e8c4266008f8fabd1d426e92ca6b1903fefe4faa64bd112bb46d1c81f
+size 618

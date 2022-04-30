@@ -1,4 +1,3 @@
-# Views
-In this directory, we have all of the interfaces and implementations of the Views in the package's **MVP** architecture.
-
-ListAdapters are also stored under `Adapters/` as they are considered a sub-View.
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa8110aacf276a30715c6202c4326ea9d6c45398b270de357583f403dbf5b496
+size 212

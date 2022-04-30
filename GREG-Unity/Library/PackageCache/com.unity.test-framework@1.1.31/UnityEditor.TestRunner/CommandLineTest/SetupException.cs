@@ -1,23 +1,3 @@
-using System;
-
-namespace UnityEditor.TestTools.TestRunner.CommandLineTest
-{
-    internal class SetupException : Exception
-    {
-        public ExceptionType Type { get; }
-        public object[] Details { get; }
-
-        public SetupException(ExceptionType type, params object[] details)
-        {
-            Type = type;
-            Details = details;
-        }
-
-        public enum ExceptionType
-        {
-            ScriptCompilationFailed,
-            PlatformNotFound,
-            TestSettingsFileNotFound,
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:355b65520a3142549fdc3bce79093b7baab20b83f1df044ed0b0edcdb3287e31
+size 555

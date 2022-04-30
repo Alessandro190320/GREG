@@ -1,13 +1,3 @@
-apiRules:
-  - exclude:
-      uidRegex: UnityEngine\.U2D\.Bezier*
-      type: Type 
-  - exclude:
-      uidRegex: UnityEngine\.U2D\.Spline*
-      type: Type
-  - exclude:
-      uidRegex: UnityEngine\.U2D\.SpriteShape*
-      type: Type
-  - exclude:
-      uidRegex: UnityEditor\.U2D*
-      type: Type
+version https://git-lfs.github.com/spec/v1
+oid sha256:b14f5867c0c70a7f11e62673ba84e94da4a350475420e33dc31872c29b4d04aa
+size 307

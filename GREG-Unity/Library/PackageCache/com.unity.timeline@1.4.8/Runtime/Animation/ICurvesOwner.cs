@@ -1,15 +1,3 @@
-namespace UnityEngine.Timeline
-{
-    interface ICurvesOwner
-    {
-        AnimationClip curves { get; }
-        bool hasCurves { get; }
-        double duration { get; }
-        void CreateCurves(string curvesClipName);
-
-        string defaultCurvesName { get; }
-        Object asset { get; }
-        Object assetOwner { get; }
-        TrackAsset targetTrack { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed63e0eb35df25603bba60bbb746c20da304ec5db9e47177f1dce176dee3a142
+size 375

@@ -1,15 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEditor.Experimental.U2D.Animation.Tests
-{
-    internal class Placeholder
-    {
-        [Test]
-        public void PlaceHolderTest()
-        {
-            // Use the Assert class to test conditions.
-            Assert.Pass("This is a placeholder to ensure we have at least one test.");
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06536752f67e41d2312de73f3a31006cbf70ba11c93828c08265df05b57267ff
+size 358

@@ -1,17 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-namespace Unity.PlasticSCM.Editor.Views.Changesets
-{
-    class ChangesetListViewItem : TreeViewItem
-    {
-        internal object ObjectInfo { get; private set; }
-
-        internal ChangesetListViewItem(int id, object objectInfo)
-            : base(id, 1)
-        {
-            ObjectInfo = objectInfo;
-
-            displayName = id.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:afc132e48d17a313893cc8ab2dfc0073848a8162f595b10df7edcf4659b99231
+size 401

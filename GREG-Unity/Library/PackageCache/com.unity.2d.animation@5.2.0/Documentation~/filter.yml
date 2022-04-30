@@ -1,4 +1,3 @@
-apiRules:
-  - exclude:
-      uid: UnityEngine.U2D.Animation.PositionVertex
-      type: Struct
+version https://git-lfs.github.com/spec/v1
+oid sha256:adeccfaf1e89682c464de9564e41b072ca1273b9de4099214bb339ef69450c57
+size 96

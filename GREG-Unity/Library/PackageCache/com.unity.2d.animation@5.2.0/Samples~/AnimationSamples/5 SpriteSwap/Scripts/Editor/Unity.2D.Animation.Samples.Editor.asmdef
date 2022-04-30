@@ -1,21 +1,3 @@
-{
-    "name": "Unity.2D.Animation.Samples.Editor",
-    "references": [
-        "UnityEditor.UI",
-        "UnityEngine.UI",
-        "Unity.2D.Animation.Editor",
-        "Unity.2D.Animation.Runtime",
-        "Unity.2D.Animation.Samples.Runtime"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:87d409587883baac310ec086f60cf2b5cdfdf8dae84d5058992da76b62c5dfe7
+size 560
