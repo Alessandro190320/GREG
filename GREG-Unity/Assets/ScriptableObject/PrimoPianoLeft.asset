@@ -1,15 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efaea356d8e90394ba1ae3225ee9eabc, type: 3}
-  m_Name: PrimoPianoLeft
-  m_EditorClassIdentifier: 
-  initialValue: {x: -2.085, y: 2.065}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae442d9f11c1e611aa5869fed60242d7bd86d58346dc4bb22f6a447e61f06ce2
+size 441

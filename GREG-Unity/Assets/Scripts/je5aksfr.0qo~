@@ -1,35 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
-
-public class MainMenu : MonoBehaviour
-{
-    //public EventSystem eventSystem;
-    //public GameObject button;
-
-    //private void Start()
-    //{
-    //    Cursor.visible = true;
-    //    LockButton();
-    //}
-
-    //private void Update()
-    //{
-        
-    //}
-
-    public void Play()
-    {
-        SceneManager.LoadScene("Atrio");
-        //LevelSystem.current.ChangeScene(1);
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
-    //private void LockButton() => eventSystem.SetSelectedGameObject(button);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f16e5b373013c36c8d95817462d3dde42bb6dc3c06744a0126e406af5cc81cec
+size 680
