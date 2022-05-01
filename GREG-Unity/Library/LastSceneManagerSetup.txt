@@ -1,5 +1,3 @@
-sceneSetups:
-- path: Assets/Scenes/Atrio.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:1eb4f94c8786bcd181b28d441b6ed85f184a6b64d60d1ae1bbbf3b1ceba2aac2
+size 103
