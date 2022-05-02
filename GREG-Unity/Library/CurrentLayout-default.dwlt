@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 685
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 3467
+  controlID: 1700
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 3556
+  controlID: 1701
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 3557
+  controlID: 1702
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a0860000
-      m_LastClickedID: 34464
-      m_ExpandedIDs: deccffffb4cfffffd2d0ffff10d3ffff44d9ffff16dbffffa4e7ffff64fbffff0c5800001671000050710000aa7c0000
+      m_SelectedIDs: 02720000
+      m_LastClickedID: 29186
+      m_ExpandedIDs: b8efffffc4f3fffff470000002720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.51672506, y: -0.23380627, z: -57.469467}
+    m_Target: {x: 0.58823365, y: -0.5610249, z: -57.624393}
     speed: 2
-    m_Value: {x: 0.51672506, y: -0.23380627, z: -57.469467}
+    m_Value: {x: 0.58823365, y: -0.5610249, z: -57.624393}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.1565118
+    m_Target: 0.4183721
     speed: 2
-    m_Value: 2.1565118
+    m_Value: 0.4183721
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -585,14 +585,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Utente\Documents\GitHub\GREG(GandolfiBased)\GREG-Unity
+  m_LastProjectPath: C:\Users\Romina\Documents\GitHub\GREG\GREG-Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 158}
-    m_SelectedIDs: 36520000
-    m_LastClickedID: 21046
-    m_ExpandedIDs: 000000000e520000105200001252000000ca9a3b
+    scrollPos: {x: 0, y: 154}
+    m_SelectedIDs: 5a5c0000
+    m_LastClickedID: 23642
+    m_ExpandedIDs: 000000004c5c00004e5c0000505c0000725c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +620,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e520000105200001252000000ca9a3b
+    m_ExpandedIDs: 000000004c5c00004e5c0000505c0000725c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300003a4d0000444d0000664d0000224f0000f6bd0000a2990000544f00001e4f00006c4f000000900000ba440000b8440000c04c010050520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
