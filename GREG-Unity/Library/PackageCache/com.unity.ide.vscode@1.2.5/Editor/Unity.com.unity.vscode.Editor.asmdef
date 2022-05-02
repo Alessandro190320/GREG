@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b03e18af843541b7d51379fdcc61fd2f83ff33c40f4e531959c550953c7d1c8c
-size 627
+{
+    "name": "Unity.VSCode.Editor",
+    "references": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2021.2.0a9",
+            "define": "ROSLYN_ANALYZER_FIX"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2021.1.2f1,2021.2.0a1]",
+            "define": "ROSLYN_ANALYZER_FIX"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2020.3.6f1,2021.0]",
+            "define": "ROSLYN_ANALYZER_FIX"
+        }
+    ]
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6a934eedcd6aaece611161c802ff9060dd18f408e91f516541f5614fdc06bad
-size 625
+﻿namespace Unity.PlasticSCM.Editor.AssetUtils.Processor
+{
+    internal static class AssetsProcessors
+    {
+        internal static void Enable()
+        {
+            PlasticAssetsProcessor.RegisterPlasticAPI(PlasticApp.PlasticAPI);
+            AssetModificationProcessor.RegisterAssetStatusCache(PlasticPlugin.AssetStatusCache);
+
+            AssetPostprocessor.IsEnabled = true;
+            AssetModificationProcessor.IsEnabled = true;
+        }
+
+        internal static void Disable()
+        {
+            AssetPostprocessor.IsEnabled = false;
+            AssetModificationProcessor.IsEnabled = false;
+        }
+    }
+}

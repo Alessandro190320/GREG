@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:decf53ceca00328f093eeb350057ae51e90b111b913d22c59938c04a2195a20e
-size 820
+using UnityEngine;
+using UnityEngine.UIElements;
+
+namespace Unity.Cloud.Collaborate.EditorGameService.SettingsProviderVisuals
+{
+    static class LearnMoreVisualHelper
+    {
+        static readonly string k_LearnMoreAboutTeamsUrl = "https://unity3d.com/teams";
+
+        public static void SetupLearnMore(VisualElement containerUI)
+        {
+            var learnMoreButton = containerUI.Q(Uxml.Node.LearnMoreLink);
+            if (learnMoreButton != null)
+            {
+                var clickable = new Clickable(GoToLearnMore);
+                learnMoreButton.AddManipulator(clickable);
+            }
+        }
+
+        static void GoToLearnMore()
+        {
+            EditorGameServiceAnalyticsSender.SendProjectSettingsLearnMoreEvent();
+            Application.OpenURL(k_LearnMoreAboutTeamsUrl);
+        }
+    }
+}

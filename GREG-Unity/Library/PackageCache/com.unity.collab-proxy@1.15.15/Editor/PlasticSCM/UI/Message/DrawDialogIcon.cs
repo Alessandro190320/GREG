@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e816cab8b85f57fb040cd6e44f838f8a7133613c9c9ff52c3e7952934657d83
-size 1454
+﻿using UnityEditor;
+using UnityEngine;
+
+using Codice.Client.Common;
+
+namespace Unity.PlasticSCM.Editor.UI.Message
+{
+    internal static class DrawDialogIcon
+    {
+        internal static void ForMessage(GuiMessage.GuiMessageType alertType)
+        {
+            using (new EditorGUILayout.VerticalScope(GUILayout.Width(80)))
+            {
+                Rect iconRect = GUILayoutUtility.GetRect(
+                    GUIContent.none, EditorStyles.label,
+                    GUILayout.Width(60), GUILayout.Height(60));
+
+                GUI.DrawTexture(
+                    iconRect,
+                    Images.GetImage(Images.Name.IconPlastic),
+                    ScaleMode.ScaleToFit);
+
+                Rect overlayIconRect = new Rect(
+                    iconRect.xMax - 30, iconRect.yMax - 24, 32, 32);
+
+                GUI.DrawTexture(
+                    overlayIconRect,
+                    GetHelpIcon(alertType),
+                    ScaleMode.ScaleToFit);
+            }
+        }
+
+        static Texture GetHelpIcon(GuiMessage.GuiMessageType alertType)
+        {
+            switch (alertType)
+            {
+                case GuiMessage.GuiMessageType.Critical:
+                    return Images.GetErrorDialogIcon();
+                case GuiMessage.GuiMessageType.Warning:
+                    return Images.GetWarnDialogIcon();
+                default:
+                    return Images.GetInfoDialogIcon();
+            }
+        }
+    }
+}

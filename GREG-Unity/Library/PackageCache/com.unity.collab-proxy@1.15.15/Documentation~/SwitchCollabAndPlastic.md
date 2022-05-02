@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08b2ab1b88b509b64a62e8977898483cdbcc9c33bc50c2d3630b161b3f8af2bc
-size 463
+# Switch between Collaborate and Plastic SCM
+
+To switch from Collaborate to Plastic SCM, open your **Project Settings** &gt; **Services** &gt; **Collaborate** and switch off Collaborate to start using Plastic SCM.
+
+![Collaborate switch](images/SwitchCollab.png)
+
+To switch from Plastic SCM to Collaborate, navigate to your Plastic SCM window, select **Settings** (gear icon) &gt; **Turn off Plastic SCM for Unity**.
+
+![Plastic switch](images/GearIconOptions.png)

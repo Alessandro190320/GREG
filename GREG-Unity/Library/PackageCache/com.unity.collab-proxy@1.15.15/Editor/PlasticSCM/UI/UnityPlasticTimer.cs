@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e8b77293ba82697027e99628f3801d665636a5a51f8bd18577050408581d725
-size 1531
+﻿using System;
+using System.Timers;
+
+using Codice.Client.Common.Threading;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal class UnityPlasticTimerBuilder : IPlasticTimerBuilder
+    {
+        IPlasticTimer IPlasticTimerBuilder.Get(bool bModalMode, ThreadWaiter.TimerTick timerTickDelegate)
+        {
+            return new UnityPlasticTimer(DEFAULT_TIMER_INTERVAL, timerTickDelegate);
+        }
+
+        IPlasticTimer IPlasticTimerBuilder.Get(bool bModalMode, int timerInterval, ThreadWaiter.TimerTick timerTickDelegate)
+        {
+            return new UnityPlasticTimer(timerInterval, timerTickDelegate);
+        }
+
+        const int DEFAULT_TIMER_INTERVAL = 100;
+    }
+
+    internal class UnityPlasticTimer : IPlasticTimer
+    {
+        internal UnityPlasticTimer(int timerInterval, ThreadWaiter.TimerTick timerTickDelegate)
+        {
+            mTimerInterval = timerInterval;
+            mTimerTickDelegate = timerTickDelegate;
+        }
+
+        void IPlasticTimer.Start()
+        {
+            mTimer = new Timer();
+            mTimer.Interval = mTimerInterval;
+            mTimer.Elapsed += OnTimerTick;
+
+            mTimer.Start();
+        }
+
+        void IPlasticTimer.Stop()
+        {
+            mTimer.Stop();
+            mTimer.Elapsed -= OnTimerTick;
+            mTimer.Dispose();
+        }
+
+        void OnTimerTick(object sender, EventArgs e)
+        {
+            mTimerTickDelegate();
+        }
+
+        Timer mTimer;
+        int mTimerInterval;
+        ThreadWaiter.TimerTick mTimerTickDelegate;
+    }
+}

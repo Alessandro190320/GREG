@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dba2d403c6d9d11d4a50d9e6f374e7469f509aed16d4d12f1dd0e516dda6b83
-size 138
+{
+	"displayName":"Spatial Provider",
+	"description": "Spatial Provider example using the QueryEngine.",
+	"createSeparatePackage": false
+}

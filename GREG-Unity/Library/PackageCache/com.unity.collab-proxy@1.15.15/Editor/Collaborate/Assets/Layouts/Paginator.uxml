@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55ba155d1cb7cc68db65e5f71d3cd1cf5715be6f1e925c776bdad0eac225a63d
-size 490
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="paginator__container">
+        <VisualElement class="paginator__content row">
+            <Label class="paginator__page-text" />
+            <VisualElement class="row">
+                <Button class="paginator__back-button" />
+                <Button class="paginator__forwards-button" />
+            </VisualElement>
+        </VisualElement>
+
+        <VisualElement class="divider-horizontal" />
+    </VisualElement>
+</UXML>

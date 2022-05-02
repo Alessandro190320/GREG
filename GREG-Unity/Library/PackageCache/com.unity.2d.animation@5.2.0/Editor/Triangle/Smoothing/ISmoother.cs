@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:134d228a00a1d0fb01938d41becda1c53f57f8ec872b493d87dd37e937f1d13e
-size 603
+// -----------------------------------------------------------------------
+// <copyright file="ISmoother.cs">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Smoothing
+{
+    using Animation.TriangleNet.Meshing;
+
+    /// <summary>
+    /// Interface for mesh smoothers.
+    /// </summary>
+    internal interface ISmoother
+    {
+        void Smooth(IMesh mesh);
+        void Smooth(IMesh mesh, int limit);
+    }
+}

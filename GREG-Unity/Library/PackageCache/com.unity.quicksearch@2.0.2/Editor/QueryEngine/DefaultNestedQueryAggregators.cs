@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:feb55a7a33f1a9c5cb7da98f98af4d541f60e4c4d1f72d62d1956ab64519be48
-size 1095
+
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Unity.QuickSearch
+{
+    static class MaxAggregator<T>
+    {
+        public static IEnumerable<T> Aggregate(IEnumerable<T> enumerable)
+        {
+            var empty = !enumerable.Any();
+            return empty ? new T[] {} : new T[]{enumerable.Max()};
+        }
+    }
+
+    static class MinAggregator<T>
+    {
+        public static IEnumerable<T> Aggregate(IEnumerable<T> enumerable)
+        {
+            var empty = !enumerable.Any();
+            return empty ? new T[] {} : new T[]{enumerable.Min()};
+        }
+    }
+
+    static class FirstAggregator<T>
+    {
+        public static IEnumerable<T> Aggregate(IEnumerable<T> enumerable)
+        {
+            var empty = !enumerable.Any();
+            return empty ? new T[] {} : new T[]{enumerable.First()};
+        }
+    }
+
+    static class LastAggregator<T>
+    {
+        public static IEnumerable<T> Aggregate(IEnumerable<T> enumerable)
+        {
+            var empty = !enumerable.Any();
+            return empty ? new T[] {} : new T[]{enumerable.Last()};
+        }
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a53ee51a86619cd7b0f1081dd81d2131dd8853129c1ae9b99fa45067c5daad6f
-size 393
+using UnityEditor.TestTools.TestRunner.Api;
+
+namespace UnityEditor.TestTools.TestRunner
+{
+    class PlayerLauncherTestRunSettings : ITestRunSettings
+    {
+        public bool buildOnly { set; get; }
+
+        public string buildOnlyLocationPath { set; get; }
+
+        public void Dispose()
+        {
+        }
+
+        void ITestRunSettings.Apply()
+        {
+        }
+    }
+}

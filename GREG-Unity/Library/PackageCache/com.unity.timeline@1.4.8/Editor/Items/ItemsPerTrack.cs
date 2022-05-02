@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18ac06ce5e421f6bdef50810461926b637b7d22c74c31713ba0a5906204044ec
-size 1138
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline
+{
+    class ItemsPerTrack
+    {
+        public virtual TrackAsset targetTrack { get; }
+
+        public IEnumerable<ITimelineItem> items
+        {
+            get { return m_ItemsGroup.items; }
+        }
+
+        public IEnumerable<TimelineClip> clips
+        {
+            get { return m_ItemsGroup.items.OfType<ClipItem>().Select(i => i.clip); }
+        }
+
+        public IEnumerable<IMarker> markers
+        {
+            get { return m_ItemsGroup.items.OfType<MarkerItem>().Select(i => i.marker); }
+        }
+
+        public ITimelineItem leftMostItem
+        {
+            get { return m_ItemsGroup.leftMostItem; }
+        }
+
+        public ITimelineItem rightMostItem
+        {
+            get { return m_ItemsGroup.rightMostItem; }
+        }
+
+        protected readonly ItemsGroup m_ItemsGroup;
+
+        public ItemsPerTrack(TrackAsset targetTrack, IEnumerable<ITimelineItem> items)
+        {
+            this.targetTrack = targetTrack;
+            m_ItemsGroup = new ItemsGroup(items);
+        }
+    }
+}

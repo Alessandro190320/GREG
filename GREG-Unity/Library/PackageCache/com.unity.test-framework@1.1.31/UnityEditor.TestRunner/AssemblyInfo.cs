@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37cd6bbc1e3b846daac2b284959bc22e88bd44156610fdf8700d027e3d4bf5e5
-size 699
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
+[assembly: AssemblyTitle("UnityEditor.TestRunner")]
+[assembly: InternalsVisibleTo("Assembly-CSharp-Editor-testable")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
+[assembly: InternalsVisibleTo("Unity.PerformanceTesting.Editor")]
+[assembly: InternalsVisibleTo("Unity.IntegrationTests")]
+[assembly: InternalsVisibleTo("UnityEditor.TestRunner.Tests")]
+[assembly: InternalsVisibleTo("Unity.PackageManagerUI.Develop.Editor")]
+[assembly: InternalsVisibleTo("Unity.PackageManagerUI.Develop.EditorTests")]
+[assembly: InternalsVisibleTo("Unity.PackageValidationSuite.Editor")]
+
+[assembly: AssemblyVersion("1.0.0")]

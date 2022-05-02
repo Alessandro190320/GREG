@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc8e64b2606d59e5aec0bf4e5164655b009953c5630d3a5bd8734e4e1d809a47
-size 537
+<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:collab="Unity.Cloud.Collaborate.Components">
+    <engine:VisualElement class="changes-group-header__container grow">
+        <engine:VisualElement class="changes-group-header__title-bar">
+            <engine:Label class="changes-group-header__name" />
+            <collab:IconButton class="changes-group-header__overflow-button btn-overflow" />
+        </engine:VisualElement>
+        <engine:VisualElement class="divider-horizontal" />
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14a0cde535f1d4c0a5da52230201431f335e8b250bd523baeed8aa5e353c1e23
-size 155
+{
+	"displayName":"QueryEngine Basic",
+	"description": "Basic usage of the Query Engine, which should cover most needs.",
+	"createSeparatePackage": false
+}

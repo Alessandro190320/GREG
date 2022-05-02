@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1a55505a4fb272fc0aa3b6fd0212fa6ac345dc4610b83bd511f70b4a251324e
-size 999
+using System;
+using System.Collections.Generic;
+using UnityEditor.Compilation;
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  internal interface IAssemblyNameProvider
+  {
+    string[] ProjectSupportedExtensions { get; }
+    string ProjectGenerationRootNamespace { get; }
+    ProjectGenerationFlag ProjectGenerationFlag { get; }
+
+    string GetAssemblyNameFromScriptPath(string path);
+    string GetProjectName(string assemblyOutputPath, string assemblyName);
+    bool IsInternalizedPackagePath(string path);
+    IEnumerable<Assembly> GetAssemblies(Func<string, bool> shouldFileBePartOfSolution);
+    IEnumerable<string> GetAllAssetPaths();
+    UnityEditor.PackageManager.PackageInfo FindForAssetPath(string assetPath);
+    ResponseFileData ParseResponseFile(string responseFilePath, string projectDirectory, string[] systemReferenceDirectories);
+    IEnumerable<string> GetRoslynAnalyzerPaths();
+    void ToggleProjectGeneration(ProjectGenerationFlag preference);
+  }
+}

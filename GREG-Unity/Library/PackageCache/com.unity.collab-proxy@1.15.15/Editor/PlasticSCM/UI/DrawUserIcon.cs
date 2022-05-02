@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:535fcd81ad87dda496b64d4530393396200c63c83eba3ae65a87f76b8e91b7f0
-size 987
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class DrawUserIcon
+    {
+        static internal void ForPendeingChangesTab(string commentText)
+        {
+            Rect rect = BuildUserIconAreaRect(commentText, 35f);
+
+            GUI.DrawTexture(rect, GetIconTexture());
+        }
+
+        static Rect BuildUserIconAreaRect(string commentText, float sizeOfImage)
+        {
+            GUIStyle commentTextAreaStyle = UnityStyles.PendingChangesTab.CommentTextArea;
+
+            Rect result = GUILayoutUtility.GetRect(sizeOfImage, sizeOfImage); // Needs to be a square
+            result.x = commentTextAreaStyle.margin.left;
+
+            return result;
+        }
+
+        static Texture2D GetIconTexture()
+        {
+            if (sUserIconImage == null)
+                sUserIconImage = Images.GetImage(Images.Name.IconEmptyGravatar);
+
+            return sUserIconImage;
+        }
+
+        static Texture2D sUserIconImage;
+    }
+}

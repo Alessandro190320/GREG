@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68bd752a7a598a155291a086eeb8f0df99a7c9dea9d25bb06367fe2c1dd331cf
-size 643
+# Searching for packages
+
+The Package Search Provider searches for installed and available Unity packages. You can install, update, or remove any package in the search results.
+
+**[Search token](search-filters.md#search-tokens):** `pkg:`
+
+**[Default action](usage.md#default-actions):** Install the package.
+
+**[Context menu actions](usage.md#additional-actions):**
+
+|Action:|Function:|
+|-|-|
+|**Install:**   |Prompts you to install the package.  |   
+|**Browse:**   |Checks for package updates.   |   
+|**Remove:**   |Uninstalls the package from the Project.   |   
+
+![asset filter](Images/QS_package-search.png)<br/>_Package Search Provider_

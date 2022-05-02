@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27b9d94c10f23dce1f8295c567bd5233a686d45424e34ada9700b823c9ec59a6
-size 454
+﻿using UnityEditor.IMGUI.Controls;
+
+using PlasticGui.WorkspaceWindow.PendingChanges;
+
+namespace Unity.PlasticSCM.Editor.Views.PendingChanges
+{
+    internal class ChangeCategoryTreeViewItem : TreeViewItem
+    {
+        internal PendingChangeCategory Category { get; private set; }
+
+        internal ChangeCategoryTreeViewItem(int id, PendingChangeCategory category)
+            : base(id, 0)
+        {
+            Category = category;
+        }
+    }
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b810541aa1787e38b23266a13bca683a00e2561af111cd9b921dcef2ddeea96b
-size 1106
+﻿using System.Collections.Generic;
+
+using UnityEditor;
+
+using Codice.Client.GameUI.Checkin;
+using GluonGui.Dialog;
+using GluonGui.WorkspaceWindow.Views.Checkin.Operations;
+using PlasticGui;
+using Unity.PlasticSCM.Editor.UI;
+
+namespace Unity.PlasticSCM.Editor.Views.PendingChanges.Dialogs
+{
+    internal class LaunchCheckinConflictsDialog : CheckinUIOperation.ICheckinConflictsDialog
+    {
+        internal LaunchCheckinConflictsDialog(EditorWindow window)
+        {
+            mWindow = window;
+        }
+
+        Result CheckinUIOperation.ICheckinConflictsDialog.Show(
+            IList<CheckinConflict> conflicts,
+            PlasticLocalization.Name dialogTitle,
+            PlasticLocalization.Name dialogExplanation,
+            PlasticLocalization.Name okButtonCaption)
+        {
+            ResponseType responseType = CheckinConflictsDialog.Show(
+                conflicts, dialogTitle, dialogExplanation,
+                okButtonCaption, mWindow);
+
+            return responseType == ResponseType.Ok ?
+                Result.Ok : Result.Cancel;
+        }
+
+        EditorWindow mWindow;
+    }
+}

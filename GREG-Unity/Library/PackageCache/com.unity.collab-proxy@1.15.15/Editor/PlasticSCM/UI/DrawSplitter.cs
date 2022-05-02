@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10ffe29fbe696f1a21696573c2cd44127da2a064dd47e402fcb174b49d98807e
-size 519
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class DrawSplitter
+    {
+        internal static void ForHorizontalIndicator()
+        {
+            GUIStyle style = UnityStyles.SplitterIndicator;
+
+            Rect splitterRect = GUILayoutUtility.GetRect(
+                EditorGUIUtility.currentViewWidth,
+                UnityConstants.SPLITTER_INDICATOR_HEIGHT,
+                style);
+
+            GUI.Label(splitterRect, string.Empty, style);
+        }
+    }
+}

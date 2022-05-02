@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b077f3977e605c8d8a211b24b7be2604efb19d2b860ab72bf249d7820141640f
-size 662
+using System;
+using System.Collections.Generic;
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    /// <summary>
+    /// A group track is a container that allows tracks to be arranged in a hierarchical manner.
+    /// </summary>
+    [Serializable]
+    [TrackClipType(typeof(TrackAsset))]
+    [SupportsChildTracks]
+    [ExcludeFromPreset]
+    public class GroupTrack : TrackAsset
+    {
+        internal override bool CanCompileClips()
+        {
+            return false;
+        }
+
+        /// <inheritdoc />
+        public override IEnumerable<PlayableBinding> outputs
+        {
+            get { return PlayableBinding.None; }
+        }
+    }
+}

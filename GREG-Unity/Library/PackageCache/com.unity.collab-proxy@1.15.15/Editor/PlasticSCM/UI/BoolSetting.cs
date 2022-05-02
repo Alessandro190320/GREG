@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:482a571cd601d7c85bc474c5ddcca042930e1d7ea975414f80601ba6f681192a
-size 1017
+﻿using UnityEditor;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class BoolSetting
+    {
+        internal static bool Load(
+            string boolSettingName,
+            bool defaultValue)
+        {
+            return EditorPrefs.GetBool(
+                GetSettingKey(boolSettingName),
+                defaultValue);
+        }
+
+        internal static void Save(
+            bool value,
+            string boolSettingName)
+        {
+            EditorPrefs.SetBool(
+                GetSettingKey(boolSettingName), value);
+        }
+
+        internal static void Clear(
+            string boolSettingName)
+        {
+            EditorPrefs.DeleteKey(
+                GetSettingKey(boolSettingName));
+        }
+
+        static string GetSettingKey(string boolSettingName)
+        {
+            return string.Format(
+                boolSettingName, PlayerSettings.productGUID,
+                PREFERENCE_VALUE_KEY);
+        }
+
+        static string PREFERENCE_VALUE_KEY = "PreferenceValue";
+    }
+}

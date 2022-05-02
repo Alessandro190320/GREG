@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b7158c2c696967d2cc0a52708bfdcdac63e485e73d1ac9aec67a445809b52e0
-size 1013
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+using System.IO;
+using System.Text;
+
+namespace Microsoft.Unity.VisualStudio.Editor.Messaging
+{
+	internal class Serializer
+	{
+		private readonly MemoryStream _stream;
+		private readonly BinaryWriter _writer;
+
+		public Serializer()
+		{
+			_stream = new MemoryStream();
+			_writer = new BinaryWriter(_stream);
+		}
+
+		public void WriteInt32(int i)
+		{
+			_writer.Write(i);
+		}
+
+		public void WriteString(string s)
+		{
+			var bytes = Encoding.UTF8.GetBytes(s ?? "");
+			if (bytes.Length > 0)
+			{
+				_writer.Write(bytes.Length);
+				_writer.Write(bytes);
+			}
+			else
+				_writer.Write(0);
+		}
+
+		public byte[] Buffer()
+		{
+			return _stream.ToArray();
+		}
+	}
+}

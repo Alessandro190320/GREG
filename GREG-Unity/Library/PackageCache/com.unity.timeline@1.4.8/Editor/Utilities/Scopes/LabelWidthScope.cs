@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d7c86f6b5403cd051fdfc819848353c27bb5d673a862c348fb3ea149720b478
-size 429
+using System;
+
+namespace UnityEditor.Timeline
+{
+    readonly struct LabelWidthScope : IDisposable
+    {
+        readonly float m_PrevValue;
+
+        public LabelWidthScope(float newValue)
+        {
+            m_PrevValue = EditorGUIUtility.labelWidth;
+            EditorGUIUtility.labelWidth = newValue;
+        }
+
+        public void Dispose()
+        {
+            EditorGUIUtility.labelWidth = m_PrevValue;
+        }
+    }
+}

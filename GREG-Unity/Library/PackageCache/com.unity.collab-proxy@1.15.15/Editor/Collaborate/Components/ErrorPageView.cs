@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:604433d14ed1edc73b909401a4c60a889b2d1d31147d2dc2dd71fda09ca290d5
-size 956
+using System;
+using JetBrains.Annotations;
+using Unity.Cloud.Collaborate.UserInterface;
+using UnityEditor;
+using UnityEngine.UIElements;
+
+namespace Unity.Cloud.Collaborate.Components
+{
+    internal class ErrorPageView : PageComponent
+    {
+        public const string UssClassName = "error-page-view";
+
+        static readonly string k_LayoutPath = $"{CollaborateWindow.LayoutPath}/{nameof(ErrorPageView)}.uxml";
+
+        bool m_Visible;
+
+        public ErrorPageView()
+        {
+            AddToClassList(UssClassName);
+            AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(k_LayoutPath).CloneTree(this);
+        }
+
+        protected override void SetActive()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SetInactive()
+        {
+            throw new NotImplementedException();
+        }
+
+        [UsedImplicitly]
+        public new class UxmlFactory : UxmlFactory<ErrorPageView> { }
+    }
+}

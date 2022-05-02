@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11a29af30c78651c76a00856b92dcdca579f38fcec04a7aa2ad78d5b37e6469d
-size 468
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline
+{
+    [ExcludeFromPreset]
+    class EditorClip : ScriptableObject
+    {
+        [SerializeField] TimelineClip m_Clip;
+
+        public TimelineClip clip
+        {
+            get { return m_Clip; }
+            set { m_Clip = value; }
+        }
+
+        public int lastHash { get; set; }
+
+        public override int GetHashCode()
+        {
+            return clip.Hash();
+        }
+    }
+}

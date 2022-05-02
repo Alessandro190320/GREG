@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d634b20d2fa427e0f0c5a2b5efcc7e28f28eb17492ebb61ba5f01dad19d1181
-size 614
+namespace UnityEditor.TestTools.TestRunner.Api
+{
+    /// <summary>
+    /// An extended version of the <see cref="ICallbacks"/>, which get invoked if the test run fails due to a build error or if any <see cref="UnityEngine.TestTools.IPrebuildSetup"/> has a failure.
+    /// </summary>
+    public interface IErrorCallbacks : ICallbacks
+    {
+        /// <summary>
+        /// Method invoked on failure.
+        /// </summary>
+        /// <param name="message">
+        /// The error message detailing the reason for the run to fail.
+        /// </param>
+        void OnError(string message);
+    }
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2af40b96b5c2f943079af7628e48e0a5c5d52eaf367a98913a45784cb53499a0
-size 467
+# Searching the Unity main menu
+
+Use the Menu Search Provider to quickly locate commands in the Unity Editor main menu.
+
+**[Search token](search-filters.md#search-tokens):** `me:`
+
+**[Default action](usage.md#default-actions):** Executes the menu command.
+
+**[Context menu actions](usage.md#additional-actions):**
+
+|Action:|Function:|
+|-|-|
+|**Execute shortcut**   | Executes the menu command.  |
+
+![asset filter](Images/QS_menu-search.png)<br/>_Menu Search Provider_

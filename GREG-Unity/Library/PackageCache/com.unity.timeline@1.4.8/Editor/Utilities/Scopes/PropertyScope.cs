@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4303f223bc28179e5ded64b1b151cbe5744ee2ca5585f486b76ea52e6d65e543
-size 457
+using System;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    readonly struct PropertyScope : IDisposable
+    {
+        public readonly GUIContent content;
+
+        public PropertyScope(Rect totalPosition, GUIContent label, SerializedProperty property)
+        {
+            content = EditorGUI.BeginProperty(totalPosition, label, property);
+        }
+
+        public void Dispose()
+        {
+            EditorGUI.EndProperty();
+        }
+    }
+}

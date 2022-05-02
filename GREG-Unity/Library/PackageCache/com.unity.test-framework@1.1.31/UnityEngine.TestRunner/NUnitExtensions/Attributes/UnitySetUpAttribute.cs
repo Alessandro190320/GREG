@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e9393b3e5af36ded4a26acc18d81a1a06cc2867d21d8882d9bcdcb7ae0468e2
-size 1243
+using System;
+using NUnit.Framework;
+
+namespace UnityEngine.TestTools
+{
+    /// <summary>
+    /// The `UnitySetUp` and <see cref="UnityTearDownAttribute"/> attributes are identical to the standard `SetUp` and `TearDown` attributes, with the exception that they allow for <see cref="IEditModeTestYieldInstruction"/>. The `UnitySetUp` and `UnityTearDown` attributes expect a return type of [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator?view=netframework-4.8).
+    /// <example>
+    /// <code>
+    ///public class SetUpTearDownExample
+    /// {
+    ///     [UnitySetUp]
+    ///     public IEnumerator SetUp()
+    ///     {
+    ///         yield return new EnterPlayMode();
+    ///     }
+    /// 
+    ///     [Test]
+    ///     public void MyTest()
+    ///     {
+    ///         Debug.Log("This runs inside playmode");
+    ///     }
+    /// 
+    ///     [UnityTearDown]
+    ///     public IEnumerator TearDown()
+    ///     {
+    ///         yield return new ExitPlayMode();
+    ///     }
+    /// }
+    /// </code>
+    /// </example>
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Method)]
+    public class UnitySetUpAttribute : NUnitAttribute
+    {
+    }
+}

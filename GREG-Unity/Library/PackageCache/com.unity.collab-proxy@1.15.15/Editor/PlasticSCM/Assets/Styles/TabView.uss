@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97e9d15db7541e9fc8a7673bd7b7692a91af1770dadd8e9a334d586b1f915c3f
-size 551
+#TabView,
+#ContentArea {
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+#TabArea {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.tab-button {
+    padding-bottom: 2px;
+    margin-bottom: 0px;
+    border-width: 0px;
+    border-radius: 0px;
+
+    font-size: 15px;
+    background-color: rgba(1, 1, 1, 0);
+}
+
+#TabArea .tab-button:hover {
+    border-bottom-color: #2196F3;
+    border-bottom-width: 0.25px;
+}
+
+#TabArea .tab-button.active {
+    border-bottom-color: #2196F3;
+    border-bottom-width: 1.5px;
+}

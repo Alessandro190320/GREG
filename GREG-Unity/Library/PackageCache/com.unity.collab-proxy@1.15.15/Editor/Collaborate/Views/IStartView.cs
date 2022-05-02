@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ed9c071c7a2ad855de39f182d4a222cf724111020fac1ef41eb1f6c49faf051
-size 626
+using Unity.Cloud.Collaborate.Presenters;
+
+namespace Unity.Cloud.Collaborate.Views
+{
+    internal interface IStartView : IView<IStartPresenter>
+    {
+        /// <summary>
+        /// Set the text for the view.
+        /// </summary>
+        string Text { set; }
+
+        /// <summary>
+        /// Set the text for the button in the view.
+        /// </summary>
+        string ButtonText { set; }
+
+        /// <summary>
+        /// Set the visibility of the button.
+        /// </summary>
+        /// <param name="isVisible">True if the button should be visible.</param>
+        void SetButtonVisible(bool isVisible);
+    }
+}

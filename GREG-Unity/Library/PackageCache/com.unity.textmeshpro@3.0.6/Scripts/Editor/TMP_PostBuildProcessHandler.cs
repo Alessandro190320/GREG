@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a66ca2d15c73317522ea2b2e8b990c1798f4ba3633190def815e983a3f9786d
-size 899
+﻿using UnityEngine;
+using UnityEditor;
+using UnityEditor.Callbacks;
+using System.IO;
+
+
+namespace TMPro
+{
+    public class TMP_PostBuildProcessHandler
+    {
+        [PostProcessBuildAttribute(10000)]
+        public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject)
+        {
+            if (target == BuildTarget.iOS)
+            {
+                // Try loading the TMP Settings
+                TMP_Settings settings = Resources.Load<TMP_Settings>("TMP Settings");
+
+                if (settings == null)
+                    return;
+
+                string file = Path.Combine(pathToBuiltProject, "Classes/UI/Keyboard.mm");
+                string content = File.ReadAllText(file);
+                content = content.Replace("FILTER_EMOJIS_IOS_KEYBOARD 1", "FILTER_EMOJIS_IOS_KEYBOARD 0");
+                File.WriteAllText(file, content);
+            }
+        }
+    }
+}

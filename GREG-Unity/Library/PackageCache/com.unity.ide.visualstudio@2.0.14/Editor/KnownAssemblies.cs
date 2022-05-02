@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b6a0ca90fea251334e2ea9a3c519dcea0bbfc6d73aca5ae062c1dd02addeb04
-size 658
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+namespace Microsoft.Unity.VisualStudio.Editor
+{
+	internal static class KnownAssemblies
+	{
+		public const string Bridge = "SyntaxTree.VisualStudio.Unity.Bridge";
+		public const string Messaging = "SyntaxTree.VisualStudio.Unity.Messaging";
+		public const string UnityVS = "UnityVS.VersionSpecific";
+	}
+}

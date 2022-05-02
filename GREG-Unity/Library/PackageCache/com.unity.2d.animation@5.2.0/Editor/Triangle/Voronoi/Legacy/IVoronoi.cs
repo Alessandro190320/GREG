@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35b622c428f648edb3946bf60feef7f3b6ddf287efeaa359e8f3d4adb09687fb
-size 981
+// -----------------------------------------------------------------------
+// <copyright file="IVoronoi.cs" company="">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Voronoi.Legacy
+{
+    using System.Collections.Generic;
+    using Animation.TriangleNet.Geometry;
+
+    /// <summary>
+    /// Voronoi diagram interface.
+    /// </summary>
+    internal interface IVoronoi
+    {
+        /// <summary>
+        /// Gets the list of Voronoi vertices.
+        /// </summary>
+        Point[] Points { get; }
+
+        /// <summary>
+        /// Gets the list of Voronoi regions.
+        /// </summary>
+        ICollection<VoronoiRegion> Regions { get; }
+
+        /// <summary>
+        /// Gets the list of edges.
+        /// </summary>
+        IEnumerable<IEdge> Edges { get; }
+    }
+}

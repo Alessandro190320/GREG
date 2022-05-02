@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6d5c50b17149c97feaad38035dcecb36e20bc83f4e7b8828f69084afb97ffe9
-size 722
+/* FloatingMenuItem Styles */
+
+.unity-floating-menu-item {
+    justify-content: center;
+    padding: 0 var(--standard-padding);
+}
+
+.dark .unity-floating-menu-item:hover,
+.dark .unity-floating-menu-item:focus {
+    background-color: var(--dark-button-hover-focus-bg-color);
+}
+
+.light .unity-floating-menu-item:hover,
+.light .unity-floating-menu-item:focus {
+    background-color: var(--light-button-hover-focus-bg-color);
+}
+
+.dark .unity-floating-menu-item:active,
+.dark .unity-floating-menu-item:hover:active {
+    background-color: var(--dark-button-active-bg-color);
+}
+
+.light .unity-floating-menu-item:active,
+.light .unity-floating-menu-item:hover:active {
+    background-color: var(--light-button-active-bg-color);
+}

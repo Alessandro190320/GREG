@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9150bbb89cd89408ad98f75cad8b2922b667c1a26ac881c4d9c93aa47caea3cb
-size 418
+using System;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    readonly struct HorizontalScope : IDisposable
+    {
+        public readonly Rect rect;
+
+        public HorizontalScope(GUIContent content, GUIStyle style)
+        {
+            rect = EditorGUILayout.BeginHorizontal(content, style);
+        }
+
+        public void Dispose()
+        {
+            EditorGUILayout.EndHorizontal();
+        }
+    }
+}

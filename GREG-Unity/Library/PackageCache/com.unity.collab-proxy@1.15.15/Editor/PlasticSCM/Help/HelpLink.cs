@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e44a82f141d745961a3bd68630e7bdd3c914bdc5a3eb3f1dd0dd2d208bf2826
-size 331
+namespace Unity.PlasticSCM.Editor.Help
+{
+    internal class HelpLink
+    {
+        internal enum LinkType
+        {
+            Action,
+            Help,
+            Link,
+        }
+
+        internal int Position;
+        internal int Length;
+        internal string Link;
+
+        internal LinkType Type = LinkType.Action;
+    }
+}

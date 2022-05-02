@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:121228b7b12e902f02848c7fdb3797c3158f98b1322cd14c5a1e8f609c01bd83
-size 1144
+﻿using System;
+
+using UnityEditor;
+using UnityEditorInternal;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class EditorWindowFocus
+    {
+        internal static event Action OnApplicationActivated;
+        internal static event Action OnApplicationDeactivated;
+
+        static EditorWindowFocus()
+        {
+            EditorApplication.update += Update;
+        }
+
+        static void Update()
+        {
+            bool isApplicationActive = InternalEditorUtility.isApplicationActive;
+
+            if (!mLastIsApplicationFocused && isApplicationActive)
+            {
+                mLastIsApplicationFocused = isApplicationActive;
+
+                if (OnApplicationActivated != null)
+                    OnApplicationActivated();
+
+                return;
+            }
+
+            if (mLastIsApplicationFocused && !isApplicationActive)
+            {
+                mLastIsApplicationFocused = isApplicationActive;
+
+                if (OnApplicationDeactivated != null)
+                    OnApplicationDeactivated();
+
+                return;
+            }
+        }
+
+        static bool mLastIsApplicationFocused;
+    }
+}

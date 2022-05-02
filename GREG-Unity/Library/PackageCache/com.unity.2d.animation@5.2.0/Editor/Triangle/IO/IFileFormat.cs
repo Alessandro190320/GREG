@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7671c54dd77ecfaf316d22f92ebad1a10c38c6a1885e1746a3a2e40922258ed1
-size 450
+// -----------------------------------------------------------------------
+// <copyright file="IFileFormat.cs" company="">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .IO
+{
+    internal interface IFileFormat
+    {
+        bool IsSupported(string file);
+    }
+}

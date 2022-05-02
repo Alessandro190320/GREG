@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e47db92a8584b24e6d272880e5a6b2d376fcd4cd8ed743ed2f550d1e28a8eaed
-size 431
+namespace Unity.Cloud.Collaborate.Models.Structures
+{
+    internal interface IProgressInfo
+    {
+        string Title { get; }
+
+        string Details { get; }
+
+        int CurrentCount { get; }
+
+        int TotalCount { get; }
+
+        string LastErrorString { get; }
+
+        ulong LastError { get; }
+
+        bool CanCancel { get; }
+
+        bool PercentageProgressType { get; }
+
+        int PercentageComplete { get; }
+    }
+}

@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a24c84f59c1dd08857a3f95871809e1d06fe36386418b85669331d0544ebeb20
-size 1334
+using System;
+using System.Linq;
+using UnityEngine;
+
+namespace UnityEditor.U2D.Animation
+{
+    internal static class TransformCacheExtensions
+    {
+        internal static bool IsDescendant<T>(this T transform, T ancestor) where T : TransformCache
+        {
+            if (ancestor != null)
+            {
+                var parent = transform.parent;
+
+                while (parent != null)
+                {
+                    if (parent == ancestor)
+                        return true;
+
+                    parent = parent.parent;
+                }
+            }
+
+            return false;
+        }
+
+        internal static bool IsDescendant<T>(this T transform, T[] ancestors) where T : TransformCache
+        {
+            return ancestors.FirstOrDefault( t => transform.IsDescendant<T>(t) ) != null;
+        }
+
+        internal static T[] FindRoots<T>(this T[] transforms) where T : TransformCache
+        {
+            return transforms.Where(t => t.IsDescendant(transforms) == false).ToArray();
+        }
+
+        internal static T FindRoot<T>(this T transform, T[] transforms) where T : TransformCache
+        {
+            var roots = transforms.FindRoots<T>();
+            return roots.FirstOrDefault( r => transform == r || IsDescendant<T>(transform, r) );
+        }
+    }
+}

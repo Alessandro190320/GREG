@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d335f1319a22c4a03b5278745576506d273222356230e2762035d8ca36d87037
-size 685
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="project-settings-header-container">
+        <VisualElement class="project-settings-title-container">
+            <TextElement class="service-title" name="service-title" text="[Service Title Here]"/>
+            <Toggle name="service-toggle" text=""/>
+        </VisualElement>
+        <Label class="service-description" name="service-description" text="[Service Description Here]"/>
+        <VisualElement class="link-container">
+            <TextElement text="Go to Dashboard" name="dashboard-link-button" class="link-button"/>
+        </VisualElement>
+    </VisualElement>
+    <VisualElement class="separator"/>
+</UXML>

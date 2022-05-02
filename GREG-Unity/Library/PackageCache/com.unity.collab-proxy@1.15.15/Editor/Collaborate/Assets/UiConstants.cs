@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2a86b239514893d328437c18a46a9727a04c56cd1890f639f8f58ce790c36db
-size 505
+using System;
+
+namespace Unity.Cloud.Collaborate.Assets
+{
+    internal static class UiConstants
+    {
+        public const int ChangesListViewItemHeight = 24;
+        public const int HistoryListViewItemHeight = 24;
+
+        // USS classes
+        public const string ussDark = "dark";
+        public const string ussLight = "light";
+        public const string ussHidden = "hidden";
+        public const string ussDefaultInset = "default-inset";
+        public const string ussActive = "active";
+    }
+}

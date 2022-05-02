@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba8152a0841a9d2aa0fde2e637042f1f16171afcc3fa94a75cfbf22bbedb9c54
-size 299
+using System;
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  [Flags]
+  enum ProjectGenerationFlag
+  {
+    None = 0,
+    Embedded = 1,
+    Local = 2,
+    Registry = 4,
+    Git = 8,
+    BuiltIn = 16,
+    Unknown = 32,
+    PlayerAssemblies = 64,
+    LocalTarBall = 128,
+  }
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38a6968a19aa70ae95ac84f80bde79e0ac94c080d83887f225dd3af30b4d13a2
-size 412
+#if ENABLE_EDITOR_GAME_SERVICES
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+namespace Unity.Services.Core.Editor.ActivationPopup
+{
+    interface IActivationPopupVisual : IDisposable
+    {
+        event Action Done;
+        void Init(VisualElement parentVisual, IEnumerable<IEditorGameService> services, VisualElement buttonsContainer = null);
+    }
+}
+#endif

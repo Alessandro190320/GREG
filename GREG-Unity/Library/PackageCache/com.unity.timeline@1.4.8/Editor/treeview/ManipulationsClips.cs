@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34e7e1c5f5a9e884da410eecbddebe8894d3e4446da31e986bbee52f1aec095a
-size 1534
+using UnityEditor.Timeline.Actions;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    class DrillIntoClip : Manipulator
+    {
+        protected override bool DoubleClick(Event evt, WindowState state)
+        {
+            if (evt.button != 0)
+                return false;
+
+            var guiClip = PickerUtils.TopmostPickedItem() as TimelineClipGUI;
+
+            if (guiClip == null)
+                return false;
+
+            if (!TimelineWindow.instance.state.editSequence.isReadOnly && (guiClip.clip.curves != null || guiClip.clip.animationClip != null))
+                Invoker.Invoke<EditClipInAnimationWindow>(new[] {guiClip.clip});
+
+            if (guiClip.supportsSubTimelines)
+                Invoker.Invoke<EditSubTimeline>(new[] {guiClip.clip});
+
+            return true;
+        }
+    }
+
+    class ContextMenuManipulator : Manipulator
+    {
+        protected override bool MouseDown(Event evt, WindowState state)
+        {
+            if (evt.button == 1)
+                ItemSelection.HandleSingleSelection(evt);
+
+            return false;
+        }
+
+        protected override bool ContextClick(Event evt, WindowState state)
+        {
+            if (evt.alt)
+                return false;
+
+            var selectable = PickerUtils.TopmostPickedItem() as ISelectable;
+
+            if (selectable != null && selectable.IsSelected())
+            {
+                SequencerContextMenu.ShowItemContextMenu(evt.mousePosition);
+                return true;
+            }
+
+            return false;
+        }
+    }
+}

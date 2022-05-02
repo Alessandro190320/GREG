@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f11df0c1882a7a3cd503ef3c4ae996a105c80f797b0abee5bf963c5d2726e31
-size 1176
+using UnityEditor;
+using UnityEngine;
+
+namespace Unity.Services.Core.Editor
+{
+    class ProjectStateRequest : IProjectStateRequest
+    {
+        public ProjectState GetProjectState()
+        {
+#if ENABLE_EDITOR_GAME_SERVICES
+            return new ProjectState(CloudProjectSettings.userId, CloudProjectSettings.userName, CloudProjectSettings.accessToken,
+                CloudProjectSettings.projectId, CloudProjectSettings.projectName, CloudProjectSettings.organizationId,
+                CloudProjectSettings.organizationName, CloudProjectSettings.coppaCompliance, CloudProjectSettings.projectBound,
+                IsInternetReachable());
+#else
+            return new ProjectState(CloudProjectSettings.userId, CloudProjectSettings.userName, CloudProjectSettings.accessToken,
+                CloudProjectSettings.projectId, CloudProjectSettings.projectName, CloudProjectSettings.organizationId,
+                CloudProjectSettings.organizationName, false, IsInternetReachable());
+#endif
+        }
+
+        static bool IsInternetReachable()
+        {
+            return Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork;
+        }
+    }
+}

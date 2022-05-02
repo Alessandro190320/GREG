@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e08aa596b553303660da22b3ea6e2f86428c4117f21c84a9dbe8bc47b6ccd323
-size 593
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+using System;
+
+namespace Microsoft.Unity.VisualStudio.Editor.Messaging
+{
+	internal class ExceptionEventArgs
+	{
+		public Exception Exception { get; }
+
+		public ExceptionEventArgs(Exception exception)
+		{
+			Exception = exception;
+		}
+	}
+}

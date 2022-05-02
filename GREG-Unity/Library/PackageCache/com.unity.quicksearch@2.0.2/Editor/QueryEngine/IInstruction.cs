@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7af63526a699c98f0d6af7df7dec6e8d47f9bdc4d8a363e549c5003f2d70ae02
-size 732
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.Assertions;
+using UnityEngine.Profiling;
+
+namespace Unity.QuickSearch
+{
+    internal interface IInstruction<T>
+    {
+        long estimatedCost { get; }
+        IQueryNode node { get; }
+    }
+    internal interface IOperandInstruction<T> : IInstruction<T>
+    {
+        IInstruction<T> LeftInstruction { get; }
+        IInstruction<T> RightInstruction { get; }
+    }
+    internal interface IAndInstruction<T> : IOperandInstruction<T>
+    {
+    }
+    internal interface IOrInstruction<T> : IOperandInstruction<T>
+    {
+
+    }
+    internal interface IResultInstruction<T> : IInstruction<T>
+    {
+    }
+}

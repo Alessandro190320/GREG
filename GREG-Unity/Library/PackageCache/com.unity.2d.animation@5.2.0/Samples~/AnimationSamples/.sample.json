@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59fb8379c78e2e6ac8e9cfa4b7ee0dace5866febe5e8e65d83d16854f04b1ab5
-size 191
+{
+    "displayName": "2D Animation Samples",
+	"interactiveImport": "true",
+    "description": "Various examples demonstrating the usage of 2D Animation tools for different outcomes.",
+}

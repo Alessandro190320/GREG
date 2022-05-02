@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b31097e9c5e3ab74e14b04f0a48896916d506af0b98bdc7fe8ddaa294e2c6573
-size 982
+using System;
+using UnityEditor.IMGUI.Controls;
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline.Signals
+{
+    static class SignalListFactory
+    {
+        public static SignalReceiverTreeView CreateSignalInspectorList(TreeViewState state, SignalReceiverHeader header, SignalReceiver target, SerializedObject so)
+        {
+            return new SignalReceiverTreeView(state, header, target, so);
+        }
+
+        public static  SignalReceiverHeader CreateHeader(MultiColumnHeaderState state, int columnHeight)
+        {
+            var header = new SignalReceiverHeader(state) { height = columnHeight };
+            header.ResizeToFit();
+            return header;
+        }
+
+        public static MultiColumnHeaderState CreateHeaderState()
+        {
+            return new MultiColumnHeaderState(SignalReceiverTreeView.GetColumns());
+        }
+
+        public static TreeViewState CreateViewState()
+        {
+            return new TreeViewState();
+        }
+    }
+}

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:744c1baacd7d1d956d896ce2d2d83f7b32ecc6e1a9212f6dc0912a090b4be874
-size 965
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    class TrackResizeHandle : IBounds
+    {
+        public Rect boundingRect { get; private set; }
+
+        public TimelineTrackGUI trackGUI { get; }
+
+        public TrackResizeHandle(TimelineTrackGUI trackGUI)
+        {
+            this.trackGUI = trackGUI;
+        }
+
+        public void Draw(Rect headerRect, WindowState state)
+        {
+            const float resizeHandleHeight = WindowConstants.trackResizeHandleHeight;
+            var rect = new Rect(headerRect.xMin, headerRect.yMax - (0.5f * resizeHandleHeight), headerRect.width, resizeHandleHeight);
+            boundingRect = trackGUI.ToWindowSpace(rect);
+
+            var cursorRect = rect;
+            cursorRect.height--;
+            EditorGUIUtility.AddCursorRect(cursorRect, MouseCursor.SplitResizeUpDown);
+            if (Event.current.type == EventType.Repaint)
+                state.headerSpacePartitioner.AddBounds(this);
+        }
+    }
+}

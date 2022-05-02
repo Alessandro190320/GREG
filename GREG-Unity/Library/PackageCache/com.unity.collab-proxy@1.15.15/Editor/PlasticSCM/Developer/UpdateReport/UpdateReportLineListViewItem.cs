@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2223ea9a8bd719ed3d376dd47bbeff53b0ac0da3336b513ee226663cde5a6040
-size 479
+﻿using UnityEditor.IMGUI.Controls;
+
+using Codice.Client.BaseCommands;
+
+namespace Unity.PlasticSCM.Editor.Developer.UpdateReport
+{
+    internal class UpdateReportLineListViewItem : TreeViewItem
+    {
+        internal ReportLine ReportLine { get; private set; }
+
+        internal UpdateReportLineListViewItem(int id, ReportLine reportLine)
+            : base(id, 0)
+        {
+            ReportLine = reportLine;
+
+            displayName = reportLine.ItemPath;
+        }
+    }
+}

@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2f391971509ba3774abad77ca717b7be3e448c8c64439f1f1e998d26b21bb19
-size 1962
+using System;
+using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
+using Object = UnityEngine.Object;
+
+namespace UnityEditor.Timeline
+{
+    static class BindingUtility
+    {
+        public static Type GetRequiredBindingType(PlayableBinding binding)
+        {
+            return binding.outputTargetType;
+        }
+
+        public static void Bind(PlayableDirector director, TrackAsset bindTo, Object objectToBind)
+        {
+            if (director == null || bindTo == null  || TimelineWindow.instance == null)
+                return;
+
+            TimelineWindow.instance.state.previewMode = false; // returns all objects to previous state
+            TimelineUndo.PushUndo(director, "PlayableDirector Binding");
+            director.SetGenericBinding(bindTo, objectToBind);
+            TimelineWindow.instance.state.rebuildGraph = true;
+        }
+
+        public static BindingAction GetBindingAction(Type requiredBindingType, Object objectToBind)
+        {
+            if (requiredBindingType == null || objectToBind == null)
+                return BindingAction.DoNotBind;
+
+            // prevent drag and drop of prefab assets
+            if (PrefabUtility.IsPartOfPrefabAsset(objectToBind))
+                return BindingAction.DoNotBind;
+
+            if (requiredBindingType.IsInstanceOfType(objectToBind))
+                return BindingAction.BindDirectly;
+
+            var draggedGameObject = objectToBind as GameObject;
+
+            if (!typeof(Component).IsAssignableFrom(requiredBindingType) || draggedGameObject == null)
+                return BindingAction.DoNotBind;
+
+            if (draggedGameObject.GetComponent(requiredBindingType) == null)
+                return BindingAction.BindToMissingComponent;
+
+            return BindingAction.BindToExistingComponent;
+        }
+    }
+
+    enum BindingAction
+    {
+        DoNotBind,
+        BindDirectly,
+        BindToExistingComponent,
+        BindToMissingComponent
+    }
+}

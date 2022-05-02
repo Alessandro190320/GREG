@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9d2f52e1980d37b3b23c8795d3611fd2f47d65baba126c17afc3fc25bc2ed96
-size 696
+/* ChangesTabPageView Styles */
+
+.changes-tab-page-view__text-field {
+    /* 36px (3 * 12px lines of text) + 5px in default padding + 1px extra */
+    height: 42px;
+
+    margin: var(--standard-margin) 0 0;
+}
+
+.changes-tab-page-view__text-field .unity-text-field__input {
+    -unity-text-align: upper-left;
+}
+
+.changes-tab-page-view__publish-button {
+    align-self: center;
+    width: 128px;
+    justify-content: center;
+    margin-top: var(--standard-margin);
+}
+
+.changes-tab-page-view__search-bar {
+    margin-bottom: var(--half-standard-margin);
+    margin-top: var(--standard-margin);
+}
+
+.changes-tab-page-view__list-view {
+    flex-basis: 288px;
+    margin-bottom: var(--standard-margin);
+}

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47717fcd447ea5d7894026bf9c73eec8870f3a41589aa72d2f5f858df3772f02
-size 639
+{
+    "name": "Unity.2D.Psdimporter.EditorTests",
+    "references": [
+        "Unity.2D.Common.Editor",
+        "Unity.2D.Psdimporter.Editor",
+        "Unity.2D.Animation.Editor",
+        "Unity.2D.Animation.Runtime",
+        "Unity.2D.Sprite.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": []
+}

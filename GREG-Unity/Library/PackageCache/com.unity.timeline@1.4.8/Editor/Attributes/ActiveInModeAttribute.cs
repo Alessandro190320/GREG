@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc8572a1b15c91eab85f32b8fe9d75efa2a6f1915861a8d8d8d35ba7272e1f73
-size 797
+using System;
+
+namespace UnityEditor.Timeline.Actions
+{
+    /// <summary>
+    /// Define the activeness of an action depending on its timeline mode.
+    /// </summary>
+    /// <seealso cref="TimelineModes"/>
+    [AttributeUsage(AttributeTargets.Class)]
+    public class ActiveInModeAttribute : Attribute
+    {
+        /// <summary>
+        /// Modes that will be used for activeness of an action.
+        /// </summary>
+        public TimelineModes modes { get; }
+
+        /// <summary>
+        /// Defines in which mode the action will be active.
+        /// </summary>
+        /// <param name="timelineModes">Modes that will define activeness of the action.</param>
+        public ActiveInModeAttribute(TimelineModes timelineModes)
+        {
+            modes = timelineModes;
+        }
+    }
+}

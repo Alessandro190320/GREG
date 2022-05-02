@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c59085dfd7b9a64e0d9d3fe988a0290b822d2014c8cd641abec49f557a52f1db
-size 328
+apiRules:
+  - exclude:
+      uidRegex: ^EditorTests
+      type: Namespace
+  - exclude:
+      uidRegex: ^Tests
+      type: Namespace
+  - exclude:
+      uidRegex: ^Common
+      type: Namespace  
+  - exclude:
+      uidRegex: ^Timeline\.Tests
+      type: Namespace
+  - exclude:
+      uidRegex: ^DocCodeExamples
+      type: Namespace

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03e7e3acad9c24a0b2b2a5f382ffd73ae808d5d0aada964e37ec522b44d05f69
-size 677
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    /// <summary>
+    /// Implement this interface in a PlayableAsset to specify which properties will be modified when Timeline is in preview mode.
+    /// </summary>
+    public interface IPropertyPreview
+    {
+        /// <summary>
+        /// Called by the Timeline Editor to gather properties requiring preview.
+        /// </summary>
+        /// <param name="director">The PlayableDirector invoking the preview</param>
+        /// <param name="driver">PropertyCollector used to gather previewable properties</param>
+        void GatherProperties(PlayableDirector director, IPropertyCollector driver);
+    }
+}

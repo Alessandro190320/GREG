@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f668149c4cb868fe97e5a872ff38050a8ee13f6082948cb58ff1cf9461531a40
-size 534
+namespace UnityEditor.TestTools.TestRunner.Api.Analytics
+{
+    internal class TestTreeData
+    {
+        public int totalNumberOfTests;
+        public int numTestAttributes;
+        public int numUnityTestAttributes;
+        public int numCategoryAttributes;
+        public int numTestFixtureAttributes;
+        public int numConditionalIgnoreAttributes;
+        public int numRequiresPlayModeAttributesTrue;
+        public int numRequiresPlayModeAttributesFalse;
+        public int numUnityPlatformAttributes;
+    }
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86e4ff1bae4cb6c833f750a64caa10a4fab99945909f3158f1da4fdc8679a923
-size 892
+// -----------------------------------------------------------------------
+// <copyright file="ITriangulator.cs" company="">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Meshing
+{
+    using System.Collections.Generic;
+    using Animation.TriangleNet.Geometry;
+
+    /// <summary>
+    /// Interface for point set triangulation.
+    /// </summary>
+    internal interface ITriangulator
+    {
+        /// <summary>
+        /// Triangulates a point set.
+        /// </summary>
+        /// <param name="points">Collection of points.</param>
+        /// <param name="config"></param>
+        /// <returns>Mesh</returns>
+        IMesh Triangulate(IList<Vertex> points, Configuration config);
+    }
+}

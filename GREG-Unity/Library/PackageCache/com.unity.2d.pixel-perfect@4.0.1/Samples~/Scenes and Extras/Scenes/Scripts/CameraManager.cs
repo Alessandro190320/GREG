@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61c0749aa8b8b79799429580ea1892471d24b107fda493310b246f0d5be78e7b
-size 857
+﻿using System;
+using UnityEngine;
+using UnityEngine.U2D;
+
+public class CameraManager : MonoBehaviour
+{
+    public Camera ordinaryCamera;
+    public PixelPerfectCamera pixelPerfectCamera;
+
+    private bool isPixelPerfect;
+
+    void Awake()
+    {
+        isPixelPerfect = false;
+        ValidateCameras(isPixelPerfect);
+    }
+
+    public void TogglePixelPerfect(bool value)
+    {
+        isPixelPerfect = value;
+        ValidateCameras(isPixelPerfect);
+    }
+
+    public void ValidateCameras(bool value)
+    {
+        if (value)
+        {
+            ordinaryCamera.gameObject.SetActive(false);
+            pixelPerfectCamera.gameObject.SetActive(true);
+        }
+        else
+        {
+            ordinaryCamera.gameObject.SetActive(true);
+            pixelPerfectCamera.gameObject.SetActive(false);
+        }
+    }
+}

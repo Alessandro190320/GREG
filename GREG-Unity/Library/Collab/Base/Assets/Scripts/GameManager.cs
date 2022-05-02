@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f52cfe97a8e968687c9240daef89adce376d0e951e750de4785fe97510cbad22
-size 602
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameManager : MonoBehaviour
+{
+    public static GameManager instance;
+    private void Awake(){
+        instance = this;
+        SceneManager.sceneLoaded += LoadState;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    //Salva il gioco
+    public void SaveState(){
+        //Debug.Log("Salvataggio");
+    }
+    //Carica il gioco
+    public void LoadState(Scene s, LoadSceneMode mode){
+        SceneManager.sceneLoaded -= LoadState;
+        //Debug.Log("Caricamento");
+    }
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea5652577905478a2cee71afe144bfe792db9666ba171acc76d1b5eb21604aa5
-size 372
+using System.Collections.Generic;
+
+namespace Packages.Rider.Editor.ProjectGeneration
+{
+  internal interface IGenerator
+  {
+    bool SyncIfNeeded(IEnumerable<string> affectedFiles, IEnumerable<string> reimportedFiles);
+    void Sync();
+    bool HasSolutionBeenGenerated();
+    string SolutionFile();
+    IAssemblyNameProvider AssemblyNameProvider { get; }
+  }
+}

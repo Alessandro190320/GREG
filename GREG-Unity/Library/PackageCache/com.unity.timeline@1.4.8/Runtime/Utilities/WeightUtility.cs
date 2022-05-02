@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbf9c048bf40937b1b43c7886da92dbff48b0597d7cbf11a5d3b334d4b732e47
-size 880
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    static class WeightUtility
+    {
+        // Given a mixer, normalizes the mixer if required
+        //  returns the output weight that should be applied to the mixer as input
+        public static float NormalizeMixer(Playable mixer)
+        {
+            if (!mixer.IsValid())
+                return 0;
+            int count = mixer.GetInputCount();
+            float weight = 0.0f;
+            for (int c = 0; c < count; c++)
+            {
+                weight += mixer.GetInputWeight(c);
+            }
+
+            if (weight > Mathf.Epsilon && weight < 1)
+            {
+                for (int c = 0; c < count; c++)
+                {
+                    mixer.SetInputWeight(c, mixer.GetInputWeight(c) / weight);
+                }
+            }
+            return Mathf.Clamp01(weight);
+        }
+    }
+}

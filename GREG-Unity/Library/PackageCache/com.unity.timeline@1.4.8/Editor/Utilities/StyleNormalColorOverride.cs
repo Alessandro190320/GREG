@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6d18da9512dd20750cf1cad59ac901fce57948b2a12fdc3410e23361dc2be88
-size 521
+using System;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    struct StyleNormalColorOverride : IDisposable
+    {
+        readonly GUIStyle m_Style;
+        readonly Color m_OldColor;
+
+        public StyleNormalColorOverride(GUIStyle style, Color newColor)
+        {
+            m_Style = style;
+            m_OldColor = style.normal.textColor;
+            style.normal.textColor = newColor;
+        }
+
+        public void Dispose()
+        {
+            m_Style.normal.textColor = m_OldColor;
+        }
+    }
+}

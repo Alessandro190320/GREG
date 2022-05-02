@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b87c1e1942d8c54c6a0c7f5b09a66a482546d8396443d0bfbfbc91a915c5fc84
-size 704
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement class="total-window">
+        <ui:VisualElement class="title">
+            <ui:Label text="Activate services" class="service-activation-title" />
+        </ui:VisualElement>
+        <ui:VisualElement class="separator" />
+        <ui:VisualElement class="content" />
+        <ui:VisualElement class="spacer" />
+        <ui:VisualElement class="buttons">
+            <ui:Button text="Ok" class="confirmation-button" />
+            <ui:Button text="Cancel" class="cancel-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

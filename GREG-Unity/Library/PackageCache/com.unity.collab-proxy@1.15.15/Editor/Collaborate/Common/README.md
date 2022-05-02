@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db5a4c2a6e50c9bff39510e21b7cc70056a106a1d2f7b4043cf46abb22eaef04
-size 488
+# Unity Collaborate Common Code
+This directory contains common classes and logic for the package.
+
+## Overview
+This is the structure of the directory:
+```none
+<root>
+  ├── LocationAttribute.cs
+  └── ScriptableObjectSingleton.cs
+```
+
+`LocationAttribute.cs` attribute used to specify where to cache the ScriptableObjectSingleton.
+
+`ScriptableObjectSingleton.cs` public version of the ScriptableSingleton class in Unity and modified from the
+GitHubForUnity implementation of it.

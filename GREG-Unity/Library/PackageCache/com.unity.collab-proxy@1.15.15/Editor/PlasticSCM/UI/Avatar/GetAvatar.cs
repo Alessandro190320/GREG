@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da3d4e03bfbe9a5061cf4697d69b43e297b10cfb399f3afa45cdd14d0b133941
-size 1037
+﻿using System;
+
+using UnityEngine;
+
+using PlasticGui;
+
+namespace Unity.PlasticSCM.Editor.UI.Avatar
+{
+    internal static class GetAvatar
+    {
+        internal static Texture2D ForEmail(
+            string email,
+            Action avatarLoadedAction)
+        {
+            if (string.IsNullOrEmpty(email))
+                return AvatarImages.GetDefaultImage();
+
+            if (AvatarImages.HasGravatar(email))
+                return AvatarImages.GetAvatar(email);
+
+            Texture2D defaultImage =
+                AvatarImages.GetDefaultImage();
+
+            AvatarImages.AddGravatar(email, defaultImage);
+
+            LoadAvatar.ForEmail(
+                email, avatarLoadedAction,
+                AfterDownloadSucceed);
+
+            return defaultImage;
+        }
+
+        static void AfterDownloadSucceed(
+            string email,
+            byte[] avatarBytes,
+            Action avatarLoadedAction)
+        {
+            AvatarImages.UpdateGravatar(email, avatarBytes);
+
+            avatarLoadedAction();
+        }
+    }
+}

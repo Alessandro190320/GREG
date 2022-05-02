@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:abfb3f2e53635ed9e5d86b0ca9587df17fcf2328b80a2003d35ee431500cd988
-size 839
+using System;
+using System.Linq;
+using UnityEditor.Compilation;
+using UnityEditor.TestTools.TestRunner.Api;
+using UnityEngine;
+using UnityEngine.TestTools;
+
+namespace UnityEditor.TestTools.TestRunner.UnityTestProtocol
+{
+    [InitializeOnLoad]
+    internal static class UnityTestProtocolStarter
+    {
+        static UnityTestProtocolStarter()
+        {
+            var commandLineArgs = Environment.GetCommandLineArgs();
+            if (commandLineArgs.Contains("-automated") && commandLineArgs.Contains("-runTests")) // wanna have it only for utr run
+            {
+                var api = ScriptableObject.CreateInstance<TestRunnerApi>();
+                var listener = ScriptableObject.CreateInstance<UnityTestProtocolListener>();
+                api.RegisterCallbacks(listener);
+            }
+        }
+    }
+}

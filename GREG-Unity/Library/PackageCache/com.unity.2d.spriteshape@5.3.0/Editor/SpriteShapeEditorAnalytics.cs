@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f353958c7436092dacca06ac537a8860163e3675e7c0d47f72677f1c301fc7df
-size 768
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.U2D;
+using UnityEditor;
+
+namespace UnityEditor.U2D
+{
+    internal class SpriteShapeEditorAnalytics : ScriptableSingleton<SpriteShapeEditorAnalytics>
+    {
+        SpriteShapeAnalytics m_Analytics = null;
+
+        internal SpriteShapeAnalyticsEvents eventBus
+        {
+            get { return analytics.eventBus; }
+        }
+
+        private SpriteShapeAnalytics analytics
+        {
+            get
+            {
+                if (m_Analytics == null)
+                    m_Analytics = new SpriteShapeAnalytics(new SpriteShapeUnityAnalyticsStorage());
+                
+                return m_Analytics;
+            }
+        }
+    }
+}

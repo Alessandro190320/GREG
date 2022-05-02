@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e884789a78f318102d053c0b559dfb6cb32ffa8992b7d69d62c11a5f7ba4ab3
-size 123
+#wait {
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+#progressContainer {
+    padding-top: 3px;
+    margin-right: 50%;
+}

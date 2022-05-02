@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40df832da09f84b68285f43c659bbd3d9a0fcc58b8b976c7e5686491a45f60ac
-size 416
+#pragma once
+#include <OleAuto.h>
+
+struct BStrHolder
+{
+	BStrHolder() :
+		m_Str(NULL)
+	{
+	}
+
+	BStrHolder(const wchar_t* str) :
+		m_Str(SysAllocString(str))
+	{
+	}
+
+	~BStrHolder()
+	{
+		if (m_Str != NULL)
+			SysFreeString(m_Str);
+	}
+
+	operator BSTR() const
+	{
+		return m_Str;
+	}
+
+	BSTR* operator&()
+	{
+		if (m_Str != NULL)
+		{
+			SysFreeString(m_Str);
+			m_Str = NULL;
+		}
+
+		return &m_Str;
+	}
+
+private:
+	BSTR m_Str;
+};

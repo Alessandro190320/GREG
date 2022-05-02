@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20770f5e6b31095f5de53f4ac032bb73bfae953cdecaad81a184b38a7739d3cb
-size 201
+{
+  "type": "scene",
+  "roots": [],
+  "includes": [],
+  "excludes": [],
+  "options": {
+    "fstats": true,
+    "types": true,
+    "properties": false,
+    "dependencies": true
+  },
+  "baseScore": 155
+}

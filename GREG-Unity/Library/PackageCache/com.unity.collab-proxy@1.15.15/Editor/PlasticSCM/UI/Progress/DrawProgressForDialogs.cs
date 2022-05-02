@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee9273cf07e7f824cbeee885c2f4c008656cc70d7fe6b112ab24457c1a1c0b27
-size 1152
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace Unity.PlasticSCM.Editor.UI.Progress
+{
+    internal static class DrawProgressForDialogs
+    {
+        internal static void For(ProgressControlsForDialogs.Data data)
+        {
+            Rect rect = GUILayoutUtility.GetRect(
+                GUILayoutUtility.GetLastRect().width, 30);
+
+            if (!string.IsNullOrEmpty(data.StatusMessage))
+            {
+                EditorGUI.HelpBox(rect, data.StatusMessage, data.StatusType);
+                return;
+            }
+
+            if (data.IsWaitingAsyncResult)
+                DoProgressBar(rect, data.ProgressMessage, data.ProgressPercent);
+        }
+
+        static void DoProgressBar(
+            Rect rect,
+            string progressMessage,
+            float progressPercent)
+        {
+            Rect messageRect = new Rect(
+                rect.xMin, rect.yMin + 2, rect.width, 16);
+            Rect progresRect = new Rect(
+                rect.xMin, rect.yMin + 20, rect.width, 6);
+
+            GUI.Label(messageRect, progressMessage);
+
+            EditorGUI.ProgressBar(progresRect, progressPercent, string.Empty);
+        }
+    }
+}

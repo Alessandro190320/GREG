@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a439dffcda78a5201166836e0e14e546721a768916154cfb4b608c4d6b3b6088
-size 1922
+﻿using UnityEditor;
+
+using Codice.Client.BaseCommands;
+
+namespace Unity.PlasticSCM.Editor.AssetMenu
+{
+    internal class AssetMenuRoutingOperations :
+        IAssetMenuOperations,
+        IAssetFilesFilterPatternsMenuOperations
+    {
+        void IAssetMenuOperations.ShowPendingChanges()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.ShowPendingChanges();
+        }
+
+        void IAssetMenuOperations.Add()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.Add();
+        }
+
+        void IAssetMenuOperations.Checkout()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.Checkout();
+        }
+
+        void IAssetMenuOperations.Checkin()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.Checkin();
+        }
+
+        void IAssetMenuOperations.Undo()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.Undo();
+        }
+
+        void IAssetMenuOperations.ShowDiff()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.ShowDiff();
+        }
+
+        void IAssetMenuOperations.ShowHistory()
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.ShowHistory();
+        }
+
+        void IAssetFilesFilterPatternsMenuOperations.AddFilesFilterPatterns(
+            FilterTypes type, 
+            FilterActions action, 
+            FilterOperationType operation)
+        {
+            PlasticWindow plasticWindow = EditorWindow.GetWindow<PlasticWindow>();
+            plasticWindow.AddFilesFilterPatterns(type, action, operation);
+        }
+    }
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0323832809ab52f68d066519aa4940715ba7adae57a2095e25c2bfa6b1437b3b
-size 559
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace UnityEngine.UI
+{
+    internal static class ListPool<T>
+    {
+        // Object pool to avoid allocations.
+        private static readonly ObjectPool<List<T>> s_ListPool = new ObjectPool<List<T>>(null, Clear);
+        static void Clear(List<T> l) { l.Clear(); }
+
+        public static List<T> Get()
+        {
+            return s_ListPool.Get();
+        }
+
+        public static void Release(List<T> toRelease)
+        {
+            s_ListPool.Release(toRelease);
+        }
+    }
+}

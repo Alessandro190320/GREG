@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b456d2ac06014ebd27805d5e1ddc9ae958a3b26b75c01a1430f9437b83297b3
-size 499
+# Add integrations
+
+You can set up integrations for your Plastic SCM organization via your plasticscm.com Cloud Dashboard.
+
+The Cloud dashboard gives you access to your organizations. From here, you can configure **triggers** (equivalent to integrations). 
+
+To configure a Slack notifications trigger:
+
+1. On an organization, click **Configure** > **Triggers**.
+2. Click **Add Trigger** > **Slack**.
+3. In **Destination**, add your Slack channel name.
+4. Select your trigger type and click **Save**.

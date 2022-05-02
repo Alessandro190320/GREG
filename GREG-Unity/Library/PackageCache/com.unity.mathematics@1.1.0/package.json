@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49584fa82297ac88bbc0e5438bde1dd8ecda8824bb5b721ad07424b4feedee17
-size 457
+{
+  "name": "com.unity.mathematics",
+  "displayName": "Mathematics",
+  "version": "1.1.0",
+  "unity": "2018.3",
+  "description": "Unity's C# SIMD math library providing vector types and math functions with a shader like syntax.",
+  "keywords": [
+    "unity"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Unity-Technologies/Unity.Mathematics.git",
+    "revision": "0a3dfafaf606098ea681de4c4be60f3aac63b773"
+  }
+}

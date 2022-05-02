@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ede3f1638f0e6808085057303280a2e82713191800ee848c71ff5cb26e981102
-size 557
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FullScreenListener : MonoBehaviour
+{
+    public static FullScreenListener current;
+
+    private void Awake()
+    {
+        if (current != null && current != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        };
+
+        current = this;
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+        }
+    }
+}

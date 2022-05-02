@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:959eb7c0b2322cd3bbb4f7154b26b44fff49a2f3ebb3899abfbc8bd4e61ed952
-size 582
+﻿using UnityEditor.IMGUI.Controls;
+
+using PlasticGui;
+using PlasticGui.WorkspaceWindow.PendingChanges;
+
+namespace Unity.PlasticSCM.Editor.Views.PendingChanges
+{
+    internal class ChangeTreeViewItem : TreeViewItem
+    {
+        internal PendingChangeInfo ChangeInfo { get; private set; }
+
+        internal ChangeTreeViewItem(int id, PendingChangeInfo change)
+            : base(id, 1)
+        {
+            ChangeInfo = change;
+
+            displayName = change.GetColumnText(PlasticLocalization.GetString(
+                PlasticLocalization.Name.ItemColumn));
+        }
+    }
+}

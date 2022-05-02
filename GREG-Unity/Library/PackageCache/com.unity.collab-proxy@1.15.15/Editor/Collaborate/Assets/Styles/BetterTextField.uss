@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a28e897c13de1954d2b212f85206019c77cb86b3149253832cd337dc9266b4e5
-size 401
+/* BetterTextField Styles */
+
+.unity-better-text-field__placeholder {
+    position: absolute;
+    margin: 0;
+    padding: 2px 3px 3px;
+}
+
+.dark .unity-better-text-field__placeholder {
+    color: var(--dark-placeholder-text-color);
+}
+
+.light .unity-better-text-field__placeholder {
+    color: var(--light-placeholder-text-color);
+}
+
+.unity-better-text-field #unity-text-input {
+    overflow: hidden;
+}

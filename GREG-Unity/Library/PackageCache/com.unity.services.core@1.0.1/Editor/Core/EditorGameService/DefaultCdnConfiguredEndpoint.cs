@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a8ff040ff4cb64742822c133278466f81e237540c3a1919d663630cefa6bb0e
-size 1075
+using System;
+using System.Diagnostics.CodeAnalysis;
+using UnityEngine;
+
+namespace Unity.Services.Core.Editor
+{
+    class DefaultCdnConfiguredEndpoint : CdnConfiguredEndpoint<DefaultCdnEndpointConfiguration> {}
+
+    [Serializable]
+    [SuppressMessage("ReSharper", "InconsistentNaming")]
+    class DefaultCdnEndpointConfiguration
+    {
+        [SerializeField]
+        string core;
+
+        public string Core => core;
+
+        internal string BuildApiUrl()
+        {
+            return Core + "/api";
+        }
+
+        internal string BuildProjectsApiUrl(string organizationKey)
+        {
+            return string.Format(BuildApiUrl() + "/orgs/{0}/projects", organizationKey);
+        }
+
+        internal string BuildProjectApiUrl(string organizationKey, string projectId)
+        {
+            return string.Format(BuildProjectsApiUrl(organizationKey) + "/{0}", projectId);
+        }
+
+        internal string BuildUsersUrl(string organizationKey, string projectId)
+        {
+            return BuildProjectApiUrl(organizationKey, projectId) + "/users";
+        }
+    }
+}

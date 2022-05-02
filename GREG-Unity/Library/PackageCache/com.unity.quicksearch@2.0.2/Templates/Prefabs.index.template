@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e62080a15cd41b585d034d416bc9a2b39abd3317870f13fc6be31b711eb24252
-size 202
+{
+  "type": "prefab",
+  "roots": [],
+  "includes": [],
+  "excludes": [],
+  "options": {
+    "fstats": true,
+    "types": true,
+    "properties": true,
+    "dependencies": false
+  },
+  "baseScore": 150
+}

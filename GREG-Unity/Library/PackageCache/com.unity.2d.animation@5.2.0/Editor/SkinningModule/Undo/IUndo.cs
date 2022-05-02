@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38585c7d51759dc122b7d9bf5dd80b9bbd165961a2105c5616c366ad09728506
-size 456
+namespace UnityEditor.U2D.Animation
+{
+    internal interface IUndo
+    {
+        void RecordObject(object o, string name);
+        void RegisterCompleteObjectUndo(object o, string name);
+        void RegisterCompleteObjectUndo(object[] o, string name);
+        void RegisterCreatedObjectUndo(object o, string name);
+        void DestroyObjectImmediate(object o);
+        void ClearUndo(object o);
+        void IncrementCurrentGroup();
+    }
+}

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da60b03a199d1898a95095f2e12cab5531ac828a8ffc25ac49d3bb5f69bc4e2b
-size 964
+using UnityEngine.UIElements;
+
+namespace Unity.Cloud.Collaborate.Components
+{
+    internal abstract class PageComponent : VisualElement
+    {
+        /// <summary>
+        /// Current active status for this page.
+        /// </summary>
+        protected bool Active { get; private set; }
+
+        /// <summary>
+        /// Set active status of this page.
+        /// </summary>
+        /// <param name="active">True if the page is to be active.</param>
+        public void SetActive(bool active)
+        {
+            Active = active;
+            if (Active)
+            {
+                SetActive();
+            }
+            else
+            {
+                SetInactive();
+            }
+        }
+
+        /// <summary>
+        /// Set this page active.
+        /// </summary>
+        protected abstract void SetActive();
+
+        /// <summary>
+        /// Set this page inactive.
+        /// </summary>
+        protected abstract void SetInactive();
+    }
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58cad9617bb75ae3b9ad5fc3f6e497ecd6012be367f4884771f88695f57199d4
-size 726
+
+using System;
+using UnityEngine;
+
+namespace Unity.QuickSearch
+{
+    internal struct BlinkCursorScope : IDisposable
+    {
+        private bool changed;
+        private Color oldCursorColor;
+
+        public BlinkCursorScope(bool blink, Color blinkColor)
+        {
+            changed = false;
+            oldCursorColor = Color.white;
+            if (blink)
+            {
+                oldCursorColor = GUI.skin.settings.cursorColor;
+                GUI.skin.settings.cursorColor = blinkColor;
+                changed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            if (changed)
+            {
+                GUI.skin.settings.cursorColor = oldCursorColor;
+            }
+        }
+    }
+}

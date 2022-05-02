@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b8e59998634a6517b36335c8d9cd07ba81dd53634e41a225a22b564824de958
-size 346
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline
+{
+    interface ICurvesOwnerInspectorWrapper
+    {
+        ICurvesOwner curvesOwner { get; }
+        SerializedObject serializedPlayableAsset { get; }
+        int lastCurveVersion { get; set; }
+        double lastEvalTime { get; set; }
+
+        double ToLocalTime(double time);
+    }
+}

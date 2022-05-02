@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:542e665366fb0ffafb956d8f03468f295518a9201bd3ca5e9e68015bdd1a014f
-size 238
+.index-manager-variables {
+    /* 2020.2 variables */
+    --unity-colors-button-background: #E4E4E4;
+    --unity-colors-button-background-hover: #ECECEC;
+    /* **************** */
+    --unity-colors-button-background-checked: #1D5087;
+}

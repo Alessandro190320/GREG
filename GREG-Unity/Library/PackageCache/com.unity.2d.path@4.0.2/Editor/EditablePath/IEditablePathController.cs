@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d70516c7771305f14d95a3f88107340a829f9635fa45308d0b3b26e58a6e134e
-size 1029
+﻿using System;
+using UnityEngine;
+
+namespace UnityEditor.U2D.Path
+{
+    public interface IEditablePathController
+    {
+        IEditablePath editablePath { get; set; }
+        IEditablePath closestEditablePath { get; }
+        ISnapping<Vector3> snapping { get; set; }
+        bool enableSnapping { get; set; }
+        void RegisterUndo(string name);
+        void ClearSelection();
+        void SelectPoint(int index, bool select);
+        void CreatePoint(int index, Vector3 position);
+        void RemoveSelectedPoints();
+        void MoveSelectedPoints(Vector3 delta);
+        void MoveEdge(int index, Vector3 delta);
+        void SetLeftTangent(int index, Vector3 position, bool setToLinear, bool mirror, Vector3 cachedRightTangent, TangentMode cachedTangentMode);
+        void SetRightTangent(int index, Vector3 position, bool setToLinear, bool mirror, Vector3 cachedLeftTangent, TangentMode cachedTangentMode);
+        void ClearClosestPath();
+        void AddClosestPath(float distance);
+    }
+}

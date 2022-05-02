@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8cf3aae118d5da633564e291331ca10a3f3dcfa0eaf9831fa6e59b125211992
-size 1326
+namespace UnityEditor.Timeline
+{
+    class TimelineInactiveMode : TimelineMode
+    {
+        public TimelineInactiveMode()
+        {
+            headerState = new HeaderState
+            {
+                breadCrumb = TimelineModeGUIState.Disabled,
+                options = TimelineModeGUIState.Enabled,
+                sequenceSelector = TimelineModeGUIState.Enabled
+            };
+
+            trackOptionsState = new TrackOptionsState
+            {
+                newButton = TimelineModeGUIState.Disabled,
+                editAsAssetButton = TimelineModeGUIState.Enabled
+            };
+            mode = TimelineModes.Inactive;
+        }
+
+        public override bool ShouldShowPlayRange(WindowState state)
+        {
+            return false;
+        }
+
+        public override bool ShouldShowTimeCursor(WindowState state)
+        {
+            return false;
+        }
+
+        public override TimelineModeGUIState ToolbarState(WindowState state)
+        {
+            return TimelineModeGUIState.Disabled;
+        }
+
+        public override TimelineModeGUIState TrackState(WindowState state)
+        {
+            return TimelineModeGUIState.Disabled;
+        }
+
+        public override TimelineModeGUIState PreviewState(WindowState state)
+        {
+            return TimelineModeGUIState.Disabled;
+        }
+    }
+}

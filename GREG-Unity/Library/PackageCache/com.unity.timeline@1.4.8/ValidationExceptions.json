@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f8aab5fbc4497f55bf2004ffaea160cddd323e0a8aec296e6fa1d23b0b699998
-size 146
+{
+    "ErrorExceptions":
+    [
+        {
+             "ValidationTest": "API Validation",
+             "PackageVersion": "1.4.8"
+        }
+    ]
+}

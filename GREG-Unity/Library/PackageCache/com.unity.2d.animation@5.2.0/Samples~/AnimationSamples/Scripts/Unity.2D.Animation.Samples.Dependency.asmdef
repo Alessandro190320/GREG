@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d9ce1dd1e4f589fed621b68811566c2c970636b1422ff6dd1377d6b671031ea
-size 515
+{
+    "name": "Unity.2D.Animation.Samples.Dependency",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.2d.psdimporter",
+            "expression": "0.0.1",
+            "define": "PSDIMPORTER_ENABLED"
+        }
+    ],
+    "noEngineReferences": false
+}

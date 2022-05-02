@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55f118276df510865927990dbf90a8a4654efaf152f434357e2c82057907e231
-size 353
+# Add team members
+
+To invite team members to contribute to your project:
+
+
+1. Click the settings menu (gear icon) and click Invite Members to Workspace.
+
+![Invite members to project](images/InviteMembers.png)
+
+2. In the Plastic SCM cloud dashboard, click Add new user. 
+
+You can also send invitations and add different permission types for each user.
+

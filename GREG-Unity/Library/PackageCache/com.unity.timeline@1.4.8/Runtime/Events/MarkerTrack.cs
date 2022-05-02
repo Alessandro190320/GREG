@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d87f50c65c7ea9b9b6306f3468d2b0507858a0f26a2484b8022b891ebf2ecc3
-size 723
+using System;
+using System.Collections.Generic;
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    /// <summary>
+    /// Use this track to add Markers bound to a GameObject.
+    /// </summary>
+    [Serializable]
+    [TrackBindingType(typeof(GameObject))]
+    [HideInMenu]
+    [ExcludeFromPreset]
+    public class MarkerTrack : TrackAsset
+    {
+        /// <inheritdoc/>
+        public override IEnumerable<PlayableBinding> outputs
+        {
+            get
+            {
+                return this == timelineAsset.markerTrack ?
+                    new List<PlayableBinding> {ScriptPlayableBinding.Create(name, null, typeof(GameObject))} :
+                    base.outputs;
+            }
+        }
+    }
+}

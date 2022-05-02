@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:370a3064895048f88a667a5b09d0d254eb09f314030682a539d1f03a1c33fed5
-size 1310
+using System;
+using JetBrains.Annotations;
+using UnityEditorInternal;
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace UnityEditor.Timeline.Signals
+{
+    [CustomPropertyDrawer(typeof(CustomSignalEventDrawer))]
+    [UsedImplicitly]
+    class SignalEventDrawer : UnityEventDrawer
+    {
+        static GameObject FindBoundObject(SerializedProperty property)
+        {
+            var component = property.serializedObject.targetObject as Component;
+            return component != null ? component.gameObject : null;
+        }
+
+        protected override void OnAddEvent(ReorderableList list)
+        {
+            base.OnAddEvent(list);
+            var listProperty = list.serializedProperty;
+            if (listProperty.arraySize > 0)
+            {
+                var lastCall = list.serializedProperty.GetArrayElementAtIndex(listProperty.arraySize - 1);
+                var targetProperty = lastCall.FindPropertyRelative(kInstancePath);
+                targetProperty.objectReferenceValue = FindBoundObject(listProperty);
+            }
+        }
+
+        protected override void DrawEventHeader(Rect headerRect) {}
+
+        protected override void SetupReorderableList(ReorderableList list)
+        {
+            base.SetupReorderableList(list);
+            list.headerHeight = 4;
+        }
+    }
+}

@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8df8a733b7e18e98cce7e9344eeae1eb9faa26ad3253571ef3c87f2ee896ff8
-size 1041
+﻿using Codice.Client.Commands.WkTree;
+using Codice.CM.Common;
+
+namespace Unity.PlasticSCM.Tests.Editor.Mock
+{
+    internal static class BuildWorkspaceTreeNode
+    {
+        internal static WorkspaceTreeNode Controlled()
+        {
+            return new WorkspaceTreeNode()
+            {
+                RevInfo = new RevisionInfo()
+                {
+                    ParentId = 156,
+                }
+            };
+        }
+
+        internal static WorkspaceTreeNode CheckedOut()
+        {
+            return new WorkspaceTreeNode()
+            {
+                RevInfo = new RevisionInfo()
+                {
+                    CheckedOut = true,
+                    ParentId = 156,
+                }
+            };
+        }
+
+        internal static WorkspaceTreeNode Added()
+        {
+            return new WorkspaceTreeNode()
+            {
+                RevInfo = new RevisionInfo()
+                {
+                    CheckedOut = true,
+                    ParentId = -1,
+                }
+            };
+        }
+    }
+}

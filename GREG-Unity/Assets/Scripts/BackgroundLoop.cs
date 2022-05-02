@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0540030b9ba9a4ef50234fe25fc7eedd057c291a80729006e9c91b1e0e861ecb
-size 459
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BackgroundLoop : MonoBehaviour
+{
+    float velocity = -2;
+    float startPosition = 13.50f;
+    float endPosition = -13.75f;
+
+    void Update()
+    {
+        transform.position += new Vector3(velocity * Time.deltaTime, 0);
+
+        if (transform.position.x < endPosition)
+            transform.position = new Vector3(startPosition, transform.position.y, 0);
+    }
+}

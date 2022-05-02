@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44f6ceece207b8716a5a75ca5196e788dbbb2b3ad37c460b7012e9df6354db9f
-size 502
+using System;
+using UnityEngine;
+
+namespace UnityEngine.Timeline
+{
+    internal abstract class RuntimeClipBase : RuntimeElement
+    {
+        public abstract double start { get; }
+        public abstract double duration { get; }
+
+        public override Int64 intervalStart
+        {
+            get { return DiscreteTime.GetNearestTick(start); }
+        }
+
+        public override Int64 intervalEnd
+        {
+            get { return DiscreteTime.GetNearestTick(start + duration); }
+        }
+    }
+}

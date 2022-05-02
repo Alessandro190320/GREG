@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34389fb1b62d6d58e80bc71b8e4ad65d848c6be31582066eb345cfb3d11d20dd
-size 1046
+﻿using NUnit.Framework;
+
+using UnityEngine;
+using UnityEngine.Profiling;
+
+using Unity.PlasticSCM.Editor.UI;
+
+namespace Unity.PlasticSCM.Tests.Editor.UI
+{
+    [TestFixture]
+    internal class TextureLoadTests
+    {
+        // NOTE(rafa): thes are no real test just use cases to verify in the profiler what happens when load more than once the same texture.
+
+        [Test]
+        public void OneLoad_Reference()
+        {
+            Profiler.BeginSample("TextureLoadTest - One load");
+
+            var icon = Images.GetImage(Images.Name.IconPlastic);
+
+            Profiler.EndSample();
+
+            Assert.NotNull(icon);
+        }
+
+        [Test]
+        public void OneHundredLoads_Reference()
+        {
+            var icons = new Texture[100];
+
+            Profiler.BeginSample("TextureLoadTest - One hundred loads");
+
+            for (int i = 0; i < 100; i++)
+                icons[i] = Images.GetImage(Images.Name.IconPlastic);
+
+            Profiler.EndSample();
+
+            CollectionAssert.AllItemsAreNotNull(icons);
+        }
+    }
+}

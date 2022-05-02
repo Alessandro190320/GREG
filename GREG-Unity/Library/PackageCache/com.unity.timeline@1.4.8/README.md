@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cb499e08510d8afc294ad0fa7b997363225d7d83929caee8097d63e121b5f5e9
-size 839
+![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.timeline/release-badge.svg)
+![ReleaseBadge](https://badges.cds.internal.unity3d.com/packages/com.unity.timeline/candidates-badge.svg)
+
+# About Timeline
+
+Use Unity’s Timeline to create cinematic content, game-play sequences, audio sequences, and complex particle effects.
+
+# Installing Timeline
+
+To install this package, follow the instructions in the [Package Manager documentation](https://docs.unity3d.com/Packages/com.unity.package-manager-ui@latest/index.html).
+
+# Using Timeline
+
+The Timeline Manual can be found [here](http://docs.hq.unity3d.com/2018.1/Documentation/Manual/TimelineSection.html)
+
+# Technical details
+## Requirements
+
+This version of Timeline is compatible with the following versions of the Unity Editor:
+
+* 2019.3 and later (recommended)

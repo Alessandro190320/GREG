@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0013ef64233e4adf01e444ef5d684cecb3711c5671a9ea1215577227932d131b
-size 452
+using System;
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    abstract class RuntimeElement : IInterval
+    {
+        public abstract Int64 intervalStart { get; }
+        public abstract Int64 intervalEnd { get; }
+        public int intervalBit { get; set; }
+
+        public abstract bool enable { set; }
+        public abstract void EvaluateAt(double localTime, FrameData frameData);
+
+        public virtual void Reset() {}
+    }
+}

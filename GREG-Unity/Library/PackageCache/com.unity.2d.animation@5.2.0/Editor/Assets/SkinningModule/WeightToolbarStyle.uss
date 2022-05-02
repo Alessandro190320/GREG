@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b081a88fd0e2e827266c3942d7618707430684d4cae5385904fe9f0f7f284b9c
-size 1223
+#AutoGenerateWeightImage {
+    background-image: url("Icons/Light/Generate_Weights.png");
+}
+
+
+#WeightPainterSliderImage {
+    background-image: url("Icons/Light/Weight_Slider.png");
+}
+
+#WeightPainterBrushImage {
+    background-image: url("Icons/Light/Weight_Brush.png");
+}
+
+#BoneInfluenceWidgetImage {
+    background-image: url("Icons/Light/Bone_Influence.png");
+}
+
+.Checked #AutoGenerateWeightImage {
+    background-image: url("Icons/Selected/Generate_Weights.png");
+}
+
+
+.Checked #WeightPainterSliderImage {
+    background-image: url("Icons/Selected/Weight_Slider.png");
+}
+
+.Checked #WeightPainterBrushImage {
+    background-image: url("Icons/Selected/Weight_Brush.png");
+}
+
+.Checked #BoneInfluenceWidgetImage {
+    background-image: url("Icons/Selected/Bone_Influence.png");
+}
+
+.Dark #AutoGenerateWeightImage {
+    background-image: url("Icons/Dark/d_Generate_Weights.png");
+}
+
+
+.Dark #WeightPainterSliderImage {
+    background-image: url("Icons/Dark/d_Weight_Slider.png");
+}
+
+.Dark #WeightPainterBrushImage {
+    background-image: url("Icons/Dark/d_Weight_Brush.png");
+}
+
+.Dark #BoneInfluenceWidgetImage {
+    background-image: url("Icons/Dark/d_Bone_Influence.png");
+}

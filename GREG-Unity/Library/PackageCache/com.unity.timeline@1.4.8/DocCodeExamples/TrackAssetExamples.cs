@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a137619bb7c2a414ac2d0748037a70d0947ff583dfa8f881b764de619e59a1a4
-size 370
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace DocCodeExamples
+{
+    class TrackAssetExamples_HideAPI
+    {
+        #region declare-trackAssetExample
+
+        [TrackColor(1, 0, 0)]
+        [TrackBindingType(typeof(Animator))]
+        [TrackClipType(typeof(AnimationClip))]
+        public class CustomAnimationTrack : TrackAsset {}
+
+        #endregion
+    }
+}

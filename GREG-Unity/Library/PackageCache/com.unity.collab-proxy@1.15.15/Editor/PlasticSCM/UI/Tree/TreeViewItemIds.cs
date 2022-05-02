@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce60f7f1f55b89faf3f3f8a0b0d21b653c6e4a3a711c31d140f0070bda2e9924
-size 1506
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace Unity.PlasticSCM.Editor.UI.Tree
+{
+    internal class TreeViewItemIds<C, I>
+    {
+        internal void Clear()
+        {
+            mCacheByCategories.Clear();
+            mCacheByInfo.Clear();
+        }
+
+        internal List<int> GetCategoryIds()
+        {
+            return new List<int>(mCacheByCategories.Values);
+        }
+
+        internal List<KeyValuePair<I, int>> GetInfoItems()
+        {
+            return mCacheByInfo.ToList();
+        }
+
+        internal bool TryGetCategoryItemId(C category, out int itemId)
+        {
+            return mCacheByCategories.TryGetValue(category, out itemId);
+        }
+
+        internal bool TryGetInfoItemId(I info, out int itemId)
+        {
+            return mCacheByInfo.TryGetValue(info, out itemId);
+        }
+
+        internal int AddCategoryItem(C category)
+        {
+            int itemId = GetNextItemId();
+
+            mCacheByCategories.Add(category, itemId);
+
+            return itemId;
+        }
+
+        internal int AddInfoItem(I info)
+        {
+            int itemId = GetNextItemId();
+
+            mCacheByInfo.Add(info, itemId);
+
+            return itemId;
+        }
+
+        int GetNextItemId()
+        {
+            return mCacheByCategories.Count
+                + mCacheByInfo.Count
+                + 1;
+        }
+
+        Dictionary<C, int> mCacheByCategories = new Dictionary<C, int>();
+        Dictionary<I, int> mCacheByInfo = new Dictionary<I, int>();
+    }
+}

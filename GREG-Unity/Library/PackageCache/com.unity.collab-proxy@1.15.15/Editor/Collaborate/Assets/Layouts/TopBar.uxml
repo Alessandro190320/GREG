@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:842ed5d04e64aa285db184b7a6eb9f885ec022355787d89542d59388500332b0
-size 552
+<UXML xmlns="UnityEngine.UIElements" xmlns:collab="Unity.Cloud.Collaborate.Components">
+    <VisualElement class="top-bar__container row">
+        <VisualElement class="top-bar__back row">
+            <collab:IconButton class="top-bar__back-button btn-back" />
+            <TextElement class="top-bar__back-text" />
+        </VisualElement>
+        <VisualElement class="top-bar__icon" />
+        <TextElement class="top-bar__branch-info grow" />
+        <collab:IconButton class="top-bar__overflow-button btn-overflow" />
+    </VisualElement>
+</UXML>

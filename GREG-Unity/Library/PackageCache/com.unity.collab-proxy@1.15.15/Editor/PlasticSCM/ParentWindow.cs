@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75aab0a9236d18438fe1599ae991464068785f9bdb820074a5a0a7af32629e2d
-size 359
+using UnityEditor;
+
+namespace Unity.PlasticSCM.Editor
+{
+    internal class ParentWindow
+    {
+        internal static EditorWindow Get()
+        {
+            if (EditorWindow.HasOpenInstances<PlasticWindow>())
+                return EditorWindow.GetWindow<PlasticWindow>(false, null, false);
+
+            return EditorWindow.focusedWindow;
+        }
+    }
+}

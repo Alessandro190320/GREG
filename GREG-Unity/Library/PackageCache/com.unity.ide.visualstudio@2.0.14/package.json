@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a1fbb47a83cf9268cb6d0cebf19e61e5b2c561cc4fb452aaaf9a91d8ceb24f8
-size 771
+{
+  "name": "com.unity.ide.visualstudio",
+  "displayName": "Visual Studio Editor",
+  "description": "Code editor integration for supporting Visual Studio as code editor for unity. Adds support for generating csproj files for intellisense purposes, auto discovery of installations, etc.",
+  "version": "2.0.14",
+  "unity": "2019.4",
+  "unityRelease": "25f1",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.9"
+  },
+  "relatedPackages": {
+    "com.unity.ide.visualstudio.tests": "2.0.14"
+  },
+  "upmCi": {
+    "footprint": "8aa1049966a0586c636698ec81d764940b1dbe44"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git",
+    "type": "git",
+    "revision": "f1e8af5df9e2507088a8622d173c9a7d5a03a882"
+  }
+}

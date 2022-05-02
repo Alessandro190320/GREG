@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:832f83c9a299d1e66b1ea24a17177e3e5e722c5ce921702d30d79dde317afbbd
-size 297
+# Adding keys
+
+The Curves view provides the following methods for adding keys:
+
+* Right-click on an animation curve and select **Add Key**. This method adds a key at the location of the right-click.
+* Double-click on an animation curve. This method adds a key at the location of the Double-click.

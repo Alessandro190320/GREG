@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70a62eafbc0e8fc24fab0c17c464674d81f02bec1248e68876bc126720e9d58d
-size 717
+using System.Linq;
+
+namespace UnityEngine.UI
+{
+    [AddComponentMenu("UI/Effects/Position As UV1", 16)]
+    /// <summary>
+    /// An IVertexModifier which sets the raw vertex position into UV1 of the generated verts.
+    /// </summary>
+    public class PositionAsUV1 : BaseMeshEffect
+    {
+        protected PositionAsUV1()
+        {}
+
+        public override void ModifyMesh(VertexHelper vh)
+        {
+            UIVertex vert = new UIVertex();
+            for (int i = 0; i < vh.currentVertCount; i++)
+            {
+                vh.PopulateUIVertex(ref vert, i);
+                vert.uv1 =  new Vector2(vert.position.x, vert.position.y);
+                vh.SetUIVertex(vert, i);
+            }
+        }
+    }
+}

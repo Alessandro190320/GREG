@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71f6275a6ea6d96a5b8016019b845ec7a5b1a44d198c7888d397a1440ec1624b
-size 1443
+using Unity.Plastic.Newtonsoft.Json;
+
+using PlasticGui.WebApi.Responses;
+
+namespace Unity.PlasticSCM.Editor.WebApi
+{
+    /// <summary>
+    /// Response to credentials request.
+    /// </summary>
+    public class CredentialsResponse
+    {
+        /// <summary>
+        /// Error caused by the request.
+        /// </summary>
+        [JsonProperty("error")]
+        public ErrorResponse.ErrorFields Error { get; set; }
+
+        /// <summary>
+        /// Type of the token.
+        /// </summary>
+        public enum TokenType : int
+        {
+            /// <summary>
+            /// Password token.
+            /// </summary>
+            Password = 0,
+
+            /// <summary>
+            /// Bearer token.
+            /// </summary>
+            Bearer = 1,
+        }
+
+        /// <summary>
+        /// Get the type of the token.
+        /// </summary>
+        [JsonIgnore]
+        public TokenType Type
+        {
+            get { return (TokenType)TokenTypeValue; }
+        }
+
+        /// <summary>
+        /// The user's email.
+        /// </summary>
+        [JsonProperty("email")]
+        public string Email;
+
+        /// <summary>
+        /// The credential's token.
+        /// </summary>
+        [JsonProperty("token")]
+        public string Token;
+
+        /// <summary>
+        /// The token type represented as an integer.
+        /// </summary>
+        [JsonProperty("tokenTypeValue")]
+        public int TokenTypeValue;
+    }
+}

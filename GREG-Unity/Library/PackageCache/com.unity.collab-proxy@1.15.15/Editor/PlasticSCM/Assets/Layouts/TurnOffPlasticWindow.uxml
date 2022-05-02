@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63f0a0775bc932fcdf94fa84ebe1d48e00de607e7268f457da5c93804ff29275
-size 205
+﻿<UXML xmlns="UnityEngine.UIElements">
+<VisualElement class="parent-container">
+	<Label name="turnoff-label" />
+	<Button name="turnoff-button" />
+	<Label name="progress-label" />
+</VisualElement>
+</UXML>

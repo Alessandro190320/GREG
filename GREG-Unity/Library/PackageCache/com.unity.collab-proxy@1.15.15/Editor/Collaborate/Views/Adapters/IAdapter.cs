@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afc40e2dbb44b3ba1d634b7c68d5ada28ca94acabc7601c9ce80cec485ed41e9
-size 421
+using System;
+using UnityEngine.UIElements;
+
+namespace Unity.Cloud.Collaborate.Views.Adapters {
+    internal interface IAdapter
+    {
+        int Height { get; }
+
+        Func<VisualElement> MakeItem { get; }
+
+        Action<VisualElement, int> BindItem { get; }
+
+        int GetEntryCount();
+
+        void RegisterObserver(IAdapterObserver observer);
+
+        void DeregisterObserver(IAdapterObserver observer);
+    }
+}

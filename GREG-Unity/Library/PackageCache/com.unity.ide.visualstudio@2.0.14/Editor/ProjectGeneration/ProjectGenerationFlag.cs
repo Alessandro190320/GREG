@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4863900de92ca94057961a4b7a38040a60af8cd19743b9c30874ade43267ec47
-size 655
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Unity Technologies.
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+using System;
+
+namespace Microsoft.Unity.VisualStudio.Editor
+{
+	[Flags]
+	public enum ProjectGenerationFlag
+	{
+		None = 0,
+		Embedded = 1,
+		Local = 2,
+		Registry = 4,
+		Git = 8,
+		BuiltIn = 16,
+		Unknown = 32,
+		PlayerAssemblies = 64,
+		LocalTarBall = 128,
+	}
+}

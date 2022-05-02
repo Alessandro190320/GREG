@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d03deac5968e72d104c261bd9a5d638ffcc1ff0d7d2f6ef7fed69d6e6371444
-size 197
+.unity-text-element.link-button {
+    color:#074492; /*from light.uss --unity-active-text-color*/
+}
+
+.separator {
+    background-color:#8F8F8F; /*from light.uss --theme-slider-background-color*/
+}

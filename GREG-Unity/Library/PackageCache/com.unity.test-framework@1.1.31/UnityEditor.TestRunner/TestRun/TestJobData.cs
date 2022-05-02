@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aaff83439481c25675d3ea605e5bded8ffc08df3259adb6bd994f32b43ce516
-size 1277
+using System;
+using NUnit.Framework.Interfaces;
+using UnityEditor.TestTools.TestRunner.Api;
+using UnityEngine;
+
+namespace UnityEditor.TestTools.TestRunner.TestRun
+{
+    [Serializable]
+    internal class TestJobData
+    {
+        [SerializeField] 
+        public string guid;
+        
+        [SerializeField]
+        public string startTime;
+        
+        [SerializeField] 
+        public int taskIndex;
+
+        [SerializeField] 
+        public int taskPC;
+
+        [SerializeField] 
+        public bool isRunning;
+        
+        [SerializeField]
+        public ExecutionSettings executionSettings;
+        
+        [SerializeField]
+        public string[] existingFiles;
+
+        [SerializeField] 
+        public int undoGroup = -1;
+
+        [SerializeField] 
+        public EditModeRunner editModeRunner;
+
+        [NonSerialized] 
+        public bool isHandledByRunner;
+        
+        public ITest testTree;
+
+        public TestJobData(ExecutionSettings settings)
+        {
+            guid = Guid.NewGuid().ToString();
+            executionSettings = settings;
+            isRunning = false;
+            taskIndex = 0;
+            taskPC = 0;
+            startTime = DateTime.Now.ToString("o");
+        }
+    }
+}

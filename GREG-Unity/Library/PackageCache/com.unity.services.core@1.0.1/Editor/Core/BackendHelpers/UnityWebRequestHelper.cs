@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ccc2834eb438df8f31be4c55990dac322c6865477e5d3ca37ab86c1e50684f9
-size 909
+using UnityEngine;
+using UnityEngine.Networking;
+
+namespace Unity.Services.Core.Editor
+{
+    static class UnityWebRequestHelper
+    {
+            internal static bool IsUnityWebRequestReadyForTextExtract(UnityWebRequest unityWebRequest, out string downloadHandlerText)
+            {
+#if UNITY_2020_1_OR_NEWER
+                var result = unityWebRequest != null && unityWebRequest.result == UnityWebRequest.Result.Success;
+#else
+                var result = unityWebRequest != null &&
+                    !unityWebRequest.isHttpError &&
+                    !unityWebRequest.isNetworkError;
+#endif
+                if (result)
+                {
+                    downloadHandlerText = unityWebRequest.downloadHandler?.text;
+                    return !string.IsNullOrEmpty(downloadHandlerText);
+                }
+                downloadHandlerText = null;
+                return false;
+            }
+    }
+}

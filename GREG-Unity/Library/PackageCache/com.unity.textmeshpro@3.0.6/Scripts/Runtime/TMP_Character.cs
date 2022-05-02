@@ -1,3 +1,70 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:238a4ee040c542469ce3f9ba24b156d2caae463923d230af65e439677082de03
-size 2069
+﻿using System;
+using UnityEngine.TextCore;
+
+namespace TMPro
+{
+    /// <summary>
+    /// A basic element of text.
+    /// </summary>
+    [Serializable]
+    public class TMP_Character : TMP_TextElement
+    {
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
+        public TMP_Character()
+        {
+            m_ElementType = TextElementType.Character;
+            this.scale = 1.0f;
+        }
+
+        /// <summary>
+        /// Constructor for new character
+        /// </summary>
+        /// <param name="unicode">Unicode value.</param>
+        /// <param name="glyph">Glyph</param>
+        public TMP_Character(uint unicode, Glyph glyph)
+        {
+            m_ElementType = TextElementType.Character;
+
+            this.unicode = unicode;
+            this.textAsset = null;
+            this.glyph = glyph;
+            this.glyphIndex = glyph.index;
+            this.scale = 1.0f;
+        }
+
+        /// <summary>
+        /// Constructor for new character
+        /// </summary>
+        /// <param name="unicode">Unicode value.</param>
+        /// <param name="fontAsset">The font asset to which this character belongs.</param>
+        /// <param name="glyph">Glyph</param>
+        public TMP_Character(uint unicode, TMP_FontAsset fontAsset, Glyph glyph)
+        {
+            m_ElementType = TextElementType.Character;
+
+            this.unicode = unicode;
+            this.textAsset = fontAsset;
+            this.glyph = glyph;
+            this.glyphIndex = glyph.index;
+            this.scale = 1.0f;
+        }
+
+        /// <summary>
+        /// Constructor for new character
+        /// </summary>
+        /// <param name="unicode">Unicode value.</param>
+        /// <param name="glyphIndex">Glyph index.</param>
+        internal TMP_Character(uint unicode, uint glyphIndex)
+        {
+            m_ElementType = TextElementType.Character;
+
+            this.unicode = unicode;
+            this.textAsset = null;
+            this.glyph = null;
+            this.glyphIndex = glyphIndex;
+            this.scale = 1.0f;
+        }
+    }
+}

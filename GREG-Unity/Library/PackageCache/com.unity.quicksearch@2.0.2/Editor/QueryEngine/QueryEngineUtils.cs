@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b205603d88aae11eccf2b061b322681bb8e3b2cd880885ced7a4959e5dd928ec
-size 978
+
+using System.Collections.Generic;
+
+namespace Unity.QuickSearch
+{
+    static class QueryEngineUtils
+    {
+        static readonly HashSet<char> k_WhiteSpaceChars = new HashSet<char>(" \f\n\r\t\v");
+
+        public static bool IsPhraseToken(string token)
+        {
+            if (token.Length < 2)
+                return false;
+            var startIndex = token[0] == '!' ? 1 : 0;
+            var endIndex = token.Length - 1;
+            return token[startIndex] == '"' && token[endIndex] == '"';
+        }
+
+        public static bool IsNestedQueryToken(string token)
+        {
+            if (token.Length < 2)
+                return false;
+            var startIndex = token.IndexOf('{');
+            var endIndex = token.LastIndexOf('}');
+            return startIndex != -1 && endIndex == token.Length - 1 && startIndex < endIndex;
+        }
+
+        public static bool IsWhiteSpaceChar(char c)
+        {
+            return k_WhiteSpaceChars.Contains(c);
+        }
+    }
+}

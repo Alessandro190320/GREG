@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a71b4ba36044fa2afdeb92f014b0d4754c4e03a0a449a0d21bd0da6b0ad90e62
-size 729
+using System;
+using System.Collections.Generic;
+using System.Security.Policy;
+using UnityEngine;
+
+namespace Unity.Services.Core.Editor
+{
+    /// <summary>
+    /// A container to store all available <see cref="IEditorGameService"/>
+    /// </summary>
+    public interface IEditorGameServiceRegistry
+    {
+        /// <summary>
+        /// Method to get a service with a specific identifier
+        /// </summary>
+        /// <typeparam name="T">The type of <see cref="IEditorGameServiceIdentifier"/> to use when getting</typeparam>
+        /// <returns>The <see cref="IEditorGameService"/>you are trying to get</returns>
+        IEditorGameService GetEditorGameService<T>() where T : struct, IEditorGameServiceIdentifier;
+    }
+}

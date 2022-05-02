@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81bade9c961eb3d69bd2edc572d2f88da23bb9bb29e43e897afc8976316b1c4c
-size 497
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    enum TrimEdge
+    {
+        Start,
+        End
+    }
+
+    interface ITrimItemMode
+    {
+        void OnBeforeTrim(ITrimmable item, TrimEdge trimDirection);
+
+        void TrimStart(ITrimmable item, double time, bool affectTimeScale);
+        void TrimEnd(ITrimmable item, double time, bool affectTimeScale);
+    }
+
+    interface ITrimItemDrawer
+    {
+        void DrawGUI(WindowState state, Rect bounds, Color color, TrimEdge edge);
+    }
+}

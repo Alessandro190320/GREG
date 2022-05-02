@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0292b441e75763a03a03bd6465e4f1d87a1a6e9f6598b17ca96e7e285eccc2c
-size 655
+namespace Unity.Services.Core.Editor
+{
+    /// <summary>
+    /// Contract for objects containing all settings to customize the behaviour of a HTTP request sending.
+    /// </summary>
+    /// <remarks>
+    /// More options will be added based on common needs.
+    /// </remarks>
+    struct HttpOptions
+    {
+        /// <summary>
+        /// Delay, in seconds, after which the request will be considered a failure.
+        /// </summary>
+        public int RequestTimeoutInSeconds;
+
+        /// <summary>
+        /// Indicates the number of redirects the request can follow without failing.
+        /// </summary>
+        public int RedirectLimit;
+    }
+}

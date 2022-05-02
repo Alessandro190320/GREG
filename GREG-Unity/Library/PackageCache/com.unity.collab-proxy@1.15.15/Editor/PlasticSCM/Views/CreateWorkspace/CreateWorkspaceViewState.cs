@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2043493f302cea9d9756146a11e907c67b3ad54d050f7011fac041a0e5ed1400
-size 989
+﻿using System.IO;
+
+using UnityEngine;
+
+using Unity.PlasticSCM.Editor.UI.Progress;
+
+namespace Unity.PlasticSCM.Editor.Views.CreateWorkspace
+{
+    internal class CreateWorkspaceViewState
+    {
+        internal enum WorkspaceModes
+        {
+            Developer,
+            Gluon
+        }
+
+        internal string RepositoryName { get; set; }
+        internal string WorkspaceName { get; set; }
+        internal WorkspaceModes WorkspaceMode { get; set; }
+        internal ProgressControlsForViews.Data ProgressData { get; set; }
+
+        internal static CreateWorkspaceViewState BuildForProjectDefaults()
+        {
+            string projectName = Application.productName;
+
+            return new CreateWorkspaceViewState()
+            {
+                RepositoryName = projectName,
+                WorkspaceName = projectName,
+                WorkspaceMode = WorkspaceModes.Developer,
+                ProgressData = new ProgressControlsForViews.Data()
+            };
+        }
+    }
+}

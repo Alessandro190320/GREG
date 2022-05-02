@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:466caa1a0e0410c5e5c1d8e64b92c0d0f1ecbb0f7e55e466b223adc83d368921
-size 165
+{
+    "displayName": "Pixel Perfect Sample Scenes and Extras",
+    "description": "This sample contains examples and utilities for the Pixel Perfect package",
+}

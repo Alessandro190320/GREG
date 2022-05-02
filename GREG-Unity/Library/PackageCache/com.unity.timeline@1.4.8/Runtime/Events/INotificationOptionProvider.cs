@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:689ba7f70edb878fc80d32806f7592fbc0c916271c82e828792975f32252e561
-size 577
+namespace UnityEngine.Timeline
+{
+    /// <summary>
+    /// Implement this interface to change the behaviour of an INotification.
+    /// </summary>
+    /// This interface must be implemented along with <see cref="UnityEngine.Playables.INotification"/> to modify the default behaviour of a notification.
+    /// <seealso cref="UnityEngine.Timeline.NotificationFlags"/>
+    public interface INotificationOptionProvider
+    {
+        /// <summary>
+        /// The flags that change the triggering behaviour.
+        /// </summary>
+        NotificationFlags flags { get; }
+    }
+}

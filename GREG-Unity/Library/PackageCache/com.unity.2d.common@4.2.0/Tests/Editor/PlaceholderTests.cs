@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b6997fff900b4781c666e9be1649c6e2a2d991e83ab4eaafd0fab8ba787b95d
-size 358
+using NUnit.Framework;
+
+
+namespace UnityEditor.Experimental.U2D.Commons.Tests
+{
+    internal class Placeholder
+    {
+        [Test]
+        public void PlaceHolderTest()
+        {
+            // Use the Assert class to test conditions.
+            Assert.Pass("This is a placeholder to ensure we have at least one test.");
+        }
+    }
+
+}

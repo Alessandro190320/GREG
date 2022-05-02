@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:191ce744e79b07ca806ed06133941cfbd5742d57dc4067a7b2f68ad8b2f42636
-size 454
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <VisualElement class="content-body">
+        <Label text="You do not have the correct permissions to activate the installed services." calss="description"/>
+        <Label text ="Please contact a project owner or project manager to activate the service." class="description" />
+    </VisualElement>
+</ui:UXML>

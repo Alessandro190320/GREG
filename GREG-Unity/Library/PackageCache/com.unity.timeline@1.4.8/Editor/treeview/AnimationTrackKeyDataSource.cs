@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4e52c5c1c03e341f0e9d2df384f73361a50a8b9e373b3a76f7a6bcab12cd6d8
-size 714
+using UnityEngine;
+using UnityEngine.Timeline;
+
+// Data sources for key overlays
+namespace UnityEditor.Timeline
+{
+    // Used for key overlays manipulators
+    class AnimationTrackKeyDataSource : BasePropertyKeyDataSource
+    {
+        readonly float m_TrackOffset;
+
+        protected override AnimationClip animationClip { get; }
+
+        public AnimationTrackKeyDataSource(AnimationTrack track)
+        {
+            animationClip = track != null ? track.infiniteClip : null;
+            m_TrackOffset = track != null ? (float)track.infiniteClipTimeOffset : 0.0f;
+        }
+
+        protected override float TransformKeyTime(float keyTime)
+        {
+            return keyTime + m_TrackOffset;
+        }
+    }
+}

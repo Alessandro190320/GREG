@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca3631b432320c1a4357e87f8c810de2ddf2ff4b01bc63063ee85c1ebd76ab3f
-size 1013
+﻿using UnityEditor;
+
+using Codice.Client.Common.Encryption;
+using PlasticGui;
+using Unity.PlasticSCM.Editor.UI;
+
+namespace Unity.PlasticSCM.Editor.Configuration
+{
+    internal class MissingEncryptionPasswordPromptHandler :
+        ClientEncryptionServiceProvider.IEncryptioPasswordProvider
+    {
+        string ClientEncryptionServiceProvider.IEncryptioPasswordProvider
+            .GetEncryptionEncryptedPassword(string server)
+        {
+            string result = null;
+
+            GUIActionRunner.RunGUIAction(delegate
+            {
+                result = AskForEncryptionPassword(server);
+            });
+
+            return result;
+        }
+
+        string AskForEncryptionPassword(string server)
+        {
+            EncryptionConfigurationDialogData dialogData =
+                EncryptionConfigurationDialog.RequestEncryptionPassword(server, ParentWindow.Get());
+
+            if (!dialogData.Result)
+                return null;
+
+            return dialogData.EncryptedPassword;
+        }
+    }
+}

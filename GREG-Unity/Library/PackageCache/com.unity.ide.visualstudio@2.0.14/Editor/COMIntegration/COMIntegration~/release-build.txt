@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1af76acd3c2ab412d900d4b6431f73535bff397dfa2b815870d67fe925a3bc57
-size 94
+cl /EHsc /std:c++17 COMIntegration.cpp /link Shlwapi.lib /out:"..\Release\COMIntegration.exe"

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e947e2ad3c8efec62e1f158182ac95448363995669acb5ef55bd03ce7d9127f4
-size 763
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using TMPro;
+
+public class MainMenu : MonoBehaviour
+{
+    private Canvas canvas;
+
+    private void Awake()
+    {
+        canvas = this.GetComponent<Canvas>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null){
+            Destroy(player);
+        }
+
+    }
+
+    public void InsertName()
+    {
+        if (PlayerState.name == null || PlayerState.name == "")
+            SceneManager.LoadScene(1);
+        else
+            LevelSystem.current.ChangeScene(LevelSystem.baseBuildIndex);
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+}

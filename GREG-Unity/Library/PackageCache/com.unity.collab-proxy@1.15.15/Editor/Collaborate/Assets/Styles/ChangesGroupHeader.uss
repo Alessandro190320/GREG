@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46d83670d8d3951041041076c036f906d7ec712d951965e17d9b75cdf9ebb104
-size 342
+/* ChangesGroupHeader Styles */
+
+.changes-group-header__title-bar {
+    flex-direction: row;
+    margin: var(--half-standard-margin) 0;
+}
+
+.changes-group-header__name {
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    flex: 1 1 auto;
+    padding-left: 0;
+}
+
+.changes-group-header__overflow-button {
+    margin-right: 0;
+}

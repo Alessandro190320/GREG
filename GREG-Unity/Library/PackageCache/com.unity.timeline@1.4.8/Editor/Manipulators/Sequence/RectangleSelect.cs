@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bce96970f606b92fe057e8cdaae0f60c269f7402f66de4247246abe46ff2d49f
-size 1008
+using System.Linq;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    class RectangleSelect : RectangleTool
+    {
+        protected override bool enableAutoPan { get { return false; } }
+
+        protected override bool CanStartRectangle(Event evt, Vector2 mousePosition, WindowState state)
+        {
+            if (evt.button != 0 || evt.alt)
+                return false;
+
+            return PickerUtils.pickedElements.All(e => e is IRowGUI);
+        }
+
+        protected override bool OnFinish(Event evt, WindowState state, Rect rect)
+        {
+            var selectables = state.spacePartitioner.GetItemsInArea<ISelectable>(rect).ToList();
+
+            if (!selectables.Any())
+                return false;
+
+            if (ItemSelection.CanClearSelection(evt))
+                SelectionManager.Clear();
+
+            foreach (var selectable in selectables)
+            {
+                ItemSelection.HandleItemSelection(evt, selectable);
+            }
+
+            return true;
+        }
+    }
+}

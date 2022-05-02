@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5618d0260581115730c96f5bbcb1b013c14fda06d5975a716301cf79fecdbdfd
-size 1714
+namespace UnityEditor.Timeline
+{
+    class TimelineReadOnlyMode : TimelineMode
+    {
+        public TimelineReadOnlyMode()
+        {
+            headerState = new HeaderState()
+            {
+                breadCrumb = TimelineModeGUIState.Enabled,
+                options =  TimelineModeGUIState.Enabled,
+                sequenceSelector = TimelineModeGUIState.Enabled,
+            };
+
+            trackOptionsState = new TrackOptionsState()
+            {
+                newButton =  TimelineModeGUIState.Disabled,
+                editAsAssetButton = TimelineModeGUIState.Disabled,
+            };
+            mode = TimelineModes.ReadOnly;
+        }
+
+        public override bool ShouldShowPlayRange(WindowState state)
+        {
+            return state.editSequence.director != null && state.playRangeEnabled;
+        }
+
+        public override bool ShouldShowTimeCursor(WindowState state)
+        {
+            return state.editSequence.director != null;
+        }
+
+        public override TimelineModeGUIState TrackState(WindowState state)
+        {
+            return TimelineModeGUIState.Disabled;
+        }
+
+        public override TimelineModeGUIState ToolbarState(WindowState state)
+        {
+            return state.editSequence.director == null ? TimelineModeGUIState.Disabled : TimelineModeGUIState.Enabled;
+        }
+
+        public override TimelineModeGUIState PreviewState(WindowState state)
+        {
+            return state.editSequence.director == null ? TimelineModeGUIState.Disabled : TimelineModeGUIState.Enabled;
+        }
+
+        public override TimelineModeGUIState EditModeButtonsState(WindowState state)
+        {
+            return TimelineModeGUIState.Disabled;
+        }
+    }
+}

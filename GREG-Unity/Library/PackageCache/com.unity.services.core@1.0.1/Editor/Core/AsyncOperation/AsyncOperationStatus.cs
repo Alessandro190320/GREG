@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eabfb7be75aa3e3dca5de0eb459427ba6e5bbc3ea2389eb6659477f36ec9dd12
-size 750
+namespace Unity.Services.Core.Editor
+{
+    /// <summary>
+    /// All supported status of an <see cref="IAsyncOperation"/>.
+    /// </summary>
+    enum AsyncOperationStatus
+    {
+        /// <summary>
+        /// The operation status hasn't been defined yet.
+        /// </summary>
+        None,
+        /// <summary>
+        /// The operation is running.
+        /// </summary>
+        InProgress,
+        /// <summary>
+        /// The operation is completed without any errors.
+        /// </summary>
+        Succeeded,
+        /// <summary>
+        /// The operation is completed with errors.
+        /// </summary>
+        Failed,
+        /// <summary>
+        /// The operation has been canceled.
+        /// </summary>
+        Cancelled
+    }
+}

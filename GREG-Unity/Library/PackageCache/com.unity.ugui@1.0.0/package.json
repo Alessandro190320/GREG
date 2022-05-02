@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:455066c816cbf90753eb2e580f342b044aaec0cbcae799cf5053ae2e562b1755
-size 563
+{
+  "name": "com.unity.ugui",
+  "displayName": "Unity UI",
+  "version": "1.0.0",
+  "unity": "2019.2",
+  "keywords": ["UI", "ugui", "Unity UI", "Canvas"],
+  "description": "Unity UI is a UI toolkit for developing user interfaces for games and applications. It is a GameObject-based UI system that uses Components and the Game View to arrange, position, and style user interfaces. ​ You cannot use Unity UI to create or change user interfaces in the Unity Editor.",
+  "dependencies": {
+	"com.unity.modules.ui": "1.0.0",
+  "com.unity.modules.imgui":"1.0.0" 
+   }
+}

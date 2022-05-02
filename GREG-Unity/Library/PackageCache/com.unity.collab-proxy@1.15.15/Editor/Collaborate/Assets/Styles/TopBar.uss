@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9f698faf20dae0b1e5a81b843467b9fb78d4e488e3dd4146a9abb031c5fd90e
-size 737
+/* TopBar Styles */
+
+.top-bar {
+    flex: var(--fixed-size);
+}
+
+.top-bar__icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-right: var(--icon-standard-margin);
+}
+
+.top-bar__container,
+.top-bar__back {
+    align-items: center;
+}
+
+.top-bar__overflow-button {
+    margin-right: 0;
+}
+
+.top-bar__back-button {
+    margin-right: var(--icon-standard-margin);
+}
+
+.top-bar__back {
+    margin-right: var(--standard-margin);
+}
+
+.dark .top-bar__icon {
+    background-image: resource("Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/collaborate-dark.png");
+}
+
+.light .top-bar__icon {
+    background-image: resource("Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/collaborate-light.png");
+}

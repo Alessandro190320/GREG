@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94ac05e7cad102706225768f733ba5781e9fa45b33ad0d08fe36b782f0be25a6
-size 592
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="alert-box__container">
+        <VisualElement class="alert-box__content row">
+            <VisualElement class="alert-box__icon"/>
+
+            <VisualElement class="column grow">
+                <TextElement class="alert-box__text"/>
+                <VisualElement class="alert-box__button-box grow">
+                    <Button class="alert-box__button"/>
+                </VisualElement>
+            </VisualElement>
+        </VisualElement>
+
+        <VisualElement class="divider-horizontal" />
+    </VisualElement>
+</UXML>

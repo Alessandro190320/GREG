@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48c04527c7f9fd448846a46d467357d96effe0dc25cd0cbafbab7a064fe63653
-size 508
+﻿using UnityEditor;
+using Unity.PlasticSCM.Editor.UI;
+
+namespace Unity.PlasticSCM.Editor
+{
+    internal static class PlasticMenuItem
+    {
+        [MenuItem(MENU_ITEM_NAME, false)]
+        static void ShowPanel()
+        {
+            ShowWindow.Plastic();
+        }
+
+        [MenuItem(MENU_ITEM_NAME, true)]
+        static bool ValidateMenu()
+        {
+            return !CollabPlugin.IsEnabled();
+        }
+
+        const string MENU_ITEM_NAME = "Window/" + UnityConstants.PLASTIC_WINDOW_TITLE;
+    }
+}

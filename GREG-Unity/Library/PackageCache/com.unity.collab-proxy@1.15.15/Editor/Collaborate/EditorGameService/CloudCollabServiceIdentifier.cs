@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a19ae826e9dccac2c581260451a1bc87d208a0b8af24ffe0f34905cc96a8360a
-size 457
+using Unity.Services.Core.Editor;
+
+namespace Unity.Cloud.Collaborate.EditorGameService
+{
+    /// <summary>
+    /// Identifier for the Cloud Collab Service
+    /// </summary>
+    public struct CloudCollabServiceIdentifier : IEditorGameServiceIdentifier
+    {
+        /// <summary>
+        /// Get the Identifier key for Cloud Collab
+        /// </summary>
+        /// <returns>The Identifier key</returns>
+        public string GetKey() => "Collab";
+    }
+}

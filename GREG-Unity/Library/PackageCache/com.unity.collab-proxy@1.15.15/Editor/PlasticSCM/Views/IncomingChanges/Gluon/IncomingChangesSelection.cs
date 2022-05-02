@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a1914bf851a353d7138857a5bed134231447701fa6bd3e7519566eb72d1886f
-size 1104
+﻿using System.Collections.Generic;
+
+using PlasticGui.Gluon.WorkspaceWindow.Views.IncomingChanges;
+
+namespace Unity.PlasticSCM.Editor.Views.IncomingChanges.Gluon
+{
+    internal static class IncomingChangesSelection
+    {
+        internal static SelectedIncomingChangesGroupInfo GetSelectedGroupInfo(
+            IncomingChangesTreeView treeView)
+        {
+            List<IncomingChangeInfo> selectedIncomingChanges =
+                treeView.GetSelectedIncomingChanges();
+
+            return GetSelectedIncomingChangesGroupInfo.For(
+                selectedIncomingChanges);
+        }
+
+        internal static List<IncomingChangeInfo> GetSelectedFileConflictsIncludingMeta(
+            IncomingChangesTreeView treeView)
+        {
+            List<IncomingChangeInfo> result = treeView.GetSelectedFileConflicts();
+            treeView.FillWithMeta(result);
+            return result;
+        }
+
+        internal static IncomingChangeInfo GetSingleSelectedIncomingChange(
+            IncomingChangesTreeView treeView)
+        {
+            return treeView.GetSelectedIncomingChange();
+        }
+    }
+}

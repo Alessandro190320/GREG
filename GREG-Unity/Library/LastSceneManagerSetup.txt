@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a987ab52bb4689594201579afc659166693af6452e8500d3b2c1ac1d4ab66b01
-size 91
+sceneSetups:
+- path: Assets/Scenes/Piano_terra_liceo.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:547a5cf124445ecbb94871ee43e91e612aeff4aea8f29603d729cbcbb236e029
-size 869
+#if ENABLE_EDITOR_GAME_SERVICES
+using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine.UIElements;
+
+namespace Unity.Services.Core.Editor.ActivationPopup
+{
+    class LoggedOutVisual : IActivationPopupVisual
+    {
+        public event Action Done;
+
+        public void Init(VisualElement parentVisual, IEnumerable<IEditorGameService> services, VisualElement buttonsContainer = null)
+        {
+            LoggedOutUiHelper.AddLoggedOutUI(parentVisual);
+
+            CloudProjectSettingsEventManager.instance.projectStateChanged += OnProjectStateChanged;
+        }
+
+        void OnProjectStateChanged()
+        {
+            Done?.Invoke();
+        }
+
+        public void Dispose()
+        {
+            Done = null;
+            CloudProjectSettingsEventManager.instance.projectStateChanged -= OnProjectStateChanged;
+        }
+    }
+}
+#endif

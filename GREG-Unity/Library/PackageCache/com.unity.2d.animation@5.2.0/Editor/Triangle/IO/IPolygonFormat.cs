@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aded67ba5802f5f1c5f77188678a381e185ce9bc6fb48c20897221784bacd85c
-size 1517
+// -----------------------------------------------------------------------
+// <copyright file="IPolygonFormat.cs" company="">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .IO
+{
+    using System.IO;
+    using Animation.TriangleNet.Geometry;
+
+    /// <summary>
+    /// Interface for geometry input.
+    /// </summary>
+    internal interface IPolygonFormat : IFileFormat
+    {
+        /// <summary>
+        /// Read a file containing polygon geometry.
+        /// </summary>
+        /// <param name="filename">The path of the file to read.</param>
+        /// <returns>An instance of the <see cref="IPolygon" /> class.</returns>
+        IPolygon Read(string filename);
+
+        /// <summary>
+        /// Save a polygon geometry to disk.
+        /// </summary>
+        /// <param name="polygon">An instance of the <see cref="IPolygon" /> class.</param>
+        /// <param name="filename">The path of the file to save.</param>
+        void Write(IPolygon polygon, string filename);
+
+        /// <summary>
+        /// Save a polygon geometry to a <see cref="Stream" />.
+        /// </summary>
+        /// <param name="polygon">An instance of the <see cref="IPolygon" /> class.</param>
+        /// <param name="stream">The stream to save to.</param>
+        void Write(IPolygon polygon, Stream stream);
+    }
+}

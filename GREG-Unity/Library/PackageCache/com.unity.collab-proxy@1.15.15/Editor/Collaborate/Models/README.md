@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:710daa337576cc963c5dfb6fbaf15faa17959c1c6f05e77973c09620774dd1e9
-size 431
+# Models
+In this directory, we have all of the interfaces and implementations of the Models in the package's **MVP** architecture.
+
+In `Api/` we have the interfaces that the Models take to communicate with the backend.
+In `Enums/` and `Structures/` we have the supporting data structures for the interfaces in `Api/`.
+In `Providers/` we have the implementations of the interfaces in `Api/`. At this moment only `Collab.cs` exists.

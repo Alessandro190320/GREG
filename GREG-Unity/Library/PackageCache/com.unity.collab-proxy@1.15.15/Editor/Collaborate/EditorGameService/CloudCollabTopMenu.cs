@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d41ee01809f458513dcb02d92dee88724c97217c85342c22c0f671f923645806
-size 592
+#if ENABLE_EDITOR_GAME_SERVICES
+using UnityEditor;
+
+namespace Unity.Cloud.Collaborate.EditorGameService
+{
+    static class CloudCollabTopMenu
+    {
+        const string k_ServiceMenuRoot = "Services/Version Control/";
+        const int k_ConfigureMenuPriority = 100;
+
+        [MenuItem(k_ServiceMenuRoot + "Configure", priority = k_ConfigureMenuPriority)]
+        static void ShowProjectSettings()
+        {
+            EditorGameServiceAnalyticsSender.SendTopMenuConfigureEvent();
+            SettingsService.OpenProjectSettings("Project/Services/Version Control");
+        }
+    }
+}
+#endif

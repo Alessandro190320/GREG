@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44e2228837c2fb6b305d794facc785b58c83c5cbbfa1a62f186f405656073b17
-size 424
+using System;
+using UnityEngine;
+
+namespace UnityEditor
+{
+    struct GUIMixedValueScope : IDisposable
+    {
+        readonly bool m_PrevValue;
+        public GUIMixedValueScope(bool newValue)
+        {
+            m_PrevValue = EditorGUI.showMixedValue;
+            EditorGUI.showMixedValue = newValue;
+        }
+
+        public void Dispose()
+        {
+            EditorGUI.showMixedValue = m_PrevValue;
+        }
+    }
+}

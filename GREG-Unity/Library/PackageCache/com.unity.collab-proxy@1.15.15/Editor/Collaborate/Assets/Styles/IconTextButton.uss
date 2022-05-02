@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7a6f25b0a7740a9e69af61197dec4d2f38c8061c266e03011df4dc9a559860d
-size 598
+/* IconTextButton Styles */
+
+.unity-icon-text-button {
+    flex-direction: row;
+}
+
+.unity-icon-text-button__image {
+    flex: var(--fixed-size);
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.light .unity-icon-text-button.icon-publish .unity-icon-text-button__image {
+    background-image: resource("Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/publish-light.png");
+}
+
+.dark .unity-icon-text-button.icon-publish .unity-icon-text-button__image {
+    background-image: resource("Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/publish-dark.png");
+}

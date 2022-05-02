@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33cc96d419c859479a286ff4a1eef02ee750dc78cf7030c81a70311e7d199c95
-size 822
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Meshing
+{
+    using Animation.TriangleNet.Geometry;
+
+    /// <summary>
+    /// Interface for polygon triangulation.
+    /// </summary>
+    internal interface IConstraintMesher
+    {
+        /// <summary>
+        /// Triangulates a polygon.
+        /// </summary>
+        /// <param name="polygon">The polygon.</param>
+        /// <returns>Mesh</returns>
+        IMesh Triangulate(IPolygon polygon);
+
+        /// <summary>
+        /// Triangulates a polygon, applying constraint options.
+        /// </summary>
+        /// <param name="polygon">The polygon.</param>
+        /// <param name="options">Constraint options.</param>
+        /// <returns>Mesh</returns>
+        IMesh Triangulate(IPolygon polygon, ConstraintOptions options);
+    }
+}

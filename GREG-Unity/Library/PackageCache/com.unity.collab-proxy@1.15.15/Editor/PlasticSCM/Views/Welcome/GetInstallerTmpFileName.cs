@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07650213e7b4e0e2e07858148456fe7a17e3ebfc39286baaa49f1cceae875920
-size 550
+﻿using System;
+using System.IO;
+
+using Codice.Utils;
+
+namespace Unity.PlasticSCM.Editor.Views.Welcome
+{
+    static class GetInstallerTmpFileName
+    {
+        internal static string ForPlatform()
+        {
+            string fileName = Guid.NewGuid().ToString();
+
+            if (PlatformIdentifier.IsWindows())
+                fileName += ".exe";
+
+            if (PlatformIdentifier.IsMac())
+                fileName += ".pkg.zip";
+
+            return Path.Combine(
+                Path.GetTempPath(),
+                fileName);
+        }
+    }
+}

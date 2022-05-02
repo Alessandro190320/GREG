@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1aad57f45d8913da96599993683e20976d01a8521c27bca8b0ce78ed3b68e66
-size 838
+#if UNITY_EDITOR
+using System.ComponentModel;
+#endif
+using UnityEngine.Playables;
+
+namespace UnityEngine.Timeline
+{
+    /// <summary>
+    /// Playable Asset class for Activation Tracks
+    /// </summary>
+#if UNITY_EDITOR
+    [DisplayName("Activation Clip")]
+#endif
+    class ActivationPlayableAsset : PlayableAsset, ITimelineClipAsset
+    {
+        /// <summary>
+        /// Returns a description of the features supported by activation clips
+        /// </summary>
+        public ClipCaps clipCaps { get { return ClipCaps.None; } }
+
+        /// <summary>
+        /// Overrides PlayableAsset.CreatePlayable() to inject needed Playables for an activation asset
+        /// </summary>
+        public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
+        {
+            return Playable.Create(graph);
+        }
+    }
+}

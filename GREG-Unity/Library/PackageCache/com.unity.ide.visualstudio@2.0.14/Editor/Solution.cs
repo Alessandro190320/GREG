@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:410ef8f92bc0ceed9d90cc3083449505f6da294f636041a6f7744445cff65203
-size 546
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+namespace Microsoft.Unity.VisualStudio.Editor
+{
+	internal class Solution
+	{
+		public SolutionProjectEntry[] Projects { get; set; }
+		public SolutionProperties[] Properties { get; set; }
+	}
+}

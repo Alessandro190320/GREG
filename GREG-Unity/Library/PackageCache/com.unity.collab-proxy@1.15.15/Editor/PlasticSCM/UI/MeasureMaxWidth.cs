@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8480c8d61f0282b35f2965a0f278364458475a23cb8064255686c431b0a8d43c
-size 546
+﻿using System;
+
+using UnityEngine;
+
+namespace Unity.PlasticSCM.Editor.UI
+{
+    internal static class MeasureMaxWidth
+    {
+        internal static float ForTexts(GUIStyle style, params string[] texts)
+        {
+            float result = 0;
+
+            GUIContent content = new GUIContent();
+
+            foreach (string text in texts)
+            {
+                content.text = text;
+
+                result = Math.Max(result,
+                    style.CalcSize(content).x);
+            }
+
+            return result + 10;
+        }
+    }
+}

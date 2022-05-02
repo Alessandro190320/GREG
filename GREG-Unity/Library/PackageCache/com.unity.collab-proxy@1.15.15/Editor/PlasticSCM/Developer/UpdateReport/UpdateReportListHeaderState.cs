@@ -1,3 +1,72 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fcf2efdab6419ed348a6adb9b1601a5e37083d373bd7117792caf9c02a1c923
-size 1995
+﻿using System;
+
+using UnityEditor.IMGUI.Controls;
+using UnityEngine;
+
+using PlasticGui;
+using Unity.PlasticSCM.Editor.UI.Tree;
+
+namespace Unity.PlasticSCM.Editor.Developer.UpdateReport
+{
+    internal enum ErrorsListColumn
+    {
+        Path,
+    }
+
+    [Serializable]
+    internal class UpdateReportListHeaderState : MultiColumnHeaderState, ISerializationCallbackReceiver
+    {
+        internal static UpdateReportListHeaderState GetDefault()
+        {
+            return new UpdateReportListHeaderState(BuildColumns());
+        }
+
+        static string GetColumnName(ErrorsListColumn column)
+        {
+            switch (column)
+            {
+                case ErrorsListColumn.Path:
+                    return PlasticLocalization.GetString(PlasticLocalization.Name.PathColumn);
+                default:
+                    return null;
+            }
+        }
+
+        void ISerializationCallbackReceiver.OnAfterDeserialize()
+        {
+            if (mHeaderTitles != null)
+                TreeHeaderColumns.SetTitles(columns, mHeaderTitles);
+        }
+
+        void ISerializationCallbackReceiver.OnBeforeSerialize()
+        {
+        }
+
+        static Column[] BuildColumns()
+        {
+            return new Column[]
+                {
+                    new Column()
+                    {
+                        width = 605,
+                        headerContent = new GUIContent(
+                            GetColumnName(ErrorsListColumn.Path)),
+                        minWidth = 200,
+                        allowToggleVisibility = false,
+                        canSort = false,
+                        sortingArrowAlignment = TextAlignment.Right
+                    }
+                };
+        }
+
+        UpdateReportListHeaderState(Column[] columns)
+            : base(columns)
+        {
+            if (mHeaderTitles == null)
+                mHeaderTitles = TreeHeaderColumns.GetTitles(columns);
+        }
+
+        [SerializeField]
+        string[] mHeaderTitles;
+    }
+}

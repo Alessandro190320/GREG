@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:016032e1a90b6040632f154839a2c5b615f7947be38f3714c987aae718110a78
-size 1887
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+namespace UnityEditor.Timeline
+{
+    static class PickerUtils
+    {
+        public static List<object> pickedElements { get; private set; }
+
+        public static void DoPick(WindowState state, Vector2 mousePosition)
+        {
+            if (state.GetWindow().sequenceHeaderRect.Contains(mousePosition))
+            {
+                pickedElements = state.headerSpacePartitioner.GetItemsAtPosition<object>(mousePosition).ToList();
+            }
+            else if (state.GetWindow().sequenceContentRect.Contains(mousePosition))
+            {
+                pickedElements = state.spacePartitioner.GetItemsAtPosition<object>(mousePosition).ToList();
+            }
+            else
+            {
+                if (pickedElements != null)
+                    pickedElements.Clear();
+                else
+                    pickedElements = new List<object>();
+            }
+        }
+
+        public static ILayerable TopmostPickedItem()
+        {
+            return PickedItemsSortedByZOrderOfType<ILayerable>().FirstOrDefault();
+        }
+
+        public static T TopmostPickedItemOfType<T>() where T : class, ILayerable
+        {
+            return PickedItemsSortedByZOrderOfType<T>().FirstOrDefault();
+        }
+
+        public static T TopmostPickedItemOfType<T>(Func<T, bool> predicate) where T : class, ILayerable
+        {
+            return PickedItemsSortedByZOrderOfType<T>().FirstOrDefault(predicate);
+        }
+
+        static IEnumerable<T> PickedItemsSortedByZOrderOfType<T>() where T: class, ILayerable
+        {
+            return pickedElements.OfType<T>().OrderByDescending(x => x.zOrder);
+        }
+
+        public static T FirstPickedElementOfType<T>() where T : class, IBounds
+        {
+            return pickedElements.FirstOrDefault(e => e is T) as T;
+        }
+    }
+}

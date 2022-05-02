@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b39e7af390c6f88826c8ec1a7196469934b2fd21a29d554dc0ae51e23529a935
-size 924
+using System;
+using Unity.Cloud.Collaborate.Models.Enums;
+
+namespace Unity.Cloud.Collaborate.Models
+{
+    internal interface IStartModel : IModel
+    {
+        /// <summary>
+        /// Event that is triggered when the project status changes.
+        /// </summary>
+        event Action<ProjectStatus> ProjectStatusChanged;
+
+        /// <summary>
+        /// Returns the current project status.
+        /// </summary>
+        ProjectStatus ProjectStatus { get; }
+
+        /// <summary>
+        /// Request to turn on the service.
+        /// </summary>
+        void RequestTurnOnService();
+
+        /// <summary>
+        /// Show the service page.
+        /// </summary>
+        void ShowServicePage();
+
+        /// <summary>
+        /// Show login page.
+        /// </summary>
+        void ShowLoginPage();
+
+        /// <summary>
+        /// Show no seat page.
+        /// </summary>
+        void ShowNoSeatPage();
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5be94b2f71367a8067195896e37fe090bc1347f5109d91b968c830b649abdb89
-size 646
+using System;
+using UnityEngine;
+using Object = UnityEngine.Object;
+
+namespace UnityEditor.Timeline
+{
+    static class UnityEditorInternals
+    {
+        public static Object DoObjectField(Rect position, Object obj, Type type, int controlId, bool allowScene)
+        {
+#if UNITY_2020_1_OR_NEWER
+            var newObject = EditorGUI.DoObjectField(position, position, controlId, obj, null, type, null, allowScene, EditorStyles.objectField);
+#else
+            var newObject = EditorGUI.DoObjectField(position, position, controlId, obj, type, null, null, allowScene, EditorStyles.objectField);
+#endif
+            return newObject;
+        }
+    }
+}

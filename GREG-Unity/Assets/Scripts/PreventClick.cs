@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab0a730a05800f4cf8d3217af2738131cf06485212f7226b64173d761f19b358
-size 509
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class PreventClick : MonoBehaviour
+{
+    public EventSystem eventSystem;
+    private GameObject prevSelected;
+
+    void Update()
+    {
+        GameObject currentSelected = EventSystem.current.currentSelectedGameObject;
+        if (currentSelected == null)
+            EventSystem.current.SetSelectedGameObject(prevSelected);
+        else
+            prevSelected = currentSelected;
+    }
+}

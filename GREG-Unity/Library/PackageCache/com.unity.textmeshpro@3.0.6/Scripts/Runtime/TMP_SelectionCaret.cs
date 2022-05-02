@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d220d2d358c0fff7575c815b22a6a55d95445ed198c1959e0f2401fcf14e14ac
-size 1194
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+
+namespace TMPro
+{
+    /// <summary>
+    /// A simple component that can be added to a newly created object where inheriting from MaskableGraphic is needed.
+    /// </summary>
+    [RequireComponent(typeof(CanvasRenderer))]
+    public class TMP_SelectionCaret : MaskableGraphic
+    {
+        /// <summary>
+        /// Override to Cull function of MaskableGraphic to prevent Culling.
+        /// </summary>
+        /// <param name="clipRect"></param>
+        /// <param name="validRect"></param>
+        public override void Cull(Rect clipRect, bool validRect)
+        {
+            //Debug.Log("***** Cull (" + clipRect + ")   Valid Rect: " + validRect + "   Cull: " + canvasRenderer.cull + " *****");
+
+            if (validRect)
+            {
+                canvasRenderer.cull = false;
+                CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(this);
+                return;
+            }
+
+            base.Cull(clipRect, validRect);
+        }
+
+        protected override void UpdateGeometry()
+        {
+            // Function overridden as Caret and text Selection Highlight is controlled by the Input Field.
+        }
+    }
+}

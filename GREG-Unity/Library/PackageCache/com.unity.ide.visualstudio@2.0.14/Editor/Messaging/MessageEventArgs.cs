@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee7dae655e36c133cf6d868b1ac2a3d4259dca40447b815497067de957d0cf90
-size 569
+﻿/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+namespace Microsoft.Unity.VisualStudio.Editor.Messaging
+{
+	internal class MessageEventArgs
+	{
+		public Message Message
+		{
+			get;
+		}
+
+		public MessageEventArgs(Message message)
+		{
+			Message = message;
+		}
+	}
+}

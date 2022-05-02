@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ba5cf5612ba1656355478aec246a8f1fe3e5b4e4b250b5bb4ec267daa2347d5
-size 426
+cmake_minimum_required(VERSION 3.15)
+
+project(com)
+set(SOURCES
+        COMIntegration.cpp
+        BStrHolder.h
+        ComPtr.h
+        dte80a.tlh
+        )
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -Wall")
+add_executable(COMIntegration ${SOURCES})
+set_property(TARGET COMIntegration PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded")
+target_link_libraries(COMIntegration Shlwapi.lib)

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1af32c84f7b4efb170a2b17b3bf24df7d87c450d08acbf11ee4d7171d6ee4a3a
-size 751
+{
+    "name": "com.unity.quicksearch",
+    "references": [
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:ee25bd4c5770f7147b2e7abfba78d26e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.ugui",
+            "expression": "1.0.0",
+            "define": "PACKAGE_UGUI"
+        },
+        {
+            "name": "com.unity.performance-tracking",
+            "expression": "0.0.0",
+            "define": "PACKAGE_PERFORMANCE_TRACKING"
+        }
+    ],
+    "noEngineReferences": false
+}

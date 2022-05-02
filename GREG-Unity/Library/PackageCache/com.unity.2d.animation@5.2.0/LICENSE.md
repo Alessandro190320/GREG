@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61a7358222619e984b26df24dbd170214f4d8b00ec1eeb4997d1ad09ef78d766
-size 456
+com.unity.2d.animation copyright © 2022 Unity Technologies ApS
+
+Licensed under the Unity Companion License for Unity-dependent projects (see https://unity3d.com/legal/licenses/unity_companion_license).
+
+Unless expressly provided otherwise, the Software under this license is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. Please review the license for details on these and other terms and conditions.

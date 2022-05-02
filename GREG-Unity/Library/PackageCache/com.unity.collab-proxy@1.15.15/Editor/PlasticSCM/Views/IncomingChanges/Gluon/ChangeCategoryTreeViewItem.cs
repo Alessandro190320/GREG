@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f40c7ea1f52e37b1350908152c1f448bb23990a34a8d2e5ec2251a706c49a7f
-size 475
+﻿using UnityEditor.IMGUI.Controls;
+
+using PlasticGui.Gluon.WorkspaceWindow.Views.IncomingChanges;
+
+namespace Unity.PlasticSCM.Editor.Views.IncomingChanges.Gluon
+{
+    internal class ChangeCategoryTreeViewItem : TreeViewItem
+    {
+        internal IncomingChangeCategory Category { get; private set; }
+
+        internal ChangeCategoryTreeViewItem(int id, IncomingChangeCategory category)
+            : base(id, 0)
+        {
+            Category = category;
+        }
+    }
+}

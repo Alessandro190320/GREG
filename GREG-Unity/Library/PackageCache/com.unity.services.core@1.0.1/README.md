@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e0184b8f2ecd2d6a5fb9d643c9cfc138c480d49035a358883a91fef596dd547
-size 197
+# Services Core
+This package defines common components used by multiple Game Service packages.
+These are standardized and aim to unify the overall experience of working with Game Service packages.

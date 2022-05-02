@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66a30005431d36d7a56c7eac379ca503a1a92015fd367908ff747511bbd94f05
-size 407
+{
+    "name": "Unity.2D.Common.Editor",
+    "references": [
+        "Unity.2D.Common.Runtime",
+        "Unity.2D.Sprite.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36178b04d1922adf43d0966e45bbdbdb0f294f32bf3398f378a6a16ecde62d20
-size 850
+using System.IO;
+using UnityEditor;
+using UnityEngine;
+
+namespace Unity.QuickSearch
+{
+    class SearchExpressionAsset : ScriptableObject
+    {
+        [MenuItem("Assets/Create/Quick Search/Expression")]
+        internal static void CreateIndexProject()
+        {
+            var folderPath = AssetDatabase.GetAssetPath(Selection.activeObject);
+            if (File.Exists(folderPath))
+                folderPath = Path.GetDirectoryName(folderPath);
+
+            var expressionPath = AssetDatabase.GenerateUniqueAssetPath(Path.Combine(folderPath, "expression.qse"));
+            var newExpression = new SearchExpression(SearchFlags.Default);
+            newExpression.Save(expressionPath);
+            AssetDatabase.ImportAsset(expressionPath);
+            Selection.activeObject = AssetDatabase.LoadMainAssetAtPath(expressionPath);
+        }
+    }
+}

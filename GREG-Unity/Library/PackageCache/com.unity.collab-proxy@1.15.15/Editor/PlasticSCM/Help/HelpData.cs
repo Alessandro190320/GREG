@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:513ec0e83f373967e0f62b0fdee2992ff5d9f2e06acf350fe52b1797cf6df255
-size 329
+using System.Collections.Generic;
+
+namespace Unity.PlasticSCM.Editor.Help
+{
+    internal class HelpData
+    {
+        internal List<HelpFormat> FormattedBlocks = new List<HelpFormat>();
+        internal List<HelpLink> Links = new List<HelpLink>();
+        internal string CleanText;
+        internal bool ShouldShowAgain;
+    }
+}

@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:635cb01778a1a87e7e64e38ac53a12246b0e8e076cbb99780d57216419b1b66e
-size 1668
+﻿using System.Collections.Generic;
+using System.IO;
+
+using Unity.PlasticSCM.Editor.AssetMenu;
+using Unity.PlasticSCM.Editor.AssetsOverlays.Cache;
+using UnityEditor.VersionControl;
+
+namespace Unity.PlasticSCM.Editor.AssetUtils
+{
+    internal static class GetSelectedPaths
+    {
+        internal static List<string> ForOperation(
+            AssetList assetList,
+            IAssetStatusCache assetStatusCache,
+            AssetMenuOperations operation)
+        {
+            List<string> selectedPaths = AssetsSelection.GetSelectedPaths(assetList);
+
+            List<string> result = new List<string>(selectedPaths);
+
+            foreach (string path in selectedPaths)
+            {
+                if (MetaPath.IsMetaPath(path))
+                    continue;
+
+                string metaPath = MetaPath.GetMetaPath(path);
+
+                if (!File.Exists(metaPath))
+                    continue;
+
+                if (result.Contains(metaPath))
+                    continue;
+
+                if (!IsApplicableForOperation(
+                        metaPath, false, operation, assetStatusCache))
+                    continue;
+
+                result.Add(metaPath);
+            }
+
+            return result;
+        }
+
+        static bool IsApplicableForOperation(
+            string path,
+            bool isDirectory,
+            AssetMenuOperations operation,
+            IAssetStatusCache assetStatusCache)
+        {
+            SelectedAssetGroupInfo info = SelectedAssetGroupInfo.BuildFromSingleFile(
+                path, isDirectory, assetStatusCache);
+
+            return AssetMenuUpdater.GetAvailableMenuOperations(info).HasFlag(operation);
+        }
+    }
+}

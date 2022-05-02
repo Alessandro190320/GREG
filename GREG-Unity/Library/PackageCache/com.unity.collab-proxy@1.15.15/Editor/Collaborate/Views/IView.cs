@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2f82348cef288b44e9f1c0074433f8fe0a2441af5faa083ddb359d6e9fe43c5
-size 473
+using System;
+using JetBrains.Annotations;
+using Unity.Cloud.Collaborate.Presenters;
+
+namespace Unity.Cloud.Collaborate.Views
+{
+    /// <summary>
+    /// Interface for all views in the UI.
+    /// </summary>
+    /// <typeparam name="T">Type of presenter this view takes.</typeparam>
+    interface IView<in T> where T : IPresenter
+    {
+        /// <summary>
+        /// Presenter for this view.
+        /// </summary>
+        [NotNull]
+        T Presenter { set; }
+    }
+}

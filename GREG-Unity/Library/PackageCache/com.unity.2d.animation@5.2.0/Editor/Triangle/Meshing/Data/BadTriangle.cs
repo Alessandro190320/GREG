@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88723ff0f092cd116e2015a4fe046b8db62e8bdce376da7a01ce88eed29278e6
-size 1329
+// -----------------------------------------------------------------------
+// <copyright file="BadTriangle.cs" company="">
+// Original Triangle code by Jonathan Richard Shewchuk, http://www.cs.cmu.edu/~quake/triangle.html
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Meshing.Data
+{
+    using System;
+    using Animation.TriangleNet.Geometry;
+    using Animation.TriangleNet.Topology;
+
+    /// <summary>
+    /// A queue used to store bad triangles.
+    /// </summary>
+    /// <remarks>
+    /// The key is the square of the cosine of the smallest angle of the triangle.
+    /// Each triangle's vertices are stored so that one can check whether a
+    /// triangle is still the same.
+    /// </remarks>
+    class BadTriangle
+    {
+        public Otri poortri; // A skinny or too-large triangle.
+        public double key; // cos^2 of smallest (apical) angle.
+        public Vertex org, dest, apex; // Its three vertices.
+        public BadTriangle next; // Pointer to next bad triangle.
+
+        public override string ToString()
+        {
+            return String.Format("B-TID {0}", poortri.tri.hash);
+        }
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0abc69b866b90c2a39a95573bde97a929d7c3a927b0f919316772f20f6f7c5bc
-size 437
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Voronoi
+{
+    using Animation.TriangleNet.Topology.DCEL;
+
+    internal interface IVoronoiFactory
+    {
+        void Initialize(int vertexCount, int edgeCount, int faceCount);
+
+        void Reset();
+
+        Vertex CreateVertex(double x, double y);
+
+        HalfEdge CreateHalfEdge(Vertex origin, Face face);
+
+        Face CreateFace(Geometry.Vertex vertex);
+    }
+}
