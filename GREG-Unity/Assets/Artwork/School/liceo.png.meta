@@ -242,6 +242,51 @@ TextureImporter:
   - first:
       213: -8253619673159068574
     second: trofei_2
+  - first:
+      213: -1831281832508883599
+    second: muro_corridoio_fab8
+  - first:
+      213: -6108534223431584610
+    second: muro_corridoio_fab9
+  - first:
+      213: -1604731008999485456
+    second: muro_bib_obliquo2
+  - first:
+      213: 7091863166719156243
+    second: muro_bib_obliquo1
+  - first:
+      213: -1912507788004299150
+    second: liceo_84
+  - first:
+      213: 3839582142432193977
+    second: porta_biblio_1
+  - first:
+      213: 543062192726780951
+    second: porta_biblio_2
+  - first:
+      213: -7282520187370524114
+    second: porta_biblio_1_aperta
+  - first:
+      213: -5969497529166713784
+    second: porta_biblio_2_aperta
+  - first:
+      213: -9091886251490580997
+    second: corridoio_destra_1
+  - first:
+      213: -5672940355931493104
+    second: liceo_90
+  - first:
+      213: 599537958386812913
+    second: corridoio_destra_2
+  - first:
+      213: 2327754419172336445
+    second: corridoio_destra_3
+  - first:
+      213: 5921300299732100188
+    second: corridoio_destra_4
+  - first:
+      213: 382901340344542378
+    second: corridoio_destra_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1795,8 +1840,8 @@ TextureImporter:
       name: muro_corridoio_lab1
       rect:
         serializedVersion: 2
-        x: 521
-        y: 309
+        x: 498
+        y: 187
         width: 16
         height: 16
       alignment: 0
@@ -1816,8 +1861,8 @@ TextureImporter:
       name: muro_corridoio_lab2
       rect:
         serializedVersion: 2
-        x: 521
-        y: 325
+        x: 498
+        y: 203
         width: 16
         height: 16
       alignment: 0
@@ -1837,8 +1882,8 @@ TextureImporter:
       name: muro_corridoio_lab3
       rect:
         serializedVersion: 2
-        x: 521
-        y: 341
+        x: 498
+        y: 219
         width: 16
         height: 16
       alignment: 0
@@ -1858,8 +1903,8 @@ TextureImporter:
       name: muro_corridoio_lab4
       rect:
         serializedVersion: 2
-        x: 521
-        y: 357
+        x: 498
+        y: 235
         width: 16
         height: 16
       alignment: 0
@@ -1879,8 +1924,8 @@ TextureImporter:
       name: muro_corridoio_lab5
       rect:
         serializedVersion: 2
-        x: 521
-        y: 373
+        x: 498
+        y: 251
         width: 16
         height: 16
       alignment: 0
@@ -1900,8 +1945,8 @@ TextureImporter:
       name: muro_corridoio_lab6
       rect:
         serializedVersion: 2
-        x: 521
-        y: 389
+        x: 498
+        y: 267
         width: 16
         height: 16
       alignment: 0
@@ -1921,8 +1966,8 @@ TextureImporter:
       name: muro_corridoio_lab7
       rect:
         serializedVersion: 2
-        x: 521
-        y: 405
+        x: 498
+        y: 283
         width: 16
         height: 16
       alignment: 0
@@ -2018,6 +2063,321 @@ TextureImporter:
       bones: []
       spriteID: 2649d2603a0457d80800000000000000
       internalID: -8253619673159068574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_fab8
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d7ea930eaf596e0800000000000000
+      internalID: -1831281832508883599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_corridoio_fab9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943b0afc702a3ba0800000000000000
+      internalID: -6108534223431584610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_bib_obliquo2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff088846a9dab9e0800000000000000
+      internalID: -1604731008999485456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_bib_obliquo1
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310e8ffc9fb5b6260800000000000000
+      internalID: 7091863166719156243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liceo_84
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 368
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ee5d9bc486575e0800000000000000
+      internalID: -1912507788004299150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: porta_biblio_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 298
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdaa959d9fe84530800000000000000
+      internalID: 3839582142432193977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: porta_biblio_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 298
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cac60ef28598700800000000000000
+      internalID: 543062192726780951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: porta_biblio_1_aperta
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 298
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e223b2a597a4fea90800000000000000
+      internalID: -7282520187370524114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: porta_biblio_2_aperta
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 298
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c227eff95182da0800000000000000
+      internalID: -5969497529166713784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_destra_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf565a900a123d180800000000000000
+      internalID: -9091886251490580997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liceo_90
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 137
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01da9b48dcaa541b0800000000000000
+      internalID: -5672940355931493104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_destra_2
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7420fb89cf15800800000000000000
+      internalID: 599537958386812913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_destra_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33ec1faf48dd4020800000000000000
+      internalID: 2327754419172336445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_destra_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5422fd004fac2250800000000000000
+      internalID: 5921300299732100188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_destra_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4e1478db6505500800000000000000
+      internalID: 382901340344542378
       vertices: []
       indices: 
       edges: []
