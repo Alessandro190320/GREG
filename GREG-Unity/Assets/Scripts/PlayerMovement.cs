@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private float x, y;
     public float speed;
+    public float modifyspeed = 1.8f ;
+    public int speedup = 0;
     private bool isMove;
 
     Vector2 oldPos;
@@ -22,9 +24,26 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         speed = PlayerState.speed;
-        // ritorna i valori di x e y
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetKeyDown(KeyCode.LeftShift)){
+            speedup = 1;
+        }
+
+        if(Input.GetKeyUp(KeyCode.LeftShift)){
+            speedup = 0;
+        }
+        if(speedup == 1){
+
+            x = Input.GetAxisRaw("Horizontal")/modifyspeed;
+            y = Input.GetAxisRaw("Vertical")/modifyspeed;
+
+        }
+
+        else{
+            // ritorna i valori di x e y
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
+        }
     }
 
     private void FixedUpdate()
@@ -38,7 +57,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+
         rb.velocity = moveDelta * speed;
+    
     }
 
     private void Animate()
