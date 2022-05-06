@@ -287,6 +287,48 @@ TextureImporter:
   - first:
       213: 382901340344542378
     second: corridoio_destra_5
+  - first:
+      213: 5817772150963448312
+    second: muro_entrata_fab1
+  - first:
+      213: -3980295699427825955
+    second: muro_entrata_fab2
+  - first:
+      213: 6364546207631235465
+    second: muro_entrata_fab3
+  - first:
+      213: 516358383642926037
+    second: muro_entrata_fab4
+  - first:
+      213: 7543247560098836716
+    second: traversa_giu
+  - first:
+      213: -1566316231327374155
+    second: colonna_drittta
+  - first:
+      213: 3350382564089107776
+    second: trave_destra
+  - first:
+      213: 2787426507208018190
+    second: trave_centrale
+  - first:
+      213: 7713860437554957245
+    second: angolo_destra
+  - first:
+      213: 1658730259120237557
+    second: muro_infolab
+  - first:
+      213: -3691307351089812278
+    second: muro_destra
+  - first:
+      213: 2288589370507340067
+    second: muro_interno_fab1
+  - first:
+      213: 4337722200066458010
+    second: muro_interno_fab2
+  - first:
+      213: -8206512347964830293
+    second: muro_interno_fab3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2349,7 +2391,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2370,7 +2412,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2378,6 +2420,300 @@ TextureImporter:
       bones: []
       spriteID: aa4e1478db6505500800000000000000
       internalID: 382901340344542378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_entrata_fab1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9265a82f0ecb050800000000000000
+      internalID: 5817772150963448312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_entrata_fab2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6e69e562623c8c0800000000000000
+      internalID: -3980295699427825955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_entrata_fab3
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9895b661e09635850800000000000000
+      internalID: 6364546207631235465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_entrata_fab4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbd4d1d6397a2700800000000000000
+      internalID: 516358383642926037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: traversa_giu
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0f588a0bffea860800000000000000
+      internalID: 7543247560098836716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colonna_drittta
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4adc1bfa3534ae0800000000000000
+      internalID: -1566316231327374155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trave_destra
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0459132e033fe7e20800000000000000
+      internalID: 3350382564089107776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trave_centrale
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0944afc3adeea620800000000000000
+      internalID: 2787426507208018190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angolo_destra
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb076bb2332d0b60800000000000000
+      internalID: 7713860437554957245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_infolab
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 106
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbad01e16ef40710800000000000000
+      internalID: 1658730259120237557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_destra
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acce0858587d5ccc0800000000000000
+      internalID: -3691307351089812278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_interno_fab1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 106
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32923d138e3b2cf10800000000000000
+      internalID: 2288589370507340067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_interno_fab2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 90
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a918945db5fa23c30800000000000000
+      internalID: 4337722200066458010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_interno_fab3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 74
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad03bedf7c9c1e80800000000000000
+      internalID: -8206512347964830293
       vertices: []
       indices: 
       edges: []
