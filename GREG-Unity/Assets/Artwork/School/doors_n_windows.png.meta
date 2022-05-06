@@ -115,7 +115,7 @@ TextureImporter:
     second: porte_mistiche
   - first:
       213: -2437508175588858173
-    second: door_tunnel_cosed_2
+    second: doors_brown_r
   - first:
       213: 7289354489394467729
     second: door_tunnel_open_0
@@ -124,10 +124,13 @@ TextureImporter:
     second: door_tunnel_open_1
   - first:
       213: 8213310957532874548
-    second: door_tunnel_open_3
+    second: doors_brown_l
   - first:
       213: -8083190934595661193
-    second: door_tunnel_open_2
+    second: doors_brown_open_l
+  - first:
+      213: 2735202800994032516
+    second: doors_brown_open_r
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -976,8 +979,8 @@ TextureImporter:
       name: door_tunnel_open_0
       rect:
         serializedVersion: 2
-        x: 126
-        y: 31
+        x: 125
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -997,8 +1000,8 @@ TextureImporter:
       name: door_tunnel_open_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 31
+        x: 141
+        y: 32
         width: 16
         height: 32
       alignment: 0
@@ -1023,7 +1026,7 @@ TextureImporter:
         width: 16
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,6 +1034,90 @@ TextureImporter:
       bones: []
       spriteID: ea644112aba039f90800000000000000
       internalID: -6948198005567371602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_brown_r
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c66ae09a3b3c2ed0800000000000000
+      internalID: -2437508175588858173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_brown_l
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4370295ccca8bf170800000000000000
+      internalID: 8213310957532874548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_brown_open_l
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77294cbebacb2df80800000000000000
+      internalID: -8083190934595661193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_brown_open_r
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b17eda47465f520800000000000000
+      internalID: 2735202800994032516
       vertices: []
       indices: 
       edges: []
