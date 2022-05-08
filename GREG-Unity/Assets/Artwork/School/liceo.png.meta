@@ -482,6 +482,90 @@ TextureImporter:
   - first:
       213: -8456447846356741149
     second: muro_angb4
+  - first:
+      213: -2783541938971830950
+    second: banco_ruote_lato1
+  - first:
+      213: 7975598332451675077
+    second: banco_ruote_lato2
+  - first:
+      213: 5800734996209710184
+    second: lim1
+  - first:
+      213: 8297607485083495769
+    second: lim2
+  - first:
+      213: 4230161934382580795
+    second: lim3
+  - first:
+      213: -1227508165064690043
+    second: muro_interno_fab4
+  - first:
+      213: -7117470512806546872
+    second: incrocio_info_lab1
+  - first:
+      213: 4647679703843430103
+    second: incrocio_info_lab2
+  - first:
+      213: -6725835659206917691
+    second: muro_info_lab
+  - first:
+      213: -141471063578810757
+    second: corridoio_obliquo1
+  - first:
+      213: 320300111997658842
+    second: corridoio_obliquo2
+  - first:
+      213: -741659038267363204
+    second: corridoio_obliquo3
+  - first:
+      213: 9201272857356630152
+    second: obliquo_biblio1
+  - first:
+      213: 4974383348355907353
+    second: obliquo_biblio2
+  - first:
+      213: 8748625700569325389
+    second: angolo_biblio_s
+  - first:
+      213: 3437376436770584098
+    second: angolo_biblio_d
+  - first:
+      213: 1569113766339998271
+    second: angolo
+  - first:
+      213: 7218941826946939342
+    second: server_1
+  - first:
+      213: -1140067643036772589
+    second: server_2
+  - first:
+      213: -7098701184846852785
+    second: lab_dritto1
+  - first:
+      213: -2718105040369464164
+    second: lab_dritto2
+  - first:
+      213: -5587418861279909988
+    second: lab_dritto3
+  - first:
+      213: 6468448616868272474
+    second: lab_diagonale_d1
+  - first:
+      213: 4252695845459349745
+    second: lab_diagonale_d2
+  - first:
+      213: -6348770917015628983
+    second: lab_diagonale_d3
+  - first:
+      213: -6291305014969329817
+    second: Diagonale_lab1
+  - first:
+      213: 2626199474145005299
+    second: Diagonale_lab2
+  - first:
+      213: -5493948206474801571
+    second: Diagonale_lab3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3930,7 +4014,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3938,6 +4022,594 @@ TextureImporter:
       bones: []
       spriteID: 3e31a48ec79a4aa80800000000000000
       internalID: -8456447846356741149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_ruote_lato1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a559e26ba5fde59d0800000000000000
+      internalID: -2783541938971830950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banco_ruote_lato2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbdaf44d640fae60800000000000000
+      internalID: 7975598332451675077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lim1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864b145deb9508050800000000000000
+      internalID: 5800734996209710184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lim2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d260a8b06072370800000000000000
+      internalID: 8297607485083495769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lim3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34c041fddd84ba30800000000000000
+      internalID: 4230161934382580795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_interno_fab4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5867d66d3d307fee0800000000000000
+      internalID: -1227508165064690043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incrocio_info_lab1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 315
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84239d0574aa93d90800000000000000
+      internalID: -7117470512806546872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incrocio_info_lab2
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 299
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de5161f010ef7040800000000000000
+      internalID: 4647679703843430103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muro_info_lab
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 283
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1015b5a1809a2a0800000000000000
+      internalID: -6725835659206917691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_obliquo1
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 157
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76636531d4690ef0800000000000000
+      internalID: -141471063578810757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_obliquo2
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 141
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6632d314fe17400800000000000000
+      internalID: 320300111997658842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corridoio_obliquo3
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 125
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70bd9fb80915b5f0800000000000000
+      internalID: -741659038267363204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obliquo_biblio1
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8887f20d9ec71bf70800000000000000
+      internalID: 9201272857356630152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obliquo_biblio2
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 189
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f3f57cc4f880540800000000000000
+      internalID: 4974383348355907353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angolo_biblio_s
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f9943f8bc596970800000000000000
+      internalID: 8748625700569325389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angolo_biblio_d
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226320148a304bf20800000000000000
+      internalID: 3437376436770584098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angolo
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32fede28ac96c510800000000000000
+      internalID: 1569113766339998271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: server_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9b1611855de2460800000000000000
+      internalID: 7218941826946939342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: server_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 23
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31750ecd48aad20f0800000000000000
+      internalID: -1140067643036772589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_dritto1
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 251
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d0f8602e85c7d90800000000000000
+      internalID: -7098701184846852785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_dritto2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 235
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c449eedd9574ad0800000000000000
+      internalID: -2718105040369464164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_dritto3
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 219
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97e71a26208572b0800000000000000
+      internalID: -5587418861279909988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_diagonale_d1
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59dc48eebb84c950800000000000000
+      internalID: 6468448616868272474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_diagonale_d2
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f05266f65c940b30800000000000000
+      internalID: 4252695845459349745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lab_diagonale_d3
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943d3fafc72a4e7a0800000000000000
+      internalID: -6348770917015628983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diagonale_lab1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7679e11fb6bc0b8a0800000000000000
+      internalID: -6291305014969329817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diagonale_lab2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe0bbde182227420800000000000000
+      internalID: 2626199474145005299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diagonale_lab3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecca2e63391c3b0800000000000000
+      internalID: -5493948206474801571
       vertices: []
       indices: 
       edges: []
