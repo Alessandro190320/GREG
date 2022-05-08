@@ -115,7 +115,7 @@ TextureImporter:
     second: porte_mistiche
   - first:
       213: -2437508175588858173
-    second: door_tunnel_cosed_2
+    second: Porta_emergenza1
   - first:
       213: 7289354489394467729
     second: door_tunnel_open_0
@@ -124,7 +124,7 @@ TextureImporter:
     second: door_tunnel_open_1
   - first:
       213: 8213310957532874548
-    second: door_tunnel_open_3
+    second: Porta_emergenza2
   - first:
       213: -8083190934595661193
     second: door_tunnel_open_2
@@ -1023,7 +1023,7 @@ TextureImporter:
         width: 16
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1031,6 +1031,48 @@ TextureImporter:
       bones: []
       spriteID: ea644112aba039f90800000000000000
       internalID: -6948198005567371602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_emergenza1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c66ae09a3b3c2ed0800000000000000
+      internalID: -2437508175588858173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_emergenza2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4370295ccca8bf170800000000000000
+      internalID: 8213310957532874548
       vertices: []
       indices: 
       edges: []
