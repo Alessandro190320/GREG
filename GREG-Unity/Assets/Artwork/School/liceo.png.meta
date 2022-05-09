@@ -743,6 +743,36 @@ TextureImporter:
   - first:
       213: 8726283277285834117
     second: Banco_prof4
+  - first:
+      213: 274987133594940316
+    second: Lab_mobile1
+  - first:
+      213: -3353373495294714833
+    second: Lab_mobile2
+  - first:
+      213: -6642164058375399695
+    second: Banco_prof5
+  - first:
+      213: -1951853437242807333
+    second: Banco_prof6
+  - first:
+      213: -1237140492498894162
+    second: Banco_prof7
+  - first:
+      213: -1209228346956036586
+    second: Banco_prof8
+  - first:
+      213: 1968142343647701885
+    second: Banco_prof9
+  - first:
+      213: 7504427196747233729
+    second: Banco_prof10
+  - first:
+      213: 7513673094915044932
+    second: Banco_prof11
+  - first:
+      213: 3970385200567323655
+    second: Banco_prof12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -5950,8 +5980,8 @@ TextureImporter:
       name: Banco_prof1
       rect:
         serializedVersion: 2
-        x: 5
-        y: 16
+        x: 7
+        y: 73
         width: 16
         height: 16
       alignment: 0
@@ -5971,8 +6001,8 @@ TextureImporter:
       name: Banco_prof2
       rect:
         serializedVersion: 2
-        x: 21
-        y: 16
+        x: 23
+        y: 73
         width: 16
         height: 16
       alignment: 0
@@ -5992,8 +6022,8 @@ TextureImporter:
       name: Banco_prof3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
+        x: 7
+        y: 57
         width: 16
         height: 16
       alignment: 0
@@ -6013,8 +6043,8 @@ TextureImporter:
       name: Banco_prof4
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
+        x: 23
+        y: 57
         width: 16
         height: 16
       alignment: 0
@@ -6026,6 +6056,216 @@ TextureImporter:
       bones: []
       spriteID: 58dbd08286cf91970800000000000000
       internalID: 8726283277285834117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_mobile1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 110
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93babf4753f0d300800000000000000
+      internalID: 274987133594940316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_mobile2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c9fbda29c6671d0800000000000000
+      internalID: -3353373495294714833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 73
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6daa80bfa42d3a0800000000000000
+      internalID: -6642164058375399695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 57
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb6483e3af99e4e0800000000000000
+      internalID: -1951853437242807333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof7
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 73
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea20a57d64bc4dee0800000000000000
+      internalID: -1237140492498894162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 57
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6164a57a935f73fe0800000000000000
+      internalID: -1209228346956036586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 73
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ba68ca80f305b10800000000000000
+      internalID: 1968142343647701885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 57
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c936e876c4152860800000000000000
+      internalID: 7504427196747233729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof11
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 73
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44632d4eedde54860800000000000000
+      internalID: 7513673094915044932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco_prof12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 57
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c884dcd44a91730800000000000000
+      internalID: 3970385200567323655
       vertices: []
       indices: 
       edges: []
