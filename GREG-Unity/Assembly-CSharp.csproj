@@ -36,7 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerFollowSystem.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\AdvancedFollowSystem.cs" />
      <Compile Include="Assets\Scripts\VectorValue.cs" />
      <Compile Include="Assets\Scripts\CreditsMenu.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
@@ -54,7 +56,8 @@
      <Compile Include="Assets\Scripts\FullScreenListener.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\DoorSystem.cs" />
-     <Compile Include="Assets\PlayerFollowSystem.cs" />
+     <Compile Include="Assets\EnemyGFX.cs" />
+     <Compile Include="Assets\EnemyAI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -297,6 +300,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:\Users\zhu16\Github\GREGFork\GREG-Unity\Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -738,6 +744,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{2c1b4122-a2ef-c121-a7df-352cb4e79b4f}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{03623b63-fd6c-7694-57d9-662889f3b9bc}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{6f918c04-eade-6528-0c41-a79d2d02cf27}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{1155b98a-b88c-b10b-da25-8013488d1d9a}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{243c251a-851f-c107-1c6f-96d66442d2b7}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
