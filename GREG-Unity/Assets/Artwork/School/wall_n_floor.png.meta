@@ -344,6 +344,9 @@ TextureImporter:
   - first:
       213: -3655974689523537552
     second: scale_rosse4
+  - first:
+      213: -5825034049849346876
+    second: pavimento_palestra
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3137,6 +3140,27 @@ TextureImporter:
       bones: []
       spriteID: 079612bd36e534dc0800000000000000
       internalID: -3655974689523537552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pavimento_palestra
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4bc2ed462592fa0800000000000000
+      internalID: -5825034049849346876
       vertices: []
       indices: 
       edges: []

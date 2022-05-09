@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637876062490000000
+      ticks: 637877189890000000
     m_Hash: 4118856937
   m_LockFileStatus:
     m_FilePath: /home/alessandro/Scrivania/GREG/GREG-Unity/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637876062490000000
+      ticks: 637877189890000000
     m_Hash: 2222962186
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
