@@ -82,6 +82,8 @@ public class LevelSystem : MonoBehaviour
             floorName = "Secondo Piano";
         else if (buildIndex == 6)
             floorName = "Piano Terra Liceo";
+        else if(buildIndex == 7)
+            floorName = "Camera dei segreti";
 
         StartCoroutine(TypeWriterEffect(floorName));
     }
