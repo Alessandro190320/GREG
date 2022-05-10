@@ -41,6 +41,7 @@
      <Compile Include="Assets/Scripts/CreditsMenu.cs" />
      <Compile Include="Assets/Scripts/Dialogue.cs" />
      <Compile Include="Assets/Scripts/NameMenu.cs" />
+     <Compile Include="Assets/Scripts/PressurePlateSystem.cs" />
      <Compile Include="Assets/Scripts/PauseMenu.cs" />
      <Compile Include="Assets/Scripts/DialogueManager.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
