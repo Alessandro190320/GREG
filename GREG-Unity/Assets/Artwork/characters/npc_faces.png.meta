@@ -19,7 +19,7 @@ TextureImporter:
     second: npc_faces_4
   - first:
       213: -7385784680652907310
-    second: npc_kris_face_A
+    second: npc_faces_5
   - first:
       213: 5098219531620171879
     second: npc_faces_6
@@ -31,22 +31,13 @@ TextureImporter:
     second: npc_faces_8
   - first:
       213: -2557616876267707932
-    second: npc_susie_faces_B
+    second: npc_faces_9
   - first:
       213: -8961429752043578372
     second: npc_faces_10
   - first:
       213: -8417970464106730506
-    second: npc_kris_face_B
-  - first:
-      213: 6177033596410789444
-    second: npc_faces_12
-  - first:
-      213: -744230420838357821
-    second: npc_susie_faces_A
-  - first:
-      213: 8177546850881833304
-    second: npc_faces_14
+    second: npc_faces_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,11 +131,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 84
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,11 +152,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 53
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +172,12 @@ TextureImporter:
       name: npc_faces_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 84
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +193,12 @@ TextureImporter:
       name: npc_faces_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 68
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +214,12 @@ TextureImporter:
       name: npc_faces_4
       rect:
         serializedVersion: 2
-        x: 48
-        y: 53
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,15 +232,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_kris_face_A
+      name: npc_faces_5
       rect:
         serializedVersion: 2
-        x: 65
-        y: 53
+        x: 16
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,11 +257,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 84
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +277,12 @@ TextureImporter:
       name: npc_faces_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 68
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +303,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,15 +316,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_susie_faces_B
+      name: npc_faces_9
       rect:
         serializedVersion: 2
-        x: 18
-        y: 38
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +345,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,15 +358,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_kris_face_B
+      name: npc_faces_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 37
+        x: 48
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,69 +374,6 @@ TextureImporter:
       bones: []
       spriteID: 6fb2035967c5d2b80800000000000000
       internalID: -8417970464106730506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_faces_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 53
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44ef7bf145b39b550800000000000000
-      internalID: 6177033596410789444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_susie_faces_A
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 35
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c4e3e61066fba5f0800000000000000
-      internalID: -744230420838357821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_faces_14
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 74
-        width: 32
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8590decc88b7c7170800000000000000
-      internalID: 8177546850881833304
       vertices: []
       indices: 
       edges: []

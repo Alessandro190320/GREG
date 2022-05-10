@@ -115,7 +115,7 @@ TextureImporter:
     second: porte_mistiche
   - first:
       213: -2437508175588858173
-    second: doors_brown_r
+    second: Porta_emergenza1
   - first:
       213: 7289354489394467729
     second: door_tunnel_open_0
@@ -124,13 +124,19 @@ TextureImporter:
     second: door_tunnel_open_1
   - first:
       213: 8213310957532874548
-    second: doors_brown_l
+    second: Porta_emergenza2
   - first:
       213: -8083190934595661193
-    second: doors_brown_open_l
+    second: door_brown_left_open
   - first:
       213: 2735202800994032516
-    second: doors_brown_open_r
+    second: door_brown_right_open
+  - first:
+      213: -1030007334802734756
+    second: door_brown_left_close
+  - first:
+      213: 4749257438693197166
+    second: door_brown_right_close
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -686,7 +692,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 47
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -707,7 +713,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 31
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -979,8 +985,8 @@ TextureImporter:
       name: door_tunnel_open_0
       rect:
         serializedVersion: 2
-        x: 125
-        y: 32
+        x: 126
+        y: 31
         width: 16
         height: 32
       alignment: 0
@@ -1000,8 +1006,8 @@ TextureImporter:
       name: door_tunnel_open_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 32
+        x: 142
+        y: 31
         width: 16
         height: 32
       alignment: 0
@@ -1039,13 +1045,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_brown_r
+      name: Porta_emergenza1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 33
+        y: 112
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1060,13 +1066,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_brown_l
+      name: Porta_emergenza2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 33
+        y: 96
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1081,15 +1087,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_brown_open_l
+      name: door_brown_left_open
       rect:
         serializedVersion: 2
-        x: 125
+        x: 34
         y: 0
-        width: 16
+        width: 15
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1102,15 +1108,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_brown_open_r
+      name: door_brown_right_open
       rect:
         serializedVersion: 2
-        x: 142
+        x: 49
         y: 0
-        width: 16
+        width: 17
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1118,6 +1124,48 @@ TextureImporter:
       bones: []
       spriteID: 48b17eda47465f520800000000000000
       internalID: 2735202800994032516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_brown_left_close
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51490549cda4b1f0800000000000000
+      internalID: -1030007334802734756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_brown_right_close
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6580345a70c8e140800000000000000
+      internalID: 4749257438693197166
       vertices: []
       indices: 
       edges: []

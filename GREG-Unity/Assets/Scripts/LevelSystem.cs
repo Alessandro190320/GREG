@@ -80,8 +80,6 @@ public class LevelSystem : MonoBehaviour
             floorName = "Primo Piano";
         else if (buildIndex == baseBuildIndex + 2)
             floorName = "Secondo Piano";
-        else if (buildIndex == baseBuildIndex + 4)
-            floorName = "Armadio";
         else if (buildIndex == 6)
             floorName = "Piano Terra Liceo";
 
