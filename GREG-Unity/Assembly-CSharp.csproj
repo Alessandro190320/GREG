@@ -36,7 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/PlayerFollowSystem.cs" />
+     <Compile Include="Assets/Scripts/PlayerFollowSystem.cs" />
      <Compile Include="Assets/Scripts/MainMenu.cs" />
      <Compile Include="Assets/Scripts/VectorValue.cs" />
      <Compile Include="Assets/Scripts/CreditsMenu.cs" />
@@ -46,7 +46,7 @@
      <Compile Include="Assets/Scripts/PauseMenu.cs" />
      <Compile Include="Assets/Scripts/DialogueManager.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-     <Compile Include="Assets/EnemyGFX.cs" />
+     <Compile Include="Assets/Scripts/EnemyGFX.cs" />
      <Compile Include="Assets/Scripts/PlayerState.cs" />
      <Compile Include="Assets/Scripts/CameraMotor.cs" />
      <Compile Include="Assets/Scripts/LoopAnimationButton.cs" />
