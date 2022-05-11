@@ -26,4 +26,6 @@
 
 ## 7--> premendo il bottone verrà caricato il tutto su GITHUB
 
-# il gioco è stato pubblicato al seguente link https://play.unity.com/mg/other/greg-online-2
+# il gioco originale è stato pubblicato al seguente link https://play.unity.com/mg/other/greg-online-2
+# il gioco GREG con grafica finita ( mancano le animazioni ) è stato pubblicato al seguente link https://play.unity.com/mg/other/greg-online-liceo
+
