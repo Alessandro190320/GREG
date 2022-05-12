@@ -833,6 +833,15 @@ TextureImporter:
   - first:
       213: 4196893304822682943
     second: BancoUnico
+  - first:
+      213: 5691884048149126167
+    second: Banco-lab-bug
+  - first:
+      213: -6343453647412860645
+    second: Banco-corridoio-bug
+  - first:
+      213: -8798202687796929696
+    second: Banco-aulaprof-bug
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6545,7 +6554,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 295
+        y: 302
         width: 16
         height: 16
       alignment: 0
@@ -6566,7 +6575,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 295
+        y: 302
         width: 16
         height: 16
       alignment: 0
@@ -6587,7 +6596,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 56
-        y: 295
+        y: 302
         width: 16
         height: 16
       alignment: 0
@@ -6608,7 +6617,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 295
+        y: 302
         width: 16
         height: 16
       alignment: 0
@@ -6738,7 +6747,7 @@ TextureImporter:
         width: 42
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6746,6 +6755,69 @@ TextureImporter:
       bones: []
       spriteID: f35db22893c5e3a30800000000000000
       internalID: 4196893304822682943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco-lab-bug
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 58
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c14a88262adfe40800000000000000
+      internalID: 5691884048149126167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco-corridoio-bug
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 14
+        width: 37
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19ecc8448687f7a0800000000000000
+      internalID: -6343453647412860645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banco-aulaprof-bug
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 302
+        width: 63
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b1af3354186e580800000000000000
+      internalID: -8798202687796929696
       vertices: []
       indices: 
       edges: []

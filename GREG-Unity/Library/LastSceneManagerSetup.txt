@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Atrio.unity
+- path: Assets/Scenes/Secondo_piano.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
