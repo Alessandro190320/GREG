@@ -122,6 +122,9 @@ TextureImporter:
   - first:
       213: -4954011656894315859
     second: playerNUOVO_39
+  - first:
+      213: 8732891292130540451
+    second: playerNUOVO_40
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1046,6 +1049,27 @@ TextureImporter:
       bones: []
       spriteID: da28ba145a0df3bb0800000000000000
       internalID: -4954011656894315859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerNUOVO_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 154
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abfa818c56713970800000000000000
+      internalID: 8732891292130540451
       vertices: []
       indices: 
       edges: []

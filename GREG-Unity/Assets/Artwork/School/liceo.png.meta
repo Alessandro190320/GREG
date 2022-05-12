@@ -829,10 +829,7 @@ TextureImporter:
     second: libreria-v-2
   - first:
       213: -7716401968944693561
-    second: Banco-liceo-bug
-  - first:
-      213: 4196893304822682943
-    second: Banco-aulaprof-bug
+    second: table-eating
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6709,34 +6706,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Banco-liceo-bug
+      name: table-eating
       rect:
         serializedVersion: 2
-        x: 228
-        y: 14
-        width: 37
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ce3de0ea45d9e490800000000000000
-      internalID: -7716401968944693561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Banco-aulaprof-bug
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 302
-        width: 63
-        height: 41
+        x: 176
+        y: 54
+        width: 42
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6744,8 +6720,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f35db22893c5e3a30800000000000000
-      internalID: 4196893304822682943
+      spriteID: 7ce3de0ea45d9e490800000000000000
+      internalID: -7716401968944693561
       vertices: []
       indices: 
       edges: []
