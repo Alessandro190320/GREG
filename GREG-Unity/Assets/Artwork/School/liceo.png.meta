@@ -829,7 +829,7 @@ TextureImporter:
     second: libreria-v-2
   - first:
       213: -7716401968944693561
-    second: table-eating
+    second: floor_black
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6706,13 +6706,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: table-eating
+      name: floor_black
       rect:
         serializedVersion: 2
-        x: 176
-        y: 54
-        width: 42
-        height: 37
+        x: 436
+        y: 572
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

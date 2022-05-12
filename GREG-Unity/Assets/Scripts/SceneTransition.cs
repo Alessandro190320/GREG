@@ -24,7 +24,9 @@ public class SceneTransition : MonoBehaviour
                 else if (name.Contains("dSP"))
                     indexFloor=7;
                 else if (name.Contains("uSP"))
-                    indexFloor=6;
+                    indexFloor=3;
+                else if (name.Contains("menu"))
+                    indexFloor=0;
             }
             else // ramo lice 
             {
