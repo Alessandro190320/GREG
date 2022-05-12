@@ -46,10 +46,12 @@
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PressurePlateSystemSecret.cs" />
      <Compile Include="Assets\Scripts\EnemyGFX.cs" />
      <Compile Include="Assets\Scripts\PlayerState.cs" />
      <Compile Include="Assets\Scripts\CameraMotor.cs" />
      <Compile Include="Assets\Scripts\LoopAnimationButton.cs" />
+     <Compile Include="Assets\AIPathModifier.cs" />
      <Compile Include="Assets\Scripts\PreventClick.cs" />
      <Compile Include="Assets\Scripts\LevelSystem.cs" />
      <Compile Include="Assets\Scripts\SceneTransition.cs" />

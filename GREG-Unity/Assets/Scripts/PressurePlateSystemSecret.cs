@@ -1,32 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
-public class PressurePlateSystem : MonoBehaviour
+public class PressurePlateSystemSecret : MonoBehaviour
 {
     private SpriteRenderer sr;
     public Sprite actived;
     public Sprite deactivated;
-    public Transform toSpwanPosition;
-    public GameObject toCopyObject;
-
-    private GameObject createdObject;
+    public AIPath aipath;
 
     // Start is called before the first frame update
     void Start()
     {
+        aipath.canMove=false;
         sr = GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         sr.sprite = actived;
-        createdObject = Instantiate(toCopyObject, toSpwanPosition.position, toSpwanPosition.rotation);
+        aipath.canMove=true;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Destroy(createdObject);
         sr.sprite = deactivated;
     }
 }
