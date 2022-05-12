@@ -6,7 +6,7 @@ public class PressurePlateSystem : MonoBehaviour
 {
     private SpriteRenderer sr;
     public Sprite actived;
-    public Sprite disactived;
+    public Sprite deactivated;
     public Transform toSpwanPosition;
     public GameObject toCopyObject;
 
@@ -27,6 +27,6 @@ public class PressurePlateSystem : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         Destroy(createdObject);
-        sr.sprite = disactived;
+        sr.sprite = deactivated;
     }
 }

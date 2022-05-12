@@ -635,6 +635,9 @@ TextureImporter:
   - first:
       213: 3462283581740454914
     second: foglio
+  - first:
+      213: 352499977904714230
+    second: oggetti_213
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -5196,7 +5199,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5204,6 +5207,27 @@ TextureImporter:
       bones: []
       spriteID: 2049e49d2908c0030800000000000000
       internalID: 3462283581740454914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oggetti_213
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 142
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1f75ebcd454e400800000000000000
+      internalID: 352499977904714230
       vertices: []
       indices: 
       edges: []
