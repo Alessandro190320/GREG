@@ -28,5 +28,11 @@
 
 ## 7--> premendo il bottone verrà caricato il tutto su GITHUB
 
+open day 
+# il progetto originale open-day è stato caricato online al seguente link https://play.unity.com/mg/other/greg-online-2
+# ricordo la repository del progetto iniziale https://github.com/matthewexe/ITIS_16Bit
+
+greg
 # il gioco è stato pubblicato al seguente link https://play.unity.com/mg/other/greg-online-2
 # Sito-GREG https://alessandro190320.github.io/Sito-Greg/
+
