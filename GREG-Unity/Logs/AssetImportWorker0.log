@@ -19,19 +19,19 @@ Unity
 -name
 AssetImportWorker0
 -projectPath
-/home/alessandro/Scrivania/GREG/GREG-Unity
+/home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-46801
-Successfully changed project path to: /home/alessandro/Scrivania/GREG/GREG-Unity
-/home/alessandro/Scrivania/GREG/GREG-Unity
+36437
+Successfully changed project path to: /home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity
+/home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42,57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40,99 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /home/alessandro/Scrivania/GREG/GREG-Unity/Assets
+[Subsystems] Discovering subsystems at path /home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity/Assets
 GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
 Renderer: NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2
 Vendor:   NVIDIA Corporation
@@ -47,81 +47,81 @@ L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_
 blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
 NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
 V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1472631448
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1417490376
 Initialize mono
 Mono path[0] = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56702
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56314
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/alessandro/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,000950 seconds.
+Registered in 0,000908 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 42,47 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 42,62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,460 seconds
+- Completed reload, in  0,450 seconds
 Domain Reload Profiling:
-	ReloadAssembly (460ms)
+	ReloadAssembly (450ms)
 		BeginReloadAssembly (38ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (372ms)
+		EndReloadAssembly (364ms)
 			LoadAssemblies (37ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (111ms)
+			SetupTypeCache (107ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (170ms)
+			SetupLoadedEditorAssemblies (168ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (42ms)
+				RefreshPlugins (43ms)
 				BeforeProcessingInitializeOnLoad (7ms)
 				ProcessInitializeOnLoadAttributes (94ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,001514 seconds.
+Registered in 0,001587 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 42,81 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 43,10 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,847 seconds
+- Completed reload, in  0,838 seconds
 Domain Reload Profiling:
-	ReloadAssembly (848ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (838ms)
+		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (706ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (699ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
+			SetupTypeCache (223ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (293ms)
+			SetupLoadedEditorAssemblies (289ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (43ms)
 				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadAttributes (177ms)
 				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -131,14 +131,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.00 seconds
-Refreshing native plugins compatible for Editor in 0,50 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0,54 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 2504 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 106,5 MB.
 System memory in use after: 106,6 MB.
 
 Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2942.
-Total: 3,999055 ms (FindLiveObjects: 0,160695 ms CreateObjectMapping: 0,103650 ms MarkObjects: 3,600718 ms  DeleteObjects: 0,133204 ms)
+Total: 3,935470 ms (FindLiveObjects: 0,152192 ms CreateObjectMapping: 0,094431 ms MarkObjects: 3,562997 ms  DeleteObjects: 0,125163 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -151,167 +151,23 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Artwork/School/doors_n_windows.png
-  artifactKey: Guid(0ef7264954205f74e86353c6fd3ea280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/doors_n_windows.png using Guid(0ef7264954205f74e86353c6fd3ea280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694655bb9c936d0bff3cb468348887c9') in 0,107598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000119 seconds.
-  path: Assets/Artwork/School/armadio_segreto_0.asset
-  artifactKey: Guid(ed6655520722c7444a0eb5bed6997cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/armadio_segreto_0.asset using Guid(ed6655520722c7444a0eb5bed6997cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331dec30f1d99096f4589c1525ec6801') in 0,011832 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000110 seconds.
-  path: Assets/Artwork/School/palestra.png
-  artifactKey: Guid(5029353c592c9b12fa0ad65c4e220d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/palestra.png using Guid(5029353c592c9b12fa0ad65c4e220d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7920f6ee45ba0e4e9a1d1b21d92e434') in 0,087386 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000108 seconds.
-  path: Assets/Artwork/School/campi_palestra.png
-  artifactKey: Guid(8cb850ca4a82ddb408086a16c2da4b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/campi_palestra.png using Guid(8cb850ca4a82ddb408086a16c2da4b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a90fa74d4865b833ea22620265c9839') in 0,200500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000090 seconds.
-  path: Assets/Artwork/School/sign.png
-  artifactKey: Guid(5e12a48d7f3792749950860fa532f98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/sign.png using Guid(5e12a48d7f3792749950860fa532f98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c05db0590585e385299a524e096e49') in 0,005062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000119 seconds.
-  path: Assets/Artwork/School/wall_blue_0.asset
-  artifactKey: Guid(bf94249f4f0ec7244a85d43cbe0c32a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_blue_0.asset using Guid(bf94249f4f0ec7244a85d43cbe0c32a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42068260d9b8f29de5ae21efb70a04fd') in 0,002945 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000108 seconds.
-  path: Assets/Artwork/School/New Palette.prefab
-  artifactKey: Guid(9110fce7c575cba4091d744cec608ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/New Palette.prefab using Guid(9110fce7c575cba4091d744cec608ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee6d6712baa726832957329c0a1d067') in 0,017782 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000124 seconds.
-  path: Assets/Artwork/School/ascensore_cut.png
-  artifactKey: Guid(31366684cae0f88439c0204824625893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/ascensore_cut.png using Guid(31366684cae0f88439c0204824625893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe873054327ead73b70e8f0043303da1') in 0,004754 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000095 seconds.
-  path: Assets/Artwork/School/wall_n_floor.png
-  artifactKey: Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_n_floor.png using Guid(76515f91adb888d4eb9e267499bec180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91152afaf1f09f0e7500b11b30127820') in 0,157908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000111 seconds.
-  path: Assets/Artwork/School/scale_palestra.png
-  artifactKey: Guid(1f925dcc696b4f41faac26d014c8ba6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/scale_palestra.png using Guid(1f925dcc696b4f41faac26d014c8ba6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6acbb52c5c0c86c031e0a9319b148b7') in 0,002849 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000101 seconds.
-  path: Assets/Artwork/School/wall_blue.png
-  artifactKey: Guid(82e969f185139df4e94d3a7b5255c9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_blue.png using Guid(82e969f185139df4e94d3a7b5255c9c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718543049d096179731e483763878379') in 0,037732 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000102 seconds.
-  path: Assets/Artwork/School/ascensore.png
-  artifactKey: Guid(7a6afc8e5797f804fad5199166f4e1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/ascensore.png using Guid(7a6afc8e5797f804fad5199166f4e1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8432d9518ebb73aef72e0597849dcfd5') in 0,006060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000116 seconds.
-  path: Assets/Artwork/School/armadio_secret_0.asset
-  artifactKey: Guid(fa8be6c0ff0bd0341be82e80f1c20e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/armadio_secret_0.asset using Guid(fa8be6c0ff0bd0341be82e80f1c20e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81acc90159bc79f32e551aeccd3ee901') in 0,004289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000079 seconds.
-  path: Assets/Artwork/School/armadio_secret_1.asset
-  artifactKey: Guid(0da5494e82c2f514b929b590c2728c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/armadio_secret_1.asset using Guid(0da5494e82c2f514b929b590c2728c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444cfe8cd4fba2714e2327daf5ba750a') in 0,002482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000067 seconds.
-  path: Assets/Artwork/School/ascensore_0.asset
-  artifactKey: Guid(fb14195d0b6835142bf0e91c22073772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/ascensore_0.asset using Guid(fb14195d0b6835142bf0e91c22073772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39624b181d902208033b775b20010d80') in 0,002917 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000070 seconds.
-  path: Assets/Artwork/School/oggetti1.png
-  artifactKey: Guid(77f38ce81d4b45441ab51a7b38ce7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/oggetti1.png using Guid(77f38ce81d4b45441ab51a7b38ce7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00934ee8bcd87a4036a3520d1dd9ce30') in 0,005446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000099 seconds.
-  path: Assets/Artwork/School/alberoSexy.png
-  artifactKey: Guid(84fee3606e377704c992167b3ec63244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/alberoSexy.png using Guid(84fee3606e377704c992167b3ec63244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20f86b316f0c0d8e4cc2af5cafe9f78') in 0,009600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000097 seconds.
-  path: Assets/Artwork/School/wall_blue_1.asset
-  artifactKey: Guid(ebdeb1edb9bbeae43a93c655fda6d3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/wall_blue_1.asset using Guid(ebdeb1edb9bbeae43a93c655fda6d3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02103cfdf0e1b961cc46c5147f08f03d') in 0,002993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000109 seconds.
-  path: Assets/Artwork/School/button_red.png
-  artifactKey: Guid(03b760efbe7f3ed43af1c79cdcda15ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/button_red.png using Guid(03b760efbe7f3ed43af1c79cdcda15ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fca9fbdefc324759aac0041f7a799d3') in 0,007179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000099 seconds.
-  path: Assets/Artwork/School/red_bush1.png
-  artifactKey: Guid(e49ee9f5e9162cc41b4868585e17933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/red_bush1.png using Guid(e49ee9f5e9162cc41b4868585e17933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e56a96e754a7a6c26297b1394714d96') in 0,009089 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000067 seconds.
-  path: Assets/Artwork/School/stairs.png
-  artifactKey: Guid(2b28a93f6a32a6f4f809f7906e792889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/stairs.png using Guid(2b28a93f6a32a6f4f809f7906e792889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e634623cf26faa496045aebac3b72eb4') in 0,099824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0,000076 seconds.
-  path: Assets/Artwork/School/red_bush.png
-  artifactKey: Guid(cd8b7ac2f0e460940b9ae310a0383286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/School/red_bush.png using Guid(cd8b7ac2f0e460940b9ae310a0383286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22215cbae530815f736c2e862e33a1d5') in 0,006884 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7,422769 seconds.
-  path: Assets/Scenes/Piano_terra_liceo.unity
-  artifactKey: Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Piano_terra_liceo.unity using Guid(b444af3ace23e5f1d8e9a784d9465401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cdf35db73d1f5c57bf6179f20c2ab5') in 0,000598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44,312360 seconds.
-  path: Assets/Scenes/Atrio.unity
-  artifactKey: Guid(f630abac36f24224693c16dcc9e966bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Atrio.unity using Guid(f630abac36f24224693c16dcc9e966bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb779a6c9c918cadaa710dac15c4cf0') in 0,000484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46,901755 seconds.
-  path: Assets/Artwork/characters/Professori/kristian.png
-  artifactKey: Guid(f5ef77a5856d04a4a8245f4d0e7a998b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Artwork/characters/Professori/kristian.png using Guid(f5ef77a5856d04a4a8245f4d0e7a998b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd441d0eec9f36ce6b53e410578700be4') in 0,007220 seconds 
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(4af254e5028213244859afda782af2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(4af254e5028213244859afda782af2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431a3dca11ddebc7a6347d3f2a663e93') in 0,002950 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0,001468 seconds.
+Registered in 0,001538 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/Progetto-GREG/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,49 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0,48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,777 seconds
+- Completed reload, in  0,785 seconds
 Domain Reload Profiling:
-	ReloadAssembly (777ms)
+	ReloadAssembly (785ms)
 		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
@@ -321,156 +177,30 @@ Domain Reload Profiling:
 		EndReloadAssembly (648ms)
 			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
+			SetupTypeCache (226ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (250ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (247ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
+				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadAttributes (180ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,55 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0,57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 2476 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105,6 MB.
-System memory in use after: 105,8 MB.
+System memory in use before: 104,2 MB.
+System memory in use after: 104,4 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2993.
-Total: 4,336331 ms (FindLiveObjects: 0,210090 ms CreateObjectMapping: 0,111737 ms MarkObjects: 3,964927 ms  DeleteObjects: 0,048531 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 120,730362 seconds.
-  path: Assets/Scenes/Secondo_piano.unity
-  artifactKey: Guid(403f806db415d4741829a1387957fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Secondo_piano.unity using Guid(403f806db415d4741829a1387957fa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f196630691bbd1147f432a44671090') in 0,002816 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4,816406 seconds.
-  path: Assets/Scenes/Primo_piano.unity
-  artifactKey: Guid(e2684e6cf7fd5d74294958f84beeb50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Primo_piano.unity using Guid(e2684e6cf7fd5d74294958f84beeb50a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc85ec015a3fc9a203c6e82ac49b1d6b') in 0,000468 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,001428 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,50 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,760 seconds
-Domain Reload Profiling:
-	ReloadAssembly (760ms)
-		BeginReloadAssembly (79ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (640ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (240ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 2476 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105,7 MB.
-System memory in use after: 105,8 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2996.
-Total: 3,781562 ms (FindLiveObjects: 0,174749 ms CreateObjectMapping: 0,090944 ms MarkObjects: 3,472091 ms  DeleteObjects: 0,042952 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,001492 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/alessandro/Scrivania/GREG/GREG-Unity/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0,49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,773 seconds
-Domain Reload Profiling:
-	ReloadAssembly (774ms)
-		BeginReloadAssembly (78ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (652ms)
-			LoadAssemblies (63ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0,53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 2476 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105,7 MB.
-System memory in use after: 105,8 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2999.
-Total: 4,036374 ms (FindLiveObjects: 0,173830 ms CreateObjectMapping: 0,110449 ms MarkObjects: 3,705940 ms  DeleteObjects: 0,045335 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2945.
+Total: 4,563272 ms (FindLiveObjects: 0,160652 ms CreateObjectMapping: 0,082922 ms MarkObjects: 4,261145 ms  DeleteObjects: 0,057885 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
