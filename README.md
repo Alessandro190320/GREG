@@ -29,7 +29,7 @@
 ## 7--> premendo il bottone verrà caricato il tutto su GITHUB
 
 # OPEN DAY
-# il progetto originale open-day è stato caricato online al seguente link https://play.unity.com/mg/other/greg-online-2
+# il progetto originale open-day è stato caricato online al seguente link https://play.unity.com/mg/other/greg-v-2-02
 # ricordo la repository del progetto iniziale https://github.com/matthewexe/ITIS_16Bit
 
 # GREG
