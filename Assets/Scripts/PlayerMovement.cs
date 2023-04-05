@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDelta;
     public Animator animator;
     private float x, y;
-    public float speed;
+    private float speed;
     private bool isMove;
     private int speedBoost = 0;
     public float shiftDownSpeed = 2f;
