@@ -35,7 +35,7 @@ per semplificare l'utilizzo, potete scaricare [github Desktop](https://desktop.g
 ## Link utili:
 
 - **progetto iniziale**: [ITIS_16Bit](https://github.com/matthewexe/ITIS_16Bit)
-- sito descrittivo dai ragazzi del GREG V.1.0: [Sito-GREG](https://alessandro190320.github.io/Sito-Greg/)
+- sito descrittivo dai ragazzi del GREG V.2.0: [Sito-GREG](https://alessandro190320.github.io/Sito-Greg/)
 - online playground
 	- [Original](https://play.unity.com/mg/other/greg-online-2)
 	- [Version 2.0](https://play.unity.com/mg/other/greg-v-2-02)
