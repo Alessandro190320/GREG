@@ -1,19 +1,6 @@
-# GREG V.3.0 -- based on [matthewexe](https://github.com/matthewexe/ITIS_16Bit)'s project
-
-###### progetto riproduzione della scuola tramite videogioco con unity
-
-![Alt](https://repobeats.axiom.co/api/embed/0d13cb3ff262c799d57276a5308250b6c941fc40.svg "Repobeats analytics image")
-
-## Istruzioni Unity:
-
-prima di iniziare, scaricare:
-- [ ] progetto GREG;
-- [ ] versione editor **2020.3.33f1** Unity;
-una volta che avete le due cose, vi basterà aprire la cartella con unity e verrà caricato il mondo di gioco;
-
----
-
-per la **parte grafica** è stato usato [GIMP](https://www.gimp.org/) <- questo non toglie la possibilità di usare altri tool come Photoshop;
+# Istruzioni Unity 
+--- 
+## questo è il file da caricare su unity, una volta caricato si può aprire e verrà caricato il mondo di gioco 
 
 ## Procedimenti per lavorare con github:
 
