@@ -1,3 +1,7 @@
+# Istruzioni Unity 
+--- 
+## questo è il file da caricare su unity, una volta caricato si può aprire e verrà caricato il mondo di gioco 
+=======
 
 ###### progetto riproduzione della scuola tramite videogioco con unity
 
@@ -13,6 +17,7 @@ una volta che avete le due cose, vi basterà aprire la cartella con unity e verr
 ---
 
 per la **parte grafica** è stato usato [GIMP](https://www.gimp.org/) <- questo non toglie la possibilità di usare altri tool come Photoshop;
+>>>>>>> 1726feeb15ea269a9a4e69cbcb538c95dae64100
 
 ## Procedimenti per lavorare con github:
 
