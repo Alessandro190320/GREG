@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Istruzioni Unity 
 --- 
 ## questo è il file da caricare su unity, una volta caricato si può aprire e verrà caricato il mondo di gioco 
